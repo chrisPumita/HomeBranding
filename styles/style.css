@@ -1,0 +1,21 @@
+/* 
+		GENERAL CLASES STYLES
+*/
+
+.iconHome{
+	width: 25%;
+	height: 25%
+}
+.redesIcons{
+	width: 5%;
+	height: 5%;
+}
+
+.lineTop {
+    width: 100%;
+    height: auto;
+    border-top: 15px solid #A0C751;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-top: 5px;
+}
