@@ -14,12 +14,12 @@
 </HEAD>
 <BODY>
 	<HEADER id="header">
-		<div>
-			<div id="logo">
+		<div class="contenedor">
+			<div class="logo contenido">
 				<img class="iconHome" src="img/homebranding-logo.png">
 			</div>
 
-			<div id="menuDesp">
+			<div class="menuDesp contenido">
 				<ul id="menu" class="navegacion">
 					<li>
 						<a class="primaryColor listMenu" href="index.php" onclick="return false";>☰</a>
@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 
-			<div id="socialConect">
+			<div class="socialConect contenido">
 				<div>
 					<h2 class="secondColor alingDer">Siguenos!</h2>
 				</div>
@@ -43,8 +43,6 @@
 					<img class="redesIcons" src="img/icon-face.png">
 					<img class="redesIcons" src="img/icon-tw.png">
 				</div>
-			</div>
-			<div class="lineTop">
 			</div>
 		</div>
 	</HEADER>
@@ -62,65 +60,68 @@
   			</div>
 		</div>
 			
-		<div>
-			<div>
-				<h2>SERVICIOS</h2>
-				<div>
+		<div class="contenedor">
+			<div class="contenPadreServ">
+				<h2 class="primaryColor">SERVICIOS</h2>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>SALMPLING</h3>
-					<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.</p>
+					<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>SIGN HUMAN</h3>
-					<p>Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.</p>
+					<p>Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.<br></p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>PUBLIANDANTE</h3>
 					<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 				</div>
-				<div>
+
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>PUBLIPANTALLA</h3>
 					<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>CROSS WALKER</h3>
 					<p>Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.</p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>CROSS BOARD STREET</h3>
-					<p>Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.</p>
+					<p>Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.				    </p>
+					<p> </p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>ROLL UP</h3>
 					<p>Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.</p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>BICI VALLA</h3>
 					<p>Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.</p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>CARTELERA MOVIL</h3>
 					<p>Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.</p>
+					<p> </p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>ESPECTACULARES</h3>
 					<p>Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. </p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>PUBLICIDAD EN RUTA</h3>
 					<p>Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.</p>
 				</div>
-				<div>
+				<div class="contenidoService contHijoServ">
 					<img src="img/iconService.png" class="iconService">
 					<h3>MATERIAL PUBLICITARIO</h3>
 					<p>Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.</p>
@@ -130,7 +131,7 @@
 
 
 		<div>
-			<h2>QUIENES SOMOS</h2>
+			<h2 class="secondColor alingDer">QUIENES SOMOS</h2>
 			<p>
 				Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 			</p>
@@ -161,7 +162,7 @@
 		
 		<div>
 			<div>
-				<h3>Escríbenos</h3>
+				<h3>ESCRÍBENOS:</h3>
 				<div class="formuls">
 					<form id="contacto" name="contacto" action="send.php" method="post">
 						<div class="formulario">
@@ -181,7 +182,6 @@
 							<p class="condiciones">
 								<input name="aceptaterminos" type="checkbox" id="aceptaterminos" value="si" checked=""> He leido los Términos y Politicas de Privacidad. 
 							</p>
-
 							<p class="condiciones">
 								<input name="aceptapromociones" type="checkbox" id="aceptapromociones" value="si" checked=""> Me gustaría recibir material promocional de Directa a Casa.
 							</p>
@@ -195,7 +195,7 @@
 			</div>
 
 			<div>
-			<h3>Informes:</h3>
+			<h3>INFORMES:</h3>
 			<p>Cerrada Noche Buena 15, <br>
 			Col. Potreros, Deleg. Tlalpan <br>
 			C.P. 01780, CDMX, Méx. <br>

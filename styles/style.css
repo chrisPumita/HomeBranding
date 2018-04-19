@@ -1,36 +1,64 @@
 /* 
-		GENERAL CLASES STYLES
+        GENERAL CLASES STYLES
 */
 body{
     font-family: sans-serif;
 }
 
+/*    Elementos de los contenedores  */
 
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 15px solid #9FC74D;
+}
+
+.contenidoService{
+    width:10%;
+    float:left;
+    color: #6B6B6B;
+}
+
+.contenPadreServ {
+    float: left;
+    margin: 0px;
+    border: 1px solid #ccc;
+}
+
+.contHijoServ {
+    box-sizing: border-box;
+    display: block;
+    width: 31%;
+    height: 200px;
+    padding: 0px;
+    margin: 1% 1% 1% 1%;
+    text-align: center;
+    font-size: 14px
+}
 
 .iconHome{
-	width: 25%;
-	height: 25%
+    width: 320px;
+    height: auto;
 }
 .redesIcons{
-	width: 32px;
-	height: 32px;
-    vertical-align: middle;
-}
-
-.iconService{
     width: 32px;
     height: 32px;
     vertical-align: middle;
 }
 
-.lineTop {
-    width: 100%;
+.iconService{
+    width: 100px;
     height: auto;
-    border-top: 15px solid #9FC74D;
-    margin-top: 5%;
-    margin-right: 5%;
-    padding-top: 5px;
 }
+
+h2{
+    margin: 30px;
+}
+
+ h3{
+    color: #9FC74D;
+    margin-bottom: 0px;
+ }
 
 .secondColor{
     color: #9A9A9A;
