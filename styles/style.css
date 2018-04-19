@@ -1,21 +1,102 @@
 /* 
 		GENERAL CLASES STYLES
 */
+body{
+    font-family: sans-serif;
+}
+
+
 
 .iconHome{
 	width: 25%;
 	height: 25%
 }
 .redesIcons{
-	width: 5%;
-	height: 5%;
+	width: 32px;
+	height: 32px;
+    vertical-align: middle;
+}
+
+.iconService{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
 }
 
 .lineTop {
     width: 100%;
     height: auto;
-    border-top: 15px solid #A0C751;
+    border-top: 15px solid #9FC74D;
     margin-top: 5%;
     margin-right: 5%;
     padding-top: 5px;
+}
+
+.secondColor{
+    color: #9A9A9A;
+    margin-bottom: 0px;
+}
+
+
+.primaryColor{
+    color: #9FC74D;
+    margin-bottom: 0px;
+}
+
+.menuTxtFormat{
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+}
+
+.primary{
+   font-size: 1.5em;
+   color: #9FC74D;
+}
+
+.alingDer{
+    text-align: right;
+}
+.alingIzq{
+    text-align: left;
+}
+
+a.class_a_href{
+    cursor: default;
+    text-decoration: none;
+}
+
+
+/* OPCIONES DEL MENU*/
+.decoraMenu{
+    list-style: none;
+}
+
+
+/*
+    Estilos de los formularios
+ */
+
+.formulario{
+    width: 100%;
+    margin-top: 3%;
+    height: auto;
+    float: left;
+}
+
+.formuls {
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #787872;
+}
+
+/* 
+BOTTON UP
+*/
+
+#press-up {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0.5;
 }
