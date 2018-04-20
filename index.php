@@ -19,7 +19,7 @@
 				<img class="iconHome" src="img/homebranding-logo.png">
 			</div>
 
-			<div class="menuDesp contenido">
+			<div class="menuDesp contenidoMenu">
 				<ul id="menu" class="navegacion">
 					<li>
 						<a class="primaryColor listMenu" href="index.php" onclick="return false";>☰</a>
@@ -37,7 +37,7 @@
 
 			<div class="socialConect contenido">
 				<div>
-					<h2 class="secondColor alingDer">Siguenos!</h2>
+					<h2 class="secondColor alingDer tittleDiv">Siguenos!</h2>
 				</div>
 				<div>
 					<img class="redesIcons" src="img/icon-face.png">
@@ -50,21 +50,22 @@
 
 	<SECTION id="section">
 		<div>
-  			<h2 class="secondColor alingDer">CASOS DE ÉXITO</h2>
+  			<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
   			<div>
   				<div>
-  					<img class="iconHome alingDer" src="img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG" alt="fotoTemporal">
-  					<img class="iconHome alingDer" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" alt="fotoTemporal">
-  					<img class="iconHome alingDer" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" alt="fotoTemporal">
+  					<img class="iconHome" src="img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG" alt="fotoTemporal">
+  					<img class="iconHome" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" alt="fotoTemporal">
+  					<img class="iconHome" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" alt="fotoTemporal">
   				</div>
   			</div>
 		</div>
 			
-		<div class="contenedor">
+		<div class="contenedorServices">
 			<div class="contenPadreServ">
-				<h2 class="primaryColor">SERVICIOS</h2>
+				<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
+            </article>
 				<div class="contenidoService contHijoServ">
-					<img src="img/iconService.png" class="iconService">
+					<img src="img/iconService.png" class="iconService logo">
 					<h3>SALMPLING</h3>
 					<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
 				</div>
@@ -131,38 +132,61 @@
 
 
 		<div>
-			<h2 class="secondColor alingDer">QUIENES SOMOS</h2>
-			<p>
-				Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
-			</p>
-			
-		</div>
-
-
-		<div>
-			<h2>CUENTAS</h2>
-
-		</div>
-
-
-		<div>
 			<div>
-				<h3>HomeBrandig</h3><br>
-				10 años ·
+				<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
+			</div>
+			<div class="portada">
+				<p class="elementoMmensaje menuTxtFormat">
+					Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
+				</p>
+			</div>
+		</div>
+
+
+		<div>
+			<h2 class="tittleDiv primaryColor">CUENTAS</h2>
+			<div>
+					<img class="clientesLogos" src="img/logos1.jpg">
+					<img class="clientesLogos" src="img/logos1.jpg">
+			</div>
+		</div>
+
+
+		<div class="footerMje">
+			<div class="contenedorMje">
+				<div class="iconLogoC">
+					<img class="logoCircle" src="img/homebranding-logo-circle.png" alt="Home Branding Logo">
+				</div>
+				<div>
+					<h3 class="secondColor">Home Brandig</h3><br>
+					<p>
+						10 años <b>·</b>
+						<img class="iconSocial" src="img/users.ico">
+					</p>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div class="elementoMensajeEmotivo menuTxtFormat mjeText1">
+				<p class="">
+					<span class="marca secondColor">
+						<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
+						<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+						¡Lo + importante de la comunicación <i class="em em-loudspeaker"></i><br> no esta en como se dice, sino en como se hace!<br>
+						#TuPublicidadEnBuenas
+						<i class="em em-open_hands"></i>
+					</span>
+				</p>
+				
+				
 			</div>
 			<div>
-				<p>
-					¡Lo + importante de la comunicación no esta en como se dice, sino en como se hace!
-				</p>
-				<p>
-					#TuPublicidadEnBuenas					
-				</p>
+				<img class="publishFondo" src="img/handPublis.png" alt="ManosConAnuncios">
 			</div>
 		</div>
 		
-		<div>
+		<div class="contenedorForm">
 			<div>
-				<h3>ESCRÍBENOS:</h3>
+				<h3 class="tittleDiv">ESCRÍBENOS:</h3>
 				<div class="formuls">
 					<form id="contacto" name="contacto" action="send.php" method="post">
 						<div class="formulario">
@@ -196,6 +220,7 @@
 
 			<div>
 			<h3>INFORMES:</h3>
+			<div class="contenedorForm">
 			<p>Cerrada Noche Buena 15, <br>
 			Col. Potreros, Deleg. Tlalpan <br>
 			C.P. 01780, CDMX, Méx. <br>

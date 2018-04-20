@@ -1,3 +1,18 @@
+/*
+        ++++++++++++++++++++++++++++++++++++++++++++
+                Variables definidas constantes
+        ++++++++++++++++++++++++++++++++++++++++++++
+ */
+:root {
+    --principal-txt-color: #9FC74D;
+    --second-txt-color: #787872;
+    --main-txt-font: sans-serif;
+    --border-block-color: #CDFC02;
+    --text-fondo-color: #DDDDDD;
+    --background-fotter-color:  #666666;
+}
+
+
 /* 
         GENERAL CLASES STYLES
 */
@@ -8,33 +23,48 @@ body{
 /*    Elementos de los contenedores  */
 
 .contenedor{
-    display: flex;
+    display:flex;
     justify-content: space-around;
-    border-bottom: 15px solid #9FC74D;
+    border-bottom: 15px solid var(--principal-txt-color);
+}
+
+.contenidoMenu{
+    float:left;
+    color: var(--second-txt-color);
+}
+
+.contenedorServices{
+    display:inline-block;
 }
 
 .contenidoService{
     width:10%;
     float:left;
-    color: #6B6B6B;
+    color: var(--second-txt-color);
 }
 
-.contenPadreServ {
-    float: left;
+.contenPadreServ{
     margin: 0px;
-    border: 1px solid #ccc;
+    border: 0px solid var(--second-txt-color);
+    margin-bottom: 20px;
 }
 
-.contHijoServ {
+.contHijoServ{
     box-sizing: border-box;
     display: block;
     width: 31%;
     height: 200px;
-    padding: 0px;
-    margin: 1% 1% 1% 1%;
+    padding: 10px;
+    margin: 3% 0% 3% 0%;
     text-align: center;
-    font-size: 14px
+    font-size: 18px
 }
+
+
+
+/*
+    ICONOS e IMAGENES
+*/
 
 .iconHome{
     width: 320px;
@@ -51,34 +81,49 @@ body{
     height: auto;
 }
 
+
+.logo{
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+.logo:hover {
+    margin-top: 2px;
+}
+
+/*   TITULOS   */
+
 h2{
     margin: 30px;
 }
 
- h3{
-    color: #9FC74D;
+h3{
+    color: var(--principal-txt-color);
     margin-bottom: 0px;
- }
+}
+
+.tittleDiv{
+    padding: 20px;
+}
+
+ /*Asignacion de colores principales y formato de texto*/
 
 .secondColor{
-    color: #9A9A9A;
+    color: var(--second-txt-color);
     margin-bottom: 0px;
 }
 
 
 .primaryColor{
-    color: #9FC74D;
+    color: var(--principal-txt-color);
     margin-bottom: 0px;
 }
 
 .menuTxtFormat{
-    font-family: 'Quicksand';
-    font-size: 1.5em;
-}
-
-.primary{
-   font-size: 1.5em;
-   color: #9FC74D;
+    font-size: 2.7em;
+    text-align:  center;
 }
 
 .alingDer{
@@ -88,21 +133,145 @@ h2{
     text-align: left;
 }
 
+.alingCen{
+    text-align: center;
+}
+
 a.class_a_href{
     cursor: default;
     text-decoration: none;
 }
 
+/*      MENSAJE EMOTIVO  */
 
-/* OPCIONES DEL MENU*/
-.decoraMenu{
-    list-style: none;
+.elementoMmensaje{
+    margin: 3% 3% 3% 3%;  
+    padding: 5%;
+    background: rgba(0,0,0,0.3);
+    display: inline-block;
+    border-style: solid;
+    border-color: var(--border-block-color);
+    color: var(--text-fondo-color);
+}
+
+.portada{
+    background: url(../img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+    padding: 3%;
+}
+
+/*
+    LOGOTIPOS Y CLIENTES DE HB
+ */
+
+.logosGey{
+    width: 460px; 
+    height: 345px;
+    max-width: 55%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.clientesLogos{
+    width: 49%;
+    height: auto;
 }
 
 
+/* OPCIONES DEL MENU  EFCTOS Y DISEÑO*/
+.decoraMenu{
+    text-align: center;
+}
+
+.footerMje{
+    background: url(../img/backGreen.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    border-bottom: -8px;
+    padding: 0px;
+    padding-top: 3%;
+    margin-bottom: -8px;
+}
+
+.contenedorMje{
+    display:flex;
+    justify-content: space-around;
+}
+
+.elementoMmensajeEmotivo{
+    margin: 3% 3% 3% 3%;  
+    padding: 5%;
+    background:rgba(0,0,0,0.3);
+    border-style: solid;
+    border-color: var(--border-block-color);
+    color: var(--text-fondo-color);
+    text-align:  center;
+
+}
+
+.mjeText1{
+    position: static;
+    display: -webkit-inline-box;
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.logoCircle{
+    width: 80px;
+}
+.iconLogoC {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 100px;
+    width: 100px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    background: white;
+}
+
+.publishFondo{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+img.iconSocial{
+    width: 20px;
+}
+
+div.contenedorMje{
+    float: left;
+    padding-left: 30px;
+}
+
 /*
-    Estilos de los formularios
+    FORM STYLE
  */
+.marca{
+    background-color: white;
+
+}
+
+.contenedorForm{
+    margin-top: -20px;
+    background: var(--background-fotter-color);
+}
 
 .formulario{
     width: 100%;
@@ -115,11 +284,11 @@ a.class_a_href{
     width: 100%;
     height: auto;
     float: left;
-    color: #787872;
+    color: var(--second-txt-color);
 }
 
 /* 
-BOTTON UP
+        BOTTON UP Y EFECTOS DE NAVEGACION
 */
 
 #press-up {
