@@ -14,103 +14,28 @@
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		  <link rel="stylesheet" type="text/css" href="styles/style.css">
 		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
+		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
 
 	<style type="text/css" media="screen">
-	
-	
-		body{
-		    font-family: sans-serif;
-		    margin-left:  -8px;
-		    margin-right:  -8px;
-		    width: 100%;
+		input[type=button], input[type=submit], input[type=reset] {
 		    background-color: var(--principal-txt-color);
-		    margin: 0 auto;
-		    overflow-x: hidden;
-		}
-
-		#header, #section{
-		     background-color: white;
-		     margin-top: 0px;
-		}
-
-	
-		/* LINEA DIVISORA */
-
-		
-		.vl {
-		        margin-top: 30px;
-			    border-left: 5px solid var(--principal-txt-color);
-			    height: 320px;
-			    left: 50%;
-			    top: 0;
-		}
-
-		ul {
-		    list-style-type: none;
-		    margin: 0;
-		    padding: 0;
-		    overflow: hidden;
-		}
-
-		li {
-		    float: left;
-		}
-
-		li a {
-		    display: block;
-		    color: white;
-		    text-align: center;
-		    padding: 14px 16px;
-		    text-decoration: none;
-		}
-
-		li a:hover:not(.active) {
-		    background-color: var(--principal-txt-color);
-		}
-
-		.active {
-		    background-color: #f9f9f9;
-		}
-
-
-		/*MENU ESTILO*/
-		.dropbtn {
-		    color: var(--second-txt-color);
-		    padding: 16px;
-		    font-size: 20px;
 		    border: none;
-		}
-
-		.dropdown {
-		    position: relative;
-		    display: block;
-		}
-
-		.dropdown-content {
-		    position: fixed;
-		    right: 0;
-		    background-color: #f9f9f9;
-		    min-width: 160px;
-		    box-shadow: 0px 16px 16px 0px #f9f9f9;
-		    
-		}
-
-		.dropdown-content a {
-		    color: var(--second-txt-color);
-		    padding: 12px 16px;
+		    color: white;
+		    padding-left: 30px;
+		    padding-right: 30px;
 		    text-decoration: none;
-		    display: block;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    color: var(--second-txt-color) ;
 		}
 
-		.dropdown-content a:hover {background-color: #CDFC02}
-
-		.dropdown:hover .dropdown-content {
-		    display: block;
+		.pie{
+			padding: 40px;
+			text-align: center;
+			color: var(--second-txt-color);
+			background: #FFF;
 		}
-
-		.dropdown:hover .dropbtn {
-		    background-color: var(--principal-txt-color);
-		}
+	
 	</style>						
 	<!--    FIN ESTILOS			-->
 
@@ -294,48 +219,48 @@
 		
 		<div class=" w3-cell-row contenedorForm">
 			<div class="w3-container w3-cell">
-			  	<h2 class="tittleDiv">ESCRÍBENOS:</h2>
-			  	<form class="form-horizontal" style="padding:  40px;" action="send.php">
+			  	<h3 class="tittleDiv" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
+			  	<form class="form-horizontal" style="padding:  10px;" action="send.php">
 				  	<div class="form-group">
-					    <label class="control-label col-sm-2" for="nom">Nombre:</label>
+					    <label class="control-label col-sm-2 colorContacto" for="nom">Nombre:</label>
 					    <div class="col-sm-10">
 				        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="email">
 				     	</div>
 				    </div>
 				    <div class="form-group">
-				    	<label class="control-label col-sm-2" for="email">Email:</label>
+				    	<label class="control-label col-sm-2 colorContacto" for="email">Email:</label>
 				      	<div class="col-sm-10">
 				        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email">
 				      	</div>
 				    </div>
 				    <div class="form-group">
-				      	<label class="control-label col-sm-2" for="tel">Teléfono:</label>
+				      	<label class="control-label col-sm-2 colorContacto" for="tel">Teléfono:</label>
 				      	<div class="col-sm-10">          
 				        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="pwd">
 				      	</div>
 				    </div>
 				    <div class="form-group">
-				    	<label class="control-label col-sm-2" for="coment">Comentario:</label>
+				    	<label class="control-label col-sm-2 colorContacto" for="coment">Comentario:</label>
 				      	<div class="col-sm-10">  
 				      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje"></textarea>
 				      	</div>
 				    </div>
 				    <div class="form-group">        
 				    	<div class="col-sm-offset-2 col-sm-10">
-				        	<button type="submit" class="btn btn-default">Enviar</button>
+				        	<input type="submit" class="btn btn-default"></input>
 				      	</div>
 				    </div>
 			  	</form>
 			</div>
 			<div class="vl w3-containerw3-cell"></div>
-			<div class="w3-container contenedorForm w3-cell">
-				<h3 class="tittleDiv">INFORMES:</h3>
-				<br><br>
-				<div>
+			<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
+				<h3 class="tittleDiv"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
+				<div style="color:  #FFFFFF;">
 					<p>Cerrada Noche Buena 15, <br>
 					Col. Potreros, Deleg. Tlalpan <br>
 					C.P. 01780, CDMX, Méx. <br>
-					</p><p>atencionaclientes@homebramding.com.mx</p>
+					</p>
+					<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
 					<p>
 						35-36-32-53 <br>
 						35-36-32-54
@@ -344,9 +269,8 @@
 			</div>
 		</div>
 	</SECTION>
-
 	<FOOTER>
-		<div>
+		<div class="pie">
 			<samp>
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
