@@ -1,13 +1,38 @@
-
 		body{
 		    font-family: sans-serif;
 		    margin-left:  -8px;
 		    margin-right:  -8px;
-		    width: 100%;
+		    width: 101%;
 		    background-color: var(--principal-txt-color);
-		    margin: 0 auto;
 		    overflow-x: hidden;
 		}
+
+		input[type=button], input[type=submit], input[type=reset] {
+		    background-color: var(--principal-txt-color);
+		    border: none;
+		    color: white;
+		    padding-left: 30px;
+		    padding-right: 30px;
+		    text-decoration: none;
+		    margin: 10px 0px;
+		    cursor: pointer;
+		    color: var(--second-txt-color);
+		    font-size: 20px;
+		}
+
+		.pie{
+			padding: 30px;
+			text-align: center;
+			color: var(--second-txt-color);
+			background: #FFF;
+		}
+
+		.infoFormat{
+			font-size: 20px;
+			margin-right: 60px;
+		}
+
+
 
 		#header, #section{
 		     background-color: white;
@@ -25,9 +50,19 @@
 		.vl {
 		        margin-top: 30px;
 			    border-left: 5px solid var(--principal-txt-color);
-			    height: 320px;
+			    height: 340px;
 			    left: 50%;
 			    top: 0;
+		}
+
+		.vl2 {
+		    position: relative;
+		    /* margin-top: 30px; */
+		    border-left: 3px solid var(--principal-txt-color);
+		    height: 82px;
+		    /* left: 50%; */
+		    top: -88px;
+		    width: 1px;
 		}
 
 		ul {
@@ -41,7 +76,7 @@
 		    float: left;
 		}
 
-		li a {
+		li .menuLink {
 		    display: block;
 		    color: white;
 		    text-align: center;
@@ -49,7 +84,7 @@
 		    text-decoration: none;
 		}
 
-		li a:hover:not(.active) {
+		li .menuLink:hover:not(.active) {
 		    background-color: var(--principal-txt-color);
 		}
 

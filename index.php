@@ -17,31 +17,15 @@
 		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
 
 	<style type="text/css" media="screen">
-		input[type=button], input[type=submit], input[type=reset] {
-		    background-color: var(--principal-txt-color);
-		    border: none;
-		    color: white;
-		    padding-left: 30px;
-		    padding-right: 30px;
-		    text-decoration: none;
-		    margin: 4px 2px;
-		    cursor: pointer;
-		    color: var(--second-txt-color) ;
-		}
 
-		.pie{
-			padding: 40px;
-			text-align: center;
-			color: var(--second-txt-color);
-			background: #FFF;
-		}
+
 	
 	</style>						
 	<!--    FIN ESTILOS			-->
 
 
 </HEAD>
-<BODY>
+<BODY style="overflow-x: hidden">
 	<div>
 		
 	</div>
@@ -56,24 +40,23 @@
 				</div>
 			</li>
 			<li style="float:right">
-				<div class="socialConect dropdown">
-					<div>
+				<div style="text-align:  center;">
 						<h2 class="secondColor alingDer tittleDiv">Siguenos!</h2>
-						<img class="redesIcons" src="img/icon-face.png">
+						<a class="redes" href="https://www.facebook.com/HomeBranding/"><img class="redesIcons" src="img/icon-face.png"></a>
 						<img class="redesIcons" src="img/icon-tw.png">
 					</div>
-				</div>
-				
+			
+				<div class="vl2"></div>
 			</li>
 			<li style="float:right; margin-top:  20px;">
 				<div class="dropdown">
 				  <button class="dropbtn">☰ MENU</button>
 				  <div class="dropdown-content" hidden>
-							<a class="class_a_href menuTxtFormat secondColor" href="#">INICIO</a>
-							<a class="class_a_href menuTxtFormat secondColor" href="#">SERVICIOS</a>
-							<a class="class_a_href menuTxtFormat secondColor" href="#">¿QUIÈNES SOMOS?</a>
-							<a class="class_a_href menuTxtFormat secondColor" href="#">CUENTAS
-							<a class="class_a_href menuTxtFormat secondColor" href="#">CONTACTO</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#">INICIO</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#">SERVICIOS</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#">¿QUIÈNES SOMOS?</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#">CUENTAS
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#">CONTACTO</a>
 				  </div>
 				</div>
 			</li>
@@ -220,33 +203,33 @@
 		<div class=" w3-cell-row contenedorForm">
 			<div class="w3-container w3-cell">
 			  	<h3 class="tittleDiv" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
-			  	<form class="form-horizontal" style="padding:  10px;" action="send.php">
+			  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php">
 				  	<div class="form-group">
-					    <label class="control-label col-sm-2 colorContacto" for="nom">Nombre:</label>
-					    <div class="col-sm-10">
-				        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="email">
+					    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">Nombre:</label>
+					    <div class="col-sm-6">
+				        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="name" required="Please">
 				     	</div>
 				    </div>
 				    <div class="form-group">
-				    	<label class="control-label col-sm-2 colorContacto" for="email">Email:</label>
-				      	<div class="col-sm-10">
-				        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email">
+				    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">Email:</label>
+				      	<div class="col-sm-6">
+				        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email" required="Please">
 				      	</div>
 				    </div>
 				    <div class="form-group">
-				      	<label class="control-label col-sm-2 colorContacto" for="tel">Teléfono:</label>
-				      	<div class="col-sm-10">          
-				        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="pwd">
+				      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">Teléfono:</label>
+				      	<div class="col-sm-6">          
+				        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="tel" required="Please">
 				      	</div>
 				    </div>
 				    <div class="form-group">
-				    	<label class="control-label col-sm-2 colorContacto" for="coment">Comentario:</label>
-				      	<div class="col-sm-10">  
-				      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje"></textarea>
+				    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
+				      	<div class="col-sm-6">  
+				      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
 				      	</div>
 				    </div>
 				    <div class="form-group">        
-				    	<div class="col-sm-offset-2 col-sm-10">
+				    	<div class="col-sm-offset-2 col-sm-6">
 				        	<input type="submit" class="btn btn-default"></input>
 				      	</div>
 				    </div>
@@ -255,13 +238,13 @@
 			<div class="vl w3-containerw3-cell"></div>
 			<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
 				<h3 class="tittleDiv"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
-				<div style="color:  #FFFFFF;">
+				<div style="color:  #FFFFFF;" class="infoFormat">
 					<p>Cerrada Noche Buena 15, <br>
 					Col. Potreros, Deleg. Tlalpan <br>
 					C.P. 01780, CDMX, Méx. <br>
 					</p>
 					<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
-					<p>
+					<p style="color:  #FFFFFF; font-size: 2em; ">
 						35-36-32-53 <br>
 						35-36-32-54
 					</p>
