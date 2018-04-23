@@ -8,6 +8,76 @@
 	
 	<!--   INICIO ESTILOS		-->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<style type="text/css" media="screen">
+		div.blueTable {
+		  font-family: "Trebuchet MS", Helvetica, sans-serif;
+		  width: 100%;
+		  height: 200px;
+		  text-align: center;
+		}
+		.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+		  padding: 10px 10px;
+		}
+		.divTable.blueTable .divTableBody .divTableCell {
+		  font-size: 13px;
+		  color: #331E28;
+		}
+		.blueTable .tableFootStyle {
+		  font-size: 14px;
+		}
+		.blueTable .tableFootStyle .links {
+			 text-align: right;
+		}
+		.blueTable .tableFootStyle .links a{
+		  display: inline-block;
+		  background: #1C6EA4;
+		  color: #FFFFFF;
+		  padding: 2px 8px;
+		  border-radius: 5px;
+		}
+		.blueTable.outerTableFooter {
+		  border-top: none;
+		}
+		.blueTable.outerTableFooter .tableFootStyle {
+		  padding: 3px 5px; 
+		}
+		/* DivTable.com */
+		.divTable{ display: table; }
+		.divTableRow { display: table-row; }
+		.divTableHeading { display: table-header-group;}
+		.divTableCell, .divTableHead { display: table-cell;}
+		.divTableHeading { display: table-header-group;}
+		.divTableFoot { display: table-footer-group;}
+		.divTableBody { display: table-row-group;}
+
+		body{
+		    font-family: sans-serif;
+		    margin-left:  -8px;
+		    margin-right:  -8px;
+		    width: 100%;
+		    background-color: var(--background-fotter-color);
+		    margin: 0 auto;
+		    overflow-x: hidden;
+		}
+
+		#header, #section{
+		     background-color: white;
+		     margin-top: 0px;
+		}
+
+		#demoparagraph {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+			-webkit-column-gap: 50px;
+			-moz-column-gap: 50px;
+			column-gap: 50px;
+			-webkit-column-rule: 1px solid #1C6EA4;
+			-moz-column-rule: 1px solid #1C6EA4;
+			column-rule: 1px solid #1C6EA4;
+		}
+
+	</style>						
 	<!--    FIN ESTILOS			-->
 
 
@@ -60,7 +130,7 @@
   			</div>
 		</div>
 			
-		<div class="contenedorServices">
+		<div class="contenedorServices" style="margin-right: -60px;">
 			<div class="contenPadreServ">
 				<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
             </article>
@@ -131,7 +201,7 @@
 		</div>
 
 
-		<div>
+		<div class="contenedorGaleria" style="margin-right:  60px;">
 			<div>
 				<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 			</div>
@@ -153,16 +223,17 @@
 
 
 		<div class="footerMje">
-			<div class="contenedorMje">
+			<div class="contenedorMje" style="position: relative;">
 				<div class="iconLogoC">
-					<img class="logoCircle" src="img/homebranding-logo-circle.png" alt="Home Branding Logo">
+					<img class="logoCircle" src="img/homebranding-logo-circle.png" alt="Home Branding Logo" style=" padding-top: 20px;    padding-left:  5px;">
 				</div>
 				<div>
-					<h3 class="secondColor">Home Brandig</h3><br>
-					<p>
-						10 años <b>·</b>
-						<img class="iconSocial" src="img/users.ico">
-					</p>
+					<h3 class="secondColor" style="right: -45px;">Home Brandig</h3>
+					<div >
+						<p style="position: absolute;bottom: 10px;">10 años <b>·</b>
+							<img class="iconSocial" src="img/users.ico">
+						</p>
+					</div>
 				</div>
 			</div>
 			<br><br><br><br>
@@ -184,7 +255,54 @@
 			</div>
 		</div>
 		
+		
 		<div class="contenedorForm">
+				<div id="demoparagraph">
+					<div>
+						<h3 class="tittleDiv">ESCRÍBENOS:</h3>
+						<div class="formuls">
+							<form id="contacto" name="contacto" action="send.php" method="post">
+								<div class="formulario">
+									<label for="nombre"> Nombre:</label>
+									<input  required autocomplete="off" placeholder="Escriba su nombre" type="text" name="nombre" id="nombre" maxlength="100"/>
+									<br>
+									<label for="email">Correo:</label>
+									<input  required autocomplete="off" placeholder="Escriba su correo" type="email" name="email" id="email" maxlength="120"/>
+									<br>
+									<label for="telefono">Teléfono:</label>
+									<input  required autocomplete="off" placeholder="" type="tel" name="tel" id="tel" maxlength="15" pattern="[0-9]"/>
+									<br>
+									<label>Comentario </label>
+									<textarea required name="comentario" placeholder="Escibanos su comentario" id="comentario" cols="25" rows="5"></textarea>
+									<br>
+									<!--
+									<p class="condiciones">
+										<input name="aceptaterminos" type="checkbox" id="aceptaterminos" value="si" checked=""> He leido los Términos y Politicas de Privacidad. 
+									</p>
+									<p class="condiciones">
+										<input name="aceptapromociones" type="checkbox" id="aceptapromociones" value="si" checked=""> Me gustaría recibir material promocional de Directa a Casa.
+									</p>
+									-->
+									<input class="boton hvr-float-shadow" type="submit" name="enviar" id="enviar" value="Enviar">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- INICIA INFORMES Y DATOS DE CONTACTO LADO IZQ-->
+					<div>
+						<h3>INFORMES:</h3>
+						<div class="contenedorForm">
+							<p>Cerrada Noche Buena 15, <br>
+							Col. Potreros, Deleg. Tlalpan <br>
+							C.P. 01780, CDMX, Méx. <br>
+							<p>atencionaclientes@homebramding.com.mx</p>
+							<p>
+								35-36-32-53 <br>
+								35-36-32-54
+							</p>
+						</div>
+					</div>
+				</div>
 			<div>
 				<h3 class="tittleDiv">ESCRÍBENOS:</h3>
 				<div class="formuls">
@@ -210,25 +328,25 @@
 								<input name="aceptapromociones" type="checkbox" id="aceptapromociones" value="si" checked=""> Me gustaría recibir material promocional de Directa a Casa.
 							</p>
 							-->
-							<div class="btnEnviar">
 								<input class="boton hvr-float-shadow" type="submit" name="enviar" id="enviar" value="Enviar">
-							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 
 			<div>
-			<h3>INFORMES:</h3>
-			<div class="contenedorForm">
-			<p>Cerrada Noche Buena 15, <br>
-			Col. Potreros, Deleg. Tlalpan <br>
-			C.P. 01780, CDMX, Méx. <br>
-			<p>atencionaclientes@homebramding.com.mx</p>
-			<p>
-				35-36-32-53 <br>
-				35-36-32-54
-			</p>
+				<h3>INFORMES:</h3>
+				<br><br>
+				<div class="contenedorForm">
+					<p>Cerrada Noche Buena 15, <br>
+					Col. Potreros, Deleg. Tlalpan <br>
+					C.P. 01780, CDMX, Méx. <br>
+					<p>atencionaclientes@homebramding.com.mx</p>
+					<p>
+						35-36-32-53 <br>
+						35-36-32-54
+					</p>
+				</div>
 			</div>
 		</div>
 	</SECTION>
