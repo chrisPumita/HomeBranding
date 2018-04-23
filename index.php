@@ -7,55 +7,23 @@
 	<!--   FIN METAS 	-->
 	
 	<!--   INICIO ESTILOS		-->
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<style type="text/css" media="screen">
-		div.blueTable {
-		  font-family: "Trebuchet MS", Helvetica, sans-serif;
-		  width: 100%;
-		  height: 200px;
-		  text-align: center;
-		}
-		.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
-		  padding: 10px 10px;
-		}
-		.divTable.blueTable .divTableBody .divTableCell {
-		  font-size: 13px;
-		  color: #331E28;
-		}
-		.blueTable .tableFootStyle {
-		  font-size: 14px;
-		}
-		.blueTable .tableFootStyle .links {
-			 text-align: right;
-		}
-		.blueTable .tableFootStyle .links a{
-		  display: inline-block;
-		  background: #1C6EA4;
-		  color: #FFFFFF;
-		  padding: 2px 8px;
-		  border-radius: 5px;
-		}
-		.blueTable.outerTableFooter {
-		  border-top: none;
-		}
-		.blueTable.outerTableFooter .tableFootStyle {
-		  padding: 3px 5px; 
-		}
-		/* DivTable.com */
-		.divTable{ display: table; }
-		.divTableRow { display: table-row; }
-		.divTableHeading { display: table-header-group;}
-		.divTableCell, .divTableHead { display: table-cell;}
-		.divTableHeading { display: table-header-group;}
-		.divTableFoot { display: table-footer-group;}
-		.divTableBody { display: table-row-group;}
+		<!-- FORMS -->
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <link rel="stylesheet" type="text/css" href="styles/style.css">
+		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
 
+	<style type="text/css" media="screen">
+	
+	
 		body{
 		    font-family: sans-serif;
 		    margin-left:  -8px;
 		    margin-right:  -8px;
 		    width: 100%;
-		    background-color: var(--background-fotter-color);
+		    background-color: var(--principal-txt-color);
 		    margin: 0 auto;
 		    overflow-x: hidden;
 		}
@@ -65,56 +33,126 @@
 		     margin-top: 0px;
 		}
 
-		#demoparagraph {
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			column-count: 2;
-			-webkit-column-gap: 50px;
-			-moz-column-gap: 50px;
-			column-gap: 50px;
-			-webkit-column-rule: 1px solid #1C6EA4;
-			-moz-column-rule: 1px solid #1C6EA4;
-			column-rule: 1px solid #1C6EA4;
+	
+		/* LINEA DIVISORA */
+
+		
+		.vl {
+		        margin-top: 30px;
+			    border-left: 5px solid var(--principal-txt-color);
+			    height: 320px;
+			    left: 50%;
+			    top: 0;
 		}
 
+		ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		}
+
+		li {
+		    float: left;
+		}
+
+		li a {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		    background-color: var(--principal-txt-color);
+		}
+
+		.active {
+		    background-color: #f9f9f9;
+		}
+
+
+		/*MENU ESTILO*/
+		.dropbtn {
+		    color: var(--second-txt-color);
+		    padding: 16px;
+		    font-size: 20px;
+		    border: none;
+		}
+
+		.dropdown {
+		    position: relative;
+		    display: block;
+		}
+
+		.dropdown-content {
+		    position: fixed;
+		    right: 0;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    box-shadow: 0px 16px 16px 0px #f9f9f9;
+		    
+		}
+
+		.dropdown-content a {
+		    color: var(--second-txt-color);
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #CDFC02}
+
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+		    background-color: var(--principal-txt-color);
+		}
 	</style>						
 	<!--    FIN ESTILOS			-->
 
 
 </HEAD>
 <BODY>
+	<div>
+		
+	</div>
 	<HEADER id="header">
-		<div class="contenedor">
-			<div class="logo contenido">
-				<img class="iconHome" src="img/homebranding-logo.png">
-			</div>
-
-			<div class="menuDesp contenidoMenu">
-				<ul id="menu" class="navegacion">
-					<li>
-						<a class="primaryColor listMenu" href="index.php" onclick="return false";>☰</a>
-						<a class="secondColor listMenu menuTxtFormat" href="index.php" onclick="return false";><b>MENU</b></a>
-						<ul id="submenu"  class="primaryColor">
-							<li class="primaryColor decoraMenu"><a class="class_a_href menuTxtFormat" href="#">INICIO</a></li>
-							<li class="primaryColor decoraMenu"><a class="class_a_href menuTxtFormat" href="#">SERVICIOS</a></li>
-							<li class="primaryColor decoraMenu"><a class="class_a_href menuTxtFormat" href="#">¿QUIÈNES SOMOS?</a></li>
-							<li class="primaryColor decoraMenu"><a class="class_a_href menuTxtFormat" href="#">CUENTAS</li>
-							<li class="primaryColor decoraMenu"><a class="class_a_href menuTxtFormat" href="#">CONTACTO</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-
-			<div class="socialConect contenido">
-				<div>
-					<h2 class="secondColor alingDer tittleDiv">Siguenos!</h2>
+		
+	</style>
+		<!--Colocamos la barra de menu estatica-->
+		<ul class="contenido">
+			<li>
+				<div class="logo contenido">
+					<img class="iconHome" src="img/homebranding-logo.png">
 				</div>
-				<div>
-					<img class="redesIcons" src="img/icon-face.png">
-					<img class="redesIcons" src="img/icon-tw.png">
+			</li>
+			<li style="float:right">
+				<div class="socialConect dropdown">
+					<div>
+						<h2 class="secondColor alingDer tittleDiv">Siguenos!</h2>
+						<img class="redesIcons" src="img/icon-face.png">
+						<img class="redesIcons" src="img/icon-tw.png">
+					</div>
 				</div>
-			</div>
-		</div>
+				
+			</li>
+			<li style="float:right; margin-top:  20px;">
+				<div class="dropdown">
+				  <button class="dropbtn">☰ MENU</button>
+				  <div class="dropdown-content" hidden>
+							<a class="class_a_href menuTxtFormat secondColor" href="#">INICIO</a>
+							<a class="class_a_href menuTxtFormat secondColor" href="#">SERVICIOS</a>
+							<a class="class_a_href menuTxtFormat secondColor" href="#">¿QUIÈNES SOMOS?</a>
+							<a class="class_a_href menuTxtFormat secondColor" href="#">CUENTAS
+							<a class="class_a_href menuTxtFormat secondColor" href="#">CONTACTO</a>
+				  </div>
+				</div>
+			</li>
+		</ul>
 	</HEADER>
 	
 
@@ -201,7 +239,7 @@
 		</div>
 
 
-		<div class="contenedorGaleria" style="margin-right:  60px;">
+		<div class="contenedorGaleria">
 			<div>
 				<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 			</div>
@@ -247,101 +285,57 @@
 						<i class="em em-open_hands"></i>
 					</span>
 				</p>
-				
-				
 			</div>
 			<div>
 				<img class="publishFondo" src="img/handPublis.png" alt="ManosConAnuncios">
 			</div>
 		</div>
-		
-		
-		<div class="contenedorForm">
-				<div id="demoparagraph">
-					<div>
-						<h3 class="tittleDiv">ESCRÍBENOS:</h3>
-						<div class="formuls">
-							<form id="contacto" name="contacto" action="send.php" method="post">
-								<div class="formulario">
-									<label for="nombre"> Nombre:</label>
-									<input  required autocomplete="off" placeholder="Escriba su nombre" type="text" name="nombre" id="nombre" maxlength="100"/>
-									<br>
-									<label for="email">Correo:</label>
-									<input  required autocomplete="off" placeholder="Escriba su correo" type="email" name="email" id="email" maxlength="120"/>
-									<br>
-									<label for="telefono">Teléfono:</label>
-									<input  required autocomplete="off" placeholder="" type="tel" name="tel" id="tel" maxlength="15" pattern="[0-9]"/>
-									<br>
-									<label>Comentario </label>
-									<textarea required name="comentario" placeholder="Escibanos su comentario" id="comentario" cols="25" rows="5"></textarea>
-									<br>
-									<!--
-									<p class="condiciones">
-										<input name="aceptaterminos" type="checkbox" id="aceptaterminos" value="si" checked=""> He leido los Términos y Politicas de Privacidad. 
-									</p>
-									<p class="condiciones">
-										<input name="aceptapromociones" type="checkbox" id="aceptapromociones" value="si" checked=""> Me gustaría recibir material promocional de Directa a Casa.
-									</p>
-									-->
-									<input class="boton hvr-float-shadow" type="submit" name="enviar" id="enviar" value="Enviar">
-								</div>
-							</form>
-						</div>
-					</div>
-					<!-- INICIA INFORMES Y DATOS DE CONTACTO LADO IZQ-->
-					<div>
-						<h3>INFORMES:</h3>
-						<div class="contenedorForm">
-							<p>Cerrada Noche Buena 15, <br>
-							Col. Potreros, Deleg. Tlalpan <br>
-							C.P. 01780, CDMX, Méx. <br>
-							<p>atencionaclientes@homebramding.com.mx</p>
-							<p>
-								35-36-32-53 <br>
-								35-36-32-54
-							</p>
-						</div>
-					</div>
-				</div>
-			<div>
-				<h3 class="tittleDiv">ESCRÍBENOS:</h3>
-				<div class="formuls">
-					<form id="contacto" name="contacto" action="send.php" method="post">
-						<div class="formulario">
-							<label for="nombre"> Nombre:</label>
-							<input  required autocomplete="off" placeholder="Escriba su nombre" type="text" name="nombre" id="nombre" maxlength="100"/>
-							<br>
-							<label for="email">Correo:</label>
-							<input  required autocomplete="off" placeholder="Escriba su correo" type="email" name="email" id="email" maxlength="120"/>
-							<br>
-							<label for="telefono">Teléfono:</label>
-							<input  required autocomplete="off" placeholder="" type="tel" name="tel" id="tel" maxlength="15" pattern="[0-9]"/>
-							<br>
-							<label>Comentario </label>
-							<textarea required name="comentario" placeholder="Escibanos su comentario" id="comentario" cols="25" rows="5"></textarea>
-							<br>
-							<!--
-							<p class="condiciones">
-								<input name="aceptaterminos" type="checkbox" id="aceptaterminos" value="si" checked=""> He leido los Términos y Politicas de Privacidad. 
-							</p>
-							<p class="condiciones">
-								<input name="aceptapromociones" type="checkbox" id="aceptapromociones" value="si" checked=""> Me gustaría recibir material promocional de Directa a Casa.
-							</p>
-							-->
-								<input class="boton hvr-float-shadow" type="submit" name="enviar" id="enviar" value="Enviar">
-						</div>
-					</form>
-				</div>
-			</div>
 
-			<div>
-				<h3>INFORMES:</h3>
+		
+		<div class=" w3-cell-row contenedorForm">
+			<div class="w3-container w3-cell">
+			  	<h2 class="tittleDiv">ESCRÍBENOS:</h2>
+			  	<form class="form-horizontal" style="padding:  40px;" action="send.php">
+				  	<div class="form-group">
+					    <label class="control-label col-sm-2" for="nom">Nombre:</label>
+					    <div class="col-sm-10">
+				        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="email">
+				     	</div>
+				    </div>
+				    <div class="form-group">
+				    	<label class="control-label col-sm-2" for="email">Email:</label>
+				      	<div class="col-sm-10">
+				        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email">
+				      	</div>
+				    </div>
+				    <div class="form-group">
+				      	<label class="control-label col-sm-2" for="tel">Teléfono:</label>
+				      	<div class="col-sm-10">          
+				        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="pwd">
+				      	</div>
+				    </div>
+				    <div class="form-group">
+				    	<label class="control-label col-sm-2" for="coment">Comentario:</label>
+				      	<div class="col-sm-10">  
+				      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje"></textarea>
+				      	</div>
+				    </div>
+				    <div class="form-group">        
+				    	<div class="col-sm-offset-2 col-sm-10">
+				        	<button type="submit" class="btn btn-default">Enviar</button>
+				      	</div>
+				    </div>
+			  	</form>
+			</div>
+			<div class="vl w3-containerw3-cell"></div>
+			<div class="w3-container contenedorForm w3-cell">
+				<h3 class="tittleDiv">INFORMES:</h3>
 				<br><br>
-				<div class="contenedorForm">
+				<div>
 					<p>Cerrada Noche Buena 15, <br>
 					Col. Potreros, Deleg. Tlalpan <br>
 					C.P. 01780, CDMX, Méx. <br>
-					<p>atencionaclientes@homebramding.com.mx</p>
+					</p><p>atencionaclientes@homebramding.com.mx</p>
 					<p>
 						35-36-32-53 <br>
 						35-36-32-54
