@@ -32,10 +32,12 @@
 		    margin-right: -10px;
 		}
 
-
-
-
-
+		.imgFotoGalery{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-right: 5px
+		}
 	</style>						
 	<!--    FIN ESTILOS			-->
 	
@@ -43,7 +45,7 @@
 
 
 </HEAD>
-<BODY id="myPage" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
+<BODY id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="header">
 		<ul id="contenido">
 			<li>
@@ -62,15 +64,15 @@
 			</li>
 			<li style="float:right; margin-top:  20px;">
 				<div class="dropdown">
-				  <button class="dropbtn">☰ MENU</button>
+				  <button class="dropbtn"> <strong class="primaryColor">☰</strong> MENU</button>
 				  <div class="dropdown-content" hidden> 
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section1">CASOS DE ÉXITO</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section2">SERVICIOS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section3">¿QUIÈNES SOMOS?</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section4">CUENTAS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section5">HOME BRANDIG</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#section6">CONTACTO</a>
-				  </div5
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#exitos">CASOS DE ÉXITO</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#servicios">SERVICIOS</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#nosotros">¿QUIÈNES SOMOS?</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#cuentas">CUENTAS</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#mensaje">HOME BRANDING</a>
+							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#contacto">CONTACTO</a>
+				  </div>
 				</div>
 			</li>
 		</ul>
@@ -78,18 +80,33 @@
 	
 
 	<SECTION id="section">
-		<div id="section1" class="container-fluid">
+		<div id="exitos" class="container-fluid">
 	  			<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
-	  			<div>
-	  				<div>
-	  					<img class="iconHome" src="img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG" alt="fotoTemporal">
-	  					<img class="iconHome" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" alt="fotoTemporal">
-	  					<img class="iconHome" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" alt="fotoTemporal">
-	  				</div>
-	  			</div>
+
+
+				  <div class="w3-row-padding" id="myGrid">
+					  <div class="w3-third">
+					    <img class="imgFotoGalery" src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/1b7cd9d5-4dc6-4879-b262-fbd5aca7c58d.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/31ce0481-50b8-4cc0-92f2-5efaac2f067f.JPG" style="width:100%">
+					  </div>
+
+					  <div class="w3-third">
+					    <img class="imgFotoGalery" src="img/94c2edf9-fc29-4d2c-ad6f-e0f1a5674102.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/592f07f9-e885-4c2a-ad47-9ad736a4388a.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/100_9291.jpg" style="width:100%">
+					  </div>
+
+					  <div class="w3-third">
+					    <img class="imgFotoGalery" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/63cecbd6-536c-4352-8615-c584a0bb63cc.JPG" style="width:100%">
+					    <img class="imgFotoGalery" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" style="width:100%">
+
+					  </div>
+					</div>
 		</div>
 				
-		<div id="section2" class="container-fluid">
+		<div id="servicios" class="container-fluid">
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
 					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
@@ -160,7 +177,7 @@
 			</div>
 		</div>
 
-		<div id="section3" class="container-fluid">
+		<div id="nosotros" class="container-fluid">
 			<div class="contenedorGaleria">
 				<div>
 					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
@@ -173,7 +190,7 @@
 			</div>
 		</div>
 
-		<div id="section4" class="container-fluid">
+		<div id="cuentas" class="container-fluid">
 			<div>
 				<h2 class="tittleDiv primaryColor">CUENTAS</h2>
 				<div>
@@ -183,7 +200,7 @@
 			</div>
 		</div>
 					<!--   	MENSAJE IMPORTANTE			 -->
-		<div id="section5" class="container-fluid">
+		<div id="mensaje" class="container-fluid">
 			<div class="footerMje">
 				<div class="contenedorMje" style="position: relative;">
 					<div class="iconLogoC">
@@ -216,7 +233,7 @@
 			</div>
 		</div>
 
-		<div id="section6" class="container-fluid">
+		<div id="contacto" class="container-fluid">
 			<div class=" w3-cell-row contenedorForm">
 				<div class="w3-container w3-cell">
 				  	<h3 class="tittleDiv" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
@@ -274,7 +291,7 @@
 	<FOOTER>
 		<div class="pie">
 			<samp>
-				<a href="#myPage" title="To Top">
+				<a href="#homeBranding" title="To Top">
 				    ARRIBA
 				 </a>
 				 <br>
@@ -291,7 +308,7 @@ $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#myPage a").on('click', function(event) {
+  $("#homeBranding a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -314,5 +331,4 @@ $(document).ready(function(){
 });
 </script>
 </BODY>
-
 </HTML>
