@@ -19,9 +19,10 @@
 		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
 		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
 		  <link rel="stylesheet" type="text/css" href="styles/effects.css">
+		  <link rel="stylesheet" type="text/css" href="styles/cssS.css">
 
 	<style type="text/css" media="screen">
-				#section {
+		#section {
 		    margin-left: -20px;
 		    margin-right: -20px;
 		}
@@ -38,8 +39,98 @@
 			margin-left: 5px;
 			margin-right: 5px
 		}
+
+		.gale-legth{
+    		margin-top: -60px;
+    		padding-left: 70px;
+		}
+		.gale-center{
+		    padding-left: 20px;
+			padding-right: 20px;
+		}
+		.gale-rigth{
+    		padding-right: 70px;
+    		margin-top: 100px;
+		}
+
+		            /*       EEFCTOS DE IMAGENES        */
+        #imagen{
+        background-image: url('img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG');
+        background-repeat: repeat-x;
+        height:410px;
+        width:100%;
+        }
+
+        #imagen{
+	      animation-name: mov-izq;
+	      animation-duration: 10s;
+	      animation-iteration-count: infinite;
+	      animation-timing-function: linear;
+	      animation-delay: 3s;
+         
+        -moz-animation-name: mov-izq;
+        -moz-animation-duration: 10s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 3s; 
+          
+        -webkit-animation-name: mov-izq;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 3s;
+        }
+	    @keyframes mov-izq{
+          100%{background-position:-940px 0px}
+        }
+
+        @-webkit-keyframes mov-izq{
+            100%{background-position:-940px 0px}
+        }
+
 	</style>						
 	<!--    FIN ESTILOS			-->
+
+	<style>
+			.containerData {
+			  position: relative;
+			  width: 100%;
+			}
+
+			.imageInfo {
+			  width: 100%;
+			}
+
+			.overlay {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background-color: var(--second-txt-color);
+			  overflow: hidden;
+			  width: 100%;
+			  height: 0;
+			  transition: .5s ease;
+			}
+
+			.containerData:hover .overlay {
+			  height: 100%;
+			  opacity: 0.7;
+			}
+
+			.texto {
+			opacity: 1;
+			white-space: nowrap; 
+			color: var(--principal-txt-color);
+			font-size: 20px;
+			position: absolute;
+			overflow: hidden;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			}
+	</style>
 	
 		<!--Colocamos la barra de menu estatica-->
 
@@ -84,24 +175,31 @@
 	  			<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
 
 
-				  <div class="w3-row-padding" id="myGrid">
-					  <div class="w3-third">
-					    <img class="imgFotoGalery" src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/1b7cd9d5-4dc6-4879-b262-fbd5aca7c58d.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/31ce0481-50b8-4cc0-92f2-5efaac2f067f.JPG" style="width:100%">
+				  <div class="w3-row" id="myGrid">
+					  <div class="w3-third gale-legth">
+
+						<div class="containerData zoom">
+						  <img src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" alt="Avatar" class="imageInfo imgFotoGalery">
+						  <div class="overlay">
+						    <div class="texto">Hello World</div>
+						  </div>
+						</div>
+
+					    <img class="imgFotoGalery zoom" src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/1b7cd9d5-4dc6-4879-b262-fbd5aca7c58d.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/31ce0481-50b8-4cc0-92f2-5efaac2f067f.JPG" style="width:100%">
 					  </div>
 
-					  <div class="w3-third">
-					    <img class="imgFotoGalery" src="img/94c2edf9-fc29-4d2c-ad6f-e0f1a5674102.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/592f07f9-e885-4c2a-ad47-9ad736a4388a.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/100_9291.jpg" style="width:100%">
+					  <div class="w3-third gale-center">
+					    <img class="imgFotoGalery zoom" src="img/94c2edf9-fc29-4d2c-ad6f-e0f1a5674102.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/592f07f9-e885-4c2a-ad47-9ad736a4388a.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/100_9291.jpg" style="width:100%">
 					  </div>
 
-					  <div class="w3-third">
-					    <img class="imgFotoGalery" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/63cecbd6-536c-4352-8615-c584a0bb63cc.JPG" style="width:100%">
-					    <img class="imgFotoGalery" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" style="width:100%">
-
+					  <div class="w3-third gale-rigth">
+					    <img class="imgFotoGalery zoom" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/63cecbd6-536c-4352-8615-c584a0bb63cc.JPG" style="width:100%">
+					    <img class="imgFotoGalery zoom" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" style="width:100%">
 					  </div>
 					</div>
 		</div>
@@ -110,7 +208,7 @@
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
 					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
-					<div class="contenidoService contHijoServ">
+					<div class="contenidoService contHijoServ ">
 						<img src="img/iconService.png" class="iconService logo">
 						<h3>SALMPLING</h3>
 						<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
@@ -173,6 +271,18 @@
 						<h3>MATERIAL PUBLICITARIO</h3>
 						<p>Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.</p>
 					</div>
+
+					<div class="contenidoService contHijoServ div-imgOver" >
+						<img class="imgOver iconService" src="img/iconTemplate.png" title="Foto4" alt="Foto4">
+					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>MATERIAL PUBLICITARIO</h3>
+					    		Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.
+					    	</p>
+					    </div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -182,7 +292,7 @@
 				<div>
 					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 				</div>
-				<div class="portada">
+				<div id="imagen" class="portada">
 					<p class="elementoMmensaje menuTxtFormat">
 						Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 					</p>

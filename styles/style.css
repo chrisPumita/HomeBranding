@@ -13,7 +13,7 @@
             --whitte-color-solid:  #FFF;
         }
         
-    
+
 
 
 
@@ -37,6 +37,8 @@
 
         .contenedorServices{
             display:inline-block;
+            margin-right: -60px;
+            margin-left: 30px;
         }
 
         .contenidoService{
@@ -165,7 +167,7 @@
         }
 
         .portada{
-            background: url(../img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG) no-repeat fixed center;
+            /*background: url(../img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG) no-repeat fixed center;*/
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -230,6 +232,26 @@
             text-align:  center;
 
         }
+
+
+        /*       GALERIA DE FOTOS   */
+        .zoom{
+            /* Aumentamos la anchura y altura durante 2 segundos */
+            transition: width 2s, height 2s, transform 2s;
+            -moz-transition: width 2s, height 2s, -moz-transform 2s;
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+            -o-transition: width 2s, height 2s,-o-transform 2s;
+        }
+        .zoom:hover{
+            /* tranformamos el elemento al pasar el mouse por encima al doble de
+               su tamaño con scale(2). */
+            transform : scale(1.2);
+            -moz-transform : scale(1.2);      /* Firefox */
+            -webkit-transform : scale(1.2);   /* Chrome - Safari */
+            -o-transform : scale(1.2);        /* Opera */
+        }
+
+
 
         .mjeText1{
             position: static;
