@@ -1,5 +1,6 @@
+		
 		body{
-		    font-family: sans-serif;
+		    font-family: Montserrat,sans-serif;
 		    margin-left:  -8px;
 		    margin-right:  -8px;
 		    width: 101%;
@@ -19,6 +20,8 @@
 		    color: var(--second-txt-color);
 		    font-size: 20px;
 		}
+
+
 
 		.pie{
 			padding: 30px;
