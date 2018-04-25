@@ -34,51 +34,58 @@
 		}
 
 		.imgFotoGalery{
-			margin-top: 5px;
-			margin-bottom: 5px;
-			margin-left: 5px;
-			margin-right: 5px
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			margin-right: 0px
 		}
 
 		.gale-legth{
+			width: 40%;
     		margin-top: -60px;
-    		padding-left: 70px;
+    		padding-left: 5px;
 		}
 		.gale-center{
-		    padding-left: 20px;
-			padding-right: 20px;
+			width: 20%;
+		    padding-left: 0px;
+			padding-right: 0px;
 		}
 		.gale-rigth{
-    		padding-right: 70px;
+			width: 40%;
+    		padding-right: 5px;
     		margin-top: 100px;
 		}
 
 		            /*       EEFCTOS DE IMAGENES        */
         #imagen{
-        background-image: url('img/f4dfa017-0c27-411f-87b2-1d406f74704b.JPG');
-        background-repeat: repeat-x;
-        height:410px;
-        width:100%;
+	        background-image: url('img/banQuienes.jpg');
+	        background-repeat: repeat;
+	        height:100%;
+	        width:100%;
+	        -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         #imagen{
-	      animation-name: mov-izq;
-	      animation-duration: 10s;
-	      animation-iteration-count: infinite;
-	      animation-timing-function: linear;
-	      animation-delay: 3s;
+	    animation-name: mov-izq;
+	    animation-duration: 15s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	    animation-delay: 1s;
          
         -moz-animation-name: mov-izq;
-        -moz-animation-duration: 10s;
+        -moz-animation-duration: 15s;
         -moz-animation-iteration-count: infinite;
         -moz-animation-timing-function: linear;
-        -moz-animation-delay: 3s; 
+        -moz-animation-delay: 1s; 
           
         -webkit-animation-name: mov-izq;
-        -webkit-animation-duration: 10s;
+        -webkit-animation-duration: 15s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 3s;
+        -webkit-animation-delay: 1s;
         }
 	    @keyframes mov-izq{
           100%{background-position:-940px 0px}
@@ -92,9 +99,85 @@
 	<!--    FIN ESTILOS			-->
 
 	<style>
-			.containerData {
-			  position: relative;
+
+			.box1{
+				width: 300px;
+				height: 300px;
+				overflow: hidden;
+				padding-left: 70px;
+			}
+			.box2{
+				width: 300px;
+				height: 160px;
+				padding-left: 70px;
+				overflow: hidden;
+			}
+			.box3{
+				width: 100%;
+				height: 160px;
+				overflow: hidden;
+			}
+			.box4{
+				width: 300px;
+				height: 300px;
+				overflow: hidden;
+			}
+			.box5{
+				width: 300px;
+				height: 150px;
+				overflow: hidden;
+			}
+			.box6{
+				width: 150px;
+				height: 75px;
+				overflow: hidden;
+			}
+			.box7{
+				width: 150px;
+				height: 250px;
+				overflow: hidden;
+			}
+			.box8{
+				width: 250px;
+				height: 160px;
+				overflow: hidden;
+				padding-right: 100px;
+			}
+			.box9{
+				width: 150px;
+				height: 200px;
+				overflow: hidden;
+			}
+			.box10{
+				width: 150px;
+				height: 200px;
+				overflow: hidden;
+			}
+			.box11{
+				width: 350px;
+				height: 160px;
+				overflow: hidden;
+				padding-right: 100px;
+			}
+
+
+			.box1 .imagenAjustada, .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
 			  width: 100%;
+			  height: auto;
+			}
+			@supports(object-fit: cover){
+				.box1 .imagenAjustada,  .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
+			    height: 100%;
+			    object-fit: cover;
+			    object-position: center center;
+			    }
+			}
+
+
+
+			.containerData {
+				position: relative;
+				width: 100%;
 			}
 
 			.imageInfo {
@@ -102,34 +185,56 @@
 			}
 
 			.overlay {
-			  position: absolute;
-			  bottom: 0;
-			  left: 0;
-			  right: 0;
-			  background-color: var(--second-txt-color);
-			  overflow: hidden;
-			  width: 100%;
-			  height: 0;
-			  transition: .5s ease;
+				position: absolute;
+				bottom: 0;
+				background-color: rgba(0, 0, 0, .9);
+				overflow: hidden;
+				width: 100%;
+				height: 0;
+				transition: .2s ease;
 			}
 
 			.containerData:hover .overlay {
-			  height: 100%;
-			  opacity: 0.7;
+				height: 100%;
+				width: 100%;
+				opacity: .8;	
+				position: absolute;
+			}
+
+			.containerData:hover #alpha {
+				opacity: 0;
 			}
 
 			.texto {
-			opacity: 1;
-			white-space: nowrap; 
-			color: var(--principal-txt-color);
-			font-size: 20px;
-			position: absolute;
-			overflow: hidden;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
+				opacity: 1;
+				white-space: nowrap; 
+				color: var(--border-block-color);
+				font-size: 15px;
+				overflow: hidden;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+	   			position:absolute;
 			}
+
+			#alpha {
+			    background-color: var(--principal-txt-color);
+			    opacity: .7;
+			    height: 3em;
+			    width: 100%;
+			    position: absolute;
+			    bottom: 0px;
+			    padding-left:20px;
+			    padding-top: 10px;
+			    color:  var(--second-txt-color);
+			}
+			.img_container {
+			    position: relative;
+			    width: 100%;
+			    margin: 0 auto;
+			}
+
 	</style>
 	
 		<!--Colocamos la barra de menu estatica-->
@@ -146,16 +251,16 @@
 			</li>
 			<li style="float:right">
 				<div style="text-align:  center;">
-						<h2 class="secondColor alingDer tittleDiv">Siguenos!</h2>
+						<h3 class="secondColor alingDer tittleDiv">Siguenos!</h3>
 						<a class="redes" href="https://www.facebook.com/HomeBranding/"><img class="redesIcons" src="img/icon-face.png"></a>
 						<img class="redesIcons" src="img/icon-tw.png">
 					</div>
 			
 				<div class="vl2"></div>
 			</li>
-			<li style="float:right; margin-top:  20px;">
+			<li style="float:right; margin-top:  40px;">
 				<div class="dropdown">
-				  <label class="dropbtn"> <strong class="primaryColor">☰</strong> MENU</label>
+				  <label class="dropbtn"> <strong class="primaryColor">☰</strong><strong>MENU</strong></label>
 				  <div class="dropdown-content" hidden> 
 							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#exitos">CASOS DE ÉXITO</a>
 							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#servicios">SERVICIOS</a>
@@ -168,43 +273,403 @@
 			</li>
 		</ul>
 	</header>
-	
+	<!--  	 			SECCION DE CODIGO PHP PARA DATOS A MOSTRAR -->
+	<?php 
+	/*
+			Optimizacion de la informacion de las imagenes, con ayuda de php se imprimen solo los valores de cada imagen y si se desea cambiarlas, solamente se efita el valor.
+	 */
+			$img1_name = "Cerveceria Modelo";
+			$img1_peo = "1,500";
+			$img1_reg = "810";
+			$img1_pre = "32";
+
+			$img2_name = "Domino`s Pizza";
+			$img2_peo = "3,500";
+			$img2_reg = "320";
+			$img2_pre = "93";
+
+			$img3_name = "Cerveceria Modelo";
+			$img3_peo = "1,500";
+			$img3_reg = "810";
+			$img3_pre = "32";
+
+			$img4_name = "Cerveceria Modelo";
+			$img4_peo = "1,500";
+			$img4_reg = "810";
+			$img4_pre = "32";
+
+			$img5_name = "Cerveceria Modelo";
+			$img5_peo = "1,500";
+			$img5_reg = "810";
+			$img5_pre = "32";
+
+			$img6_name = "Cerveceria Modelo";
+			$img6_peo = "1,500";
+			$img6_reg = "810";
+			$img6_pre = "32";
+
+			$img7_name = "Cerveceria Modelo";
+			$img7_peo = "1,500";
+			$img7_reg = "810";
+			$img7_pre = "32";
+
+			$img8_name = "Cerveceria Modelo";
+			$img8_peo = "1,500";
+			$img8_reg = "810";
+			$img8_pre = "32";
+
+			$img9_name = "Cerveceria Modelo";
+			$img9_peo = "1,500";
+			$img9_reg = "810";
+			$img9_pre = "32";
+
+			$img10_name = "Cerveceria Modelo";
+			$img10_peo = "1,500";
+			$img10_reg = "810";
+			$img10_pre = "32";
+
+			$img11_name = "Cerveceria Modelo";
+			$img11_peo = "1,500";
+			$img11_reg = "810";
+			$img11_pre = "32";
+	?>
 
 	<SECTION id="section">
 		<div id="exitos" class="container-fluid">
-	  			<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
-
-
-				  <div class="w3-row" id="myGrid">
-					  <div class="w3-third gale-legth">
-
-						<div class="containerData zoom">
-						  <img src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" alt="Avatar" class="imageInfo imgFotoGalery">
-						  <div class="overlay">
-						    <div class="texto">TEXTO IMPLEMENTADO</div>
-						  </div>
+	  		<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
+			<div class="w3-row" id="myGrid">
+<!--  	PRIMER PANEL IZQ IMAGENES 123  -->
+				<div class="w3-third gale-legth">
+<!--1.1 imagen estatica-->
+					<div class="containerData zoom box1">
+						<img class="imagenAjustada img_container" src="img/photos/1.1.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img1_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img1_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img1_pre"; ?>
+						    	</p>
+						    </div>
+						<div class="overlay">
+						    <div class="texto">
+						    	<p>
+						    		<strong><ins>Activación</ins></strong><br>
+						    		<?php echo "$img1_name"; ?> <br>
+									<img class="iconImageDesple" src="img/icons/people-icon.png">
+									<?php echo "$img1_peo"; ?> Personas <br>
+									<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+									<?php echo "$img1_reg"; ?> Registros <br>
+									<img class="iconImageDesple" src="img/icons/premios-icon.png">
+									<?php echo "$img1_pre"; ?> Premios<br>
+						    	</p>
+						    </div>
 						</div>
-
-					    <img class="imgFotoGalery zoom" src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/1b7cd9d5-4dc6-4879-b262-fbd5aca7c58d.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/31ce0481-50b8-4cc0-92f2-5efaac2f067f.JPG" style="width:100%">
-					  </div>
-
-					  <div class="w3-third gale-center">
-					    <img class="imgFotoGalery zoom" src="img/94c2edf9-fc29-4d2c-ad6f-e0f1a5674102.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/592f07f9-e885-4c2a-ad47-9ad736a4388a.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/100_9291.jpg" style="width:100%">
-					  </div>
-
-					  <div class="w3-third gale-rigth">
-					    <img class="imgFotoGalery zoom" src="img/e3c4547a-60c2-4396-b61c-5a8f37364603.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/63cecbd6-536c-4352-8615-c584a0bb63cc.JPG" style="width:100%">
-					    <img class="imgFotoGalery zoom" src="img/e207edbc-663b-4891-8822-d991542290ee.JPG" style="width:100%">
+					</div>
+<!--1.2 imagen estatica-->
+					<div class="containerData zoom box2">
+					  <img class="imagenAjustada img_container" src="img/photos/1.2.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img2_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img2_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img2_pre"; ?>
+						    	</p>
+						    </div>
+						<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img2_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img2_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img2_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img2_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
 					  </div>
 					</div>
+<!-- 1.3 imagen estatica-->
+					<div class="containerData zoom box3">
+					  	<img class="imagenAjustada img_container" src="img/photos/1.3.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img3_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img3_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img3_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img3_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img3_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img3_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img3_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+
+<!--	SEGUNDO PANEL SE COMPONE DE 4 IMAGENES	IMG 4,5,6,7		-->
+
+				<div class="w3-third gale-center">
+				    <!--1.1 imagen estatica-->
+					<div class="containerData zoom box4">
+						<img class="imagenAjustada img_container" src="img/photos/2.1.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img4_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img4_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img4_pre"; ?>
+						    	</p>
+						    </div>
+						<div class="overlay">
+						    <div class="texto">
+						    	<p>
+						    		<strong><ins>Activación</ins></strong><br>
+						    		<?php echo "$img4_name"; ?> <br>
+									<img class="iconImageDesple" src="img/icons/people-icon.png">
+									<?php echo "$img4_peo"; ?> Personas <br>
+									<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+									<?php echo "$img4_reg"; ?> Registros <br>
+									<img class="iconImageDesple" src="img/icons/premios-icon.png">
+									<?php echo "$img4_pre"; ?> Premios<br>
+						    	</p>
+						    </div>
+						</div>
+					</div>
+<!-- 2.2 imagen estatica-->
+					<div class="containerData zoom box5">
+					  	<img class="imagenAjustada img_container" src="img/photos/2.2.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img5_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img5_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img5_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img5_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img5_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img5_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img5_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+<!-- 2.3 imagen estatica-->
+					<div class="containerData zoom box5">
+					  	<img class="imagenAjustada img_container" src="img/photos/2.3.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img6_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img6_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img6_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img6_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img6_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img6_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img6_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+<!-- 2.4 imagen estatica-->
+					<div class="containerData zoom box7">
+					  	<img class="imagenAjustada img_container" src="img/photos/2.4.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img7_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img7_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img7_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img7_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img7_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img7_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img7_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+					  <!--	TERCER PANEL SE COMPONE DE 4 IMAGENES	IMG 8,9,10,11		-->
+
+				<div class="w3-third gale-rigth">
+<!--3.1 imagen estatica-->
+					<div class="containerData zoom box8">
+						<img class="imagenAjustada img_container" src="img/photos/3.1.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img8_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img8_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img8_pre"; ?>
+						    	</p>
+						    </div>
+						<div class="overlay">
+						    <div class="texto">
+						    	<p>
+						    		<strong><ins>Activación</ins></strong><br>
+						    		<?php echo "$img8_name"; ?> <br>
+									<img class="iconImageDesple" src="img/icons/people-icon.png">
+									<?php echo "$img8_peo"; ?> Personas <br>
+									<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+									<?php echo "$img8_reg"; ?> Registros <br>
+									<img class="iconImageDesple" src="img/icons/premios-icon.png">
+									<?php echo "$img8_pre"; ?> Premios<br>
+						    	</p>
+						    </div>
+						</div>
+					</div>
+<!-- 3.2.1 imagen estatica-->
+<div class="w3-row" id="myGrid">
+	<div class="w3-third gale-legth">
+					<div class="containerData zoom box9">
+					  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img9_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img9_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img9_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img9_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img9_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img9_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img9_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+	</div>
+<div class="w3-third gale-legth">
+<!-- 3.2.2 imagen estatica-->
+					<div class="containerData zoom box10">
+					  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img10_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img10_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img10_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img10_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img10_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img10_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img10_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+	</div>
+</div>
+<!-- 3.3 imagen estatica-->
+					<div class="containerData zoom box11">
+					  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img11_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img11_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img11_pre"; ?>
+						    	</p>
+						    </div>
+					  	<div class="overlay">
+					    <div class="texto">
+					    	<p>
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img11_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img11_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img11_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img11_pre"; ?> Premios<br>
+					    	</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 				
-		<div id="servicios" class="container-fluid">
+		<div id="servicios" class="container-fluid" style="padding-bottom: 110px;">
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
 					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
@@ -219,13 +684,6 @@
 					    	</p>
 					    </div>
 					</div>
-<!--
-					<div class="contenidoService contHijoServ ">
-						<img src="img\hm.png" class="iconService logo">
-						<h3>SALMPLING</h3>
-						<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
-					</div>
--->
 					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/flecha.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">SIGN HUMAN</h3>
@@ -236,13 +694,6 @@
 					    	</p>
 					    </div>
 					</div>
-					<!--
-					<div class="contenidoService contHijoServ">
-						<img src="img/flecha.png" class="iconService">
-						<h3>SIGN HUMAN</h3>
-						<p>Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.<br></p>
-					</div>
-					-->
 					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/solo.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">PUBLIANDANTE</h3>
@@ -253,13 +704,6 @@
 					    	</p>
 					    </div>
 					</div>
-					<!--
-					<div class="contenidoService contHijoServ">
-						<img src="img/solo.png" class="iconService">
-						<h3>PUBLIANDANTE</h3>
-						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
-					</div>
-					-->
 					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/pantalla.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">PUBLIPANTALLA</h3>
@@ -270,13 +714,6 @@
 					    	</p>
 					    </div>
 					</div>
-<!--
-					<div class="contenidoService contHijoServ">
-						<img src="img/pantalla.png" class="iconService">
-						<h3>PUBLIPANTALLA</h3>
-						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
-					</div>
--->
 					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/par.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">CROSS WALKER</h3>
@@ -287,50 +724,66 @@
 					    	</p>
 					    </div>
 					</div>
-
-					<div class="contenidoService contHijoServ">
-						<img src="img/par.png" class="iconService">
-						<h3>CROSS WALKER</h3>
-						<p>Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.</p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/chicas.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">CROSS BOARD STREET</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>CROSS BOARD STREET</h3>
+					    		Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/chicas.png" class="iconService">
-						<h3>CROSS BOARD STREET</h3>
-						<p>Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.				    </p>
-						<p> </p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/par2.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">ROLL UP</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>ROLL UP</h3>
+					    		Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/par2.png" class="iconService">
-						<h3>ROLL UP</h3>
-						<p>Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.</p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/bici.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">BICI VALLA</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>BICI VALLA</h3>
+					    		Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/bici.png" class="iconService">
-						<h3>BICI VALLA</h3>
-						<p>Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.</p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/camion.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">CARTELERA MOVIL</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>CARTELERA MOVIL</h3>
+					    		Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/camion.png" class="iconService">
-						<h3>CARTELERA MOVIL</h3>
-						<p>Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.</p>
-						<p> </p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/anuncio.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">ESPECTACULARES</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>ESPECTACULARES</h3>
+					    		Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. 
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/anuncio.png" class="iconService">
-						<h3>ESPECTACULARES</h3>
-						<p>Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. </p>
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/bus.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">PUBLICIDAD EN RUTA</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>PUBLICIDAD EN RUTA</h3>
+					    		Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.
+					    	</p>
+					    </div>
 					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/bus.png" class="iconService">
-						<h3>PUBLICIDAD EN RUTA</h3>
-						<p>Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.</p>
-					</div>
-					<div class="contenidoService contHijoServ">
-						<img src="img/globos.png" class="iconService">
-						<h3>MATERIAL PUBLICITARIO</h3>
-						<p>Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.</p>
-					</div>
-
 					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/globos.png" alt="Foto4">
 					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
@@ -341,7 +794,6 @@
 					    	</p>
 					    </div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -352,7 +804,7 @@
 					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 				</div>
 				<div id="imagen" class="portada">
-					<p class="elementoMmensaje menuTxtFormat">
+					<p class="elementoMmensaje menuTxtFormat zoom">
 						Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 					</p>
 				</div>
@@ -376,9 +828,9 @@
 						<img class="logoCircle" src="img/homebranding-logo-circle.png" alt="Home Branding Logo" style=" padding-top: 20px;    padding-left:  5px;">
 					</div>
 					<div>
-						<h3 class="secondColor" style="right: -45px;">Home Brandig</h3>
+						<h3 class="secondColor" style="right: -45px; padding-left:10px">Home Brandig</h3>
 						<div >
-							<p style="position: absolute;bottom: 10px;">10 años <b>·</b>
+							<p class="secondColor" style="position: absolute; bottom: 40px; padding-left:10px">   10 años <b>·</b>
 								<img class="iconSocial" src="img/users.ico">
 							</p>
 						</div>
@@ -390,9 +842,9 @@
 						<span class="marca secondColor">
 							<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
 							<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-							¡Lo + importante de la comunicación <i class="em em-loudspeaker"></i><br> no esta en como se dice, sino en como se hace!<br>
+							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom"></i><br> no esta en como se dice, sino en como se hace!<br>
 							#TuPublicidadEnBuenas
-							<i class="em em-open_hands"></i>
+							<i class="em em-open_hands zoom"></i>
 						</span>
 					</p>
 				</div>
@@ -461,38 +913,22 @@
 		<div class="pie">
 			<samp>
 				<a href="#homeBranding" title="To Top">
-				    ARRIBA
+				    ▲
 				 </a>
 				 <br>
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
-				Todos los Derechos Reservados. HomeBranding S.A. de C.V.
+				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
+				<br><h3>VERSION DEMO 1.7.2</h3>
 			</samp>
 		</div>
 	</FOOTER>
-	<!-- 	Script Bootstrap JS Ref Movimiento en pantalla -->
+	<!-- 	Script Bootstrap JS Ref Navegator -->
 <script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#homeBranding a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+$(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50});$("#homeBranding a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();
+       var hash = this.hash;$('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     }  // End if
