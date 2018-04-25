@@ -155,7 +155,7 @@
 			</li>
 			<li style="float:right; margin-top:  20px;">
 				<div class="dropdown">
-				  <button class="dropbtn"> <strong class="primaryColor">☰</strong> MENU</button>
+				  <label class="dropbtn"> <strong class="primaryColor">☰</strong> MENU</label>
 				  <div class="dropdown-content" hidden> 
 							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#exitos">CASOS DE ÉXITO</a>
 							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#servicios">SERVICIOS</a>
@@ -208,27 +208,86 @@
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
 					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
+
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img\hm.png" alt="Entregando Flayer">
+					    <h3 class="titleHidden">SALMPLING</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>SALMPLING</h3>
+					    		Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.
+					    	</p>
+					    </div>
+					</div>
+<!--
 					<div class="contenidoService contHijoServ ">
 						<img src="img\hm.png" class="iconService logo">
 						<h3>SALMPLING</h3>
 						<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
 					</div>
+-->
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/flecha.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">SIGN HUMAN</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>SIGN HUMAN</h3>
+					    		Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.
+					    	</p>
+					    </div>
+					</div>
+					<!--
 					<div class="contenidoService contHijoServ">
 						<img src="img/flecha.png" class="iconService">
 						<h3>SIGN HUMAN</h3>
 						<p>Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.<br></p>
 					</div>
+					-->
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/solo.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">PUBLIANDANTE</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>PUBLIANDANTE</h3>
+					    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
+					    	</p>
+					    </div>
+					</div>
+					<!--
 					<div class="contenidoService contHijoServ">
 						<img src="img/solo.png" class="iconService">
 						<h3>PUBLIANDANTE</h3>
 						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 					</div>
-
+					-->
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/pantalla.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">PUBLIPANTALLA</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>PUBLIPANTALLA</h3>
+					    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
+					    	</p>
+					    </div>
+					</div>
+<!--
 					<div class="contenidoService contHijoServ">
 						<img src="img/pantalla.png" class="iconService">
 						<h3>PUBLIPANTALLA</h3>
 						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 					</div>
+-->
+					<div class="contenidoService contHijoServ div-imgOver">
+						<img class="imgOver iconService" src="img/par.png" alt="Banner de flecha">
+					    <h3 class="titleHidden">CROSS WALKER</h3>
+					    <div class="text">
+					    	<p>
+					    		<h3>CROSS WALKER</h3>
+					    		Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.
+					    	</p>
+					    </div>
+					</div>
+
 					<div class="contenidoService contHijoServ">
 						<img src="img/par.png" class="iconService">
 						<h3>CROSS WALKER</h3>
@@ -272,7 +331,7 @@
 						<p>Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.</p>
 					</div>
 
-					<div class="contenidoService contHijoServ div-imgOver" >
+					<div class="contenidoService contHijoServ div-imgOver">
 						<img class="imgOver iconService" src="img/globos.png" alt="Foto4">
 					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
 					    <div class="text">
