@@ -181,7 +181,7 @@
 						<div class="containerData zoom">
 						  <img src="img/8c2216a4-52f6-493a-9954-b6825e1a5f66.JPG" alt="Avatar" class="imageInfo imgFotoGalery">
 						  <div class="overlay">
-						    <div class="texto">Hello World</div>
+						    <div class="texto">TEXTO IMPLEMENTADO</div>
 						  </div>
 						</div>
 
@@ -209,71 +209,71 @@
 				<div class="contenPadreServ">
 					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
 					<div class="contenidoService contHijoServ ">
-						<img src="img/iconService.png" class="iconService logo">
+						<img src="img\hm.png" class="iconService logo">
 						<h3>SALMPLING</h3>
 						<p>Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.<br></p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/flecha.png" class="iconService">
 						<h3>SIGN HUMAN</h3>
 						<p>Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.<br></p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/solo.png" class="iconService">
 						<h3>PUBLIANDANTE</h3>
 						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 					</div>
 
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/pantalla.png" class="iconService">
 						<h3>PUBLIPANTALLA</h3>
 						<p>Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.</p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/par.png" class="iconService">
 						<h3>CROSS WALKER</h3>
 						<p>Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.</p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/chicas.png" class="iconService">
 						<h3>CROSS BOARD STREET</h3>
 						<p>Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.				    </p>
 						<p> </p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/par2.png" class="iconService">
 						<h3>ROLL UP</h3>
 						<p>Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.</p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/bici.png" class="iconService">
 						<h3>BICI VALLA</h3>
 						<p>Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.</p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/camion.png" class="iconService">
 						<h3>CARTELERA MOVIL</h3>
 						<p>Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.</p>
 						<p> </p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/anuncio.png" class="iconService">
 						<h3>ESPECTACULARES</h3>
 						<p>Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. </p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/bus.png" class="iconService">
 						<h3>PUBLICIDAD EN RUTA</h3>
 						<p>Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.</p>
 					</div>
 					<div class="contenidoService contHijoServ">
-						<img src="img/iconService.png" class="iconService">
+						<img src="img/globos.png" class="iconService">
 						<h3>MATERIAL PUBLICITARIO</h3>
 						<p>Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.</p>
 					</div>
 
 					<div class="contenidoService contHijoServ div-imgOver" >
-						<img class="imgOver iconService" src="img/iconTemplate.png" title="Foto4" alt="Foto4">
+						<img class="imgOver iconService" src="img/globos.png" alt="Foto4">
 					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
 					    <div class="text">
 					    	<p>
