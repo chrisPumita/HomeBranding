@@ -11,9 +11,8 @@
 		  <meta name="viewport" content="width=device-width, initial-scale=1">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 
 		  <link rel="stylesheet" type="text/css" href="styles/style.css">
 		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
@@ -278,10 +277,10 @@
 	/*
 			Optimizacion de la informacion de las imagenes, con ayuda de php se imprimen solo los valores de cada imagen y si se desea cambiarlas, solamente se efita el valor.
 	 */
-			$img1_name = "Cerveceria Modelo";
-			$img1_peo = "1,500";
-			$img1_reg = "810";
-			$img1_pre = "32";
+			$img1_name = "BURGER KING";
+			$img1_peo = "4548";
+			$img1_reg = "342";
+			$img1_pre = "10";
 
 			$img2_name = "Domino`s Pizza";
 			$img2_peo = "3,500";
@@ -919,7 +918,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.7.2</h3>
+				<br><h3>VERSION DEMO 1.7.3</h3>
 			</samp>
 		</div>
 	</FOOTER>
