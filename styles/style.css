@@ -109,6 +109,12 @@
 
         .tittleDiv{
             padding: 20px;
+            margin-left: 40px;
+        }
+
+        .tittleDivForm {
+            padding: 20px;
+
         }
 
          /*Asignacion de colores principales y formato de texto*/
@@ -125,12 +131,12 @@
         }
 
         .menuTxtFormat{
-            font-size: 1.5em;
+            font-size: 2.5em;
             text-align:  center;
         }
 
         .menuTxtFormatMenu{
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         .alingDer{
@@ -260,8 +266,10 @@
             position: static;
             display: -webkit-inline-box;
             padding: 0px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 15%;
+            padding-top: 15%;
         }
 
         .logoCircle{
@@ -336,3 +344,224 @@
             right: 10px;
             opacity: 0.5;
         }
+
+
+
+            /*  Imagenes 1.1 **** 1.2 ***** 1.3 */
+            .box1{
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                padding-left: 70px;
+            }
+            .box2{
+                width: 300px;
+                height: 160px;
+                padding-left: 70px;
+                overflow: hidden;
+            }
+            .box3{
+                width: 100%;
+                height: 160px;
+                overflow: hidden;
+            }
+        /*  Imagenes 2.1 ******* 2.2  ******* 2.3 ****** 2.4*/
+            .box4{
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+            }
+            .box5{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+            }
+            .box6{
+                width: 300px;
+                height: 100px;
+                overflow: hidden;
+            }
+            .box7{
+                width: 150px;
+                height: 250px;
+                overflow: hidden;
+            }
+        /*  Imagenes 3.1 ***** 3.2.1 **** 3.2.2  ***** 3.3  */
+            .box8{
+                width: 250px;
+                height: 160px;
+                overflow: hidden;
+            }
+            .box9{
+                width: 300px;
+                height: 200px;
+                overflow: hidden;
+            }
+            .box10{
+                width: 300px;
+                height: 200px;
+                overflow: hidden;
+            }
+            .box11{
+                width: 350px;
+                height: 160px;
+                overflow: hidden;
+            }
+
+
+            .box1 .imagenAjustada, .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
+              width: 100%;
+              height: auto;
+            }
+            @supports(object-fit: cover){
+                .box1 .imagenAjustada,  .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+                }
+            }
+
+
+
+            .containerData {
+                position: relative;
+                width: 100%;
+            }
+
+            .imageInfo {
+              width: 100%;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, .9);
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .2s ease;
+            }
+
+            .containerData:hover .overlay {
+                height: 100%;
+                width: 100%;
+                opacity: .8;    
+                position: absolute;
+            }
+
+            .containerData:hover #alpha {
+                opacity: 0;
+            }
+
+            .texto {
+                opacity: 1;
+                white-space: nowrap; 
+                color: var(--border-block-color);
+                font-size: 70%;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                position:absolute;
+            }
+
+            #alpha {
+                background-color: var(--principal-txt-color);
+                opacity: .7;
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                padding-left:20px;
+                color:  var(--second-txt-color);
+            }
+            .img_container {
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .iconsTextMje1{
+                font-size:  1.5em;
+            }
+            #section {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            #contenido{
+                border-bottom: 15px solid var(--principal-txt-color);
+                margin-bottom: 0px;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+            .imgFotoGalery{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px
+            }
+
+            .gale-legth{
+                width: 40%;
+                margin-top: -60px;
+                padding-left: 5px;
+            }
+            .gale-center{
+                width: 20%;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .gale-rigth{
+                width: 40%;
+                padding-right: 5px;
+                margin-top: 50px;
+            }
+
+
+
+        .navegacion {
+            position: absolute;
+            top: 0;
+            background: var(--whitte-color-solid);
+            margin-top: 50px;
+            margin-left: 70%;
+            opacity: 0.9;
+        }
+         .navegacion li {
+            list-style-type: none;
+            text-align: right;
+        }
+         .navegacion li a {
+            text-decoration: none;
+            color: var(--second-txt-color);
+            padding: 10px;
+            margin: 0px;
+        }
+         .navegacion > li > a:hover {
+
+            color: var(--background-fotter-color);
+        }
+         .navegacion li ul {
+            padding-top: 30px;
+            display: grid;
+        }
+         .navegacion li ul li {
+            padding-right: 20px;
+            padding-left: 20px;
+            border-top: 1px solid var(--text-fondo-color);
+        }
+         .navegacion li ul li:hover {
+            background: var(--trasnparent-color-fondo);
+        }
+         .navegacion li ul li:hover a {
+            color: var(--border-block-color);
+        }
+
+         .navegacion li ul li a {
+            font-size: 27px;
+        }
+
+
+
+                        /*       EEFCTOS DE IMAGENES        */

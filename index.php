@@ -13,49 +13,16 @@
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+		<!-- LOCAL SYLES  -->
 		  <link rel="stylesheet" type="text/css" href="styles/style.css">
 		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
 		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
 		  <link rel="stylesheet" type="text/css" href="styles/effects.css">
 		  <link rel="stylesheet" type="text/css" href="styles/cssS.css">
-
-	<style type="text/css" media="screen">
-		#section {
-		    margin-left: -20px;
-		    margin-right: -20px;
-		}
-		#contenido{
-		    border-bottom: 15px solid var(--principal-txt-color);
-		    margin-bottom: 0px;
-		    margin-left: -10px;
-		    margin-right: -10px;
-		}
-
-		.imgFotoGalery{
-			margin-top: 0px;
-			margin-bottom: 0px;
-			margin-left: 0px;
-			margin-right: 0px
-		}
-
-		.gale-legth{
-			width: 40%;
-    		margin-top: -60px;
-    		padding-left: 5px;
-		}
-		.gale-center{
-			width: 20%;
-		    padding-left: 0px;
-			padding-right: 0px;
-		}
-		.gale-rigth{
-			width: 40%;
-    		padding-right: 5px;
-    		margin-top: 100px;
-		}
-
-		            /*       EEFCTOS DE IMAGENES        */
+		
+	<!--    ESTILOS DE PRUEBA	-->
+		<style>
+		/*NO REMOVE*/
         #imagen{
 	        background-image: url('img/banQuienes.jpg');
 	        background-repeat: repeat;
@@ -66,176 +33,33 @@
             -o-background-size: cover;
             background-size: cover;
         }
-
         #imagen{
-	    animation-name: mov-izq;
-	    animation-duration: 15s;
-	    animation-iteration-count: infinite;
-	    animation-timing-function: linear;
-	    animation-delay: 1s;
-         
-        -moz-animation-name: mov-izq;
-        -moz-animation-duration: 15s;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -moz-animation-delay: 1s; 
-          
-        -webkit-animation-name: mov-izq;
-        -webkit-animation-duration: 15s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 1s;
+		    animation-name: mov-izq;
+		    animation-duration: 15s;
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		    animation-delay: 1s;
+	         
+	        -moz-animation-name: mov-izq;
+	        -moz-animation-duration: 15s;
+	        -moz-animation-iteration-count: infinite;
+	        -moz-animation-timing-function: linear;
+	        -moz-animation-delay: 1s; 
+	          
+	        -webkit-animation-name: mov-izq;
+	        -webkit-animation-duration: 15s;
+	        -webkit-animation-iteration-count: infinite;
+	        -webkit-animation-timing-function: linear;
+	        -webkit-animation-delay: 1s;
         }
 	    @keyframes mov-izq{
           100%{background-position:-940px 0px}
         }
-
         @-webkit-keyframes mov-izq{
             100%{background-position:-940px 0px}
         }
-
-	</style>						
-	<!--    FIN ESTILOS			-->
-
-	<style>
-
-			.box1{
-				width: 300px;
-				height: 300px;
-				overflow: hidden;
-				padding-left: 70px;
-			}
-			.box2{
-				width: 300px;
-				height: 160px;
-				padding-left: 70px;
-				overflow: hidden;
-			}
-			.box3{
-				width: 100%;
-				height: 160px;
-				overflow: hidden;
-			}
-			.box4{
-				width: 300px;
-				height: 300px;
-				overflow: hidden;
-			}
-			.box5{
-				width: 300px;
-				height: 150px;
-				overflow: hidden;
-			}
-			.box6{
-				width: 150px;
-				height: 75px;
-				overflow: hidden;
-			}
-			.box7{
-				width: 150px;
-				height: 250px;
-				overflow: hidden;
-			}
-			.box8{
-				width: 250px;
-				height: 160px;
-				overflow: hidden;
-				padding-right: 100px;
-			}
-			.box9{
-				width: 150px;
-				height: 200px;
-				overflow: hidden;
-			}
-			.box10{
-				width: 150px;
-				height: 200px;
-				overflow: hidden;
-			}
-			.box11{
-				width: 350px;
-				height: 160px;
-				overflow: hidden;
-				padding-right: 100px;
-			}
-
-
-			.box1 .imagenAjustada, .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
-			  width: 100%;
-			  height: auto;
-			}
-			@supports(object-fit: cover){
-				.box1 .imagenAjustada,  .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
-			    height: 100%;
-			    object-fit: cover;
-			    object-position: center center;
-			    }
-			}
-
-
-
-			.containerData {
-				position: relative;
-				width: 100%;
-			}
-
-			.imageInfo {
-			  width: 100%;
-			}
-
-			.overlay {
-				position: absolute;
-				bottom: 0;
-				background-color: rgba(0, 0, 0, .9);
-				overflow: hidden;
-				width: 100%;
-				height: 0;
-				transition: .2s ease;
-			}
-
-			.containerData:hover .overlay {
-				height: 100%;
-				width: 100%;
-				opacity: .8;	
-				position: absolute;
-			}
-
-			.containerData:hover #alpha {
-				opacity: 0;
-			}
-
-			.texto {
-				opacity: 1;
-				white-space: nowrap; 
-				color: var(--border-block-color);
-				font-size: 15px;
-				overflow: hidden;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-	   			position:absolute;
-			}
-
-			#alpha {
-			    background-color: var(--principal-txt-color);
-			    opacity: .7;
-			    height: 3em;
-			    width: 100%;
-			    position: absolute;
-			    bottom: 0px;
-			    padding-left:20px;
-			    padding-top: 10px;
-			    color:  var(--second-txt-color);
-			}
-			.img_container {
-			    position: relative;
-			    width: 100%;
-			    margin: 0 auto;
-			}
-
-	</style>
-	
+        /*NO REMOVE*/
+		</style>
 		<!--Colocamos la barra de menu estatica-->
 
 
@@ -251,25 +75,31 @@
 			<li style="float:right">
 				<div style="text-align:  center;">
 						<h3 class="secondColor alingDer tittleDiv">Siguenos!</h3>
-						<a class="redes" href="https://www.facebook.com/HomeBranding/"><img class="redesIcons" src="img/icon-face.png"></a>
+						<a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a>
 						<img class="redesIcons" src="img/icon-tw.png">
 					</div>
 			
 				<div class="vl2"></div>
 			</li>
-			<li style="float:right; margin-top:  40px;">
-				<div class="dropdown">
-				  <label class="dropbtn"> <strong class="primaryColor">☰</strong><strong>MENU</strong></label>
-				  <div class="dropdown-content" hidden> 
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#exitos">CASOS DE ÉXITO</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#servicios">SERVICIOS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#nosotros">¿QUIÈNES SOMOS?</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#cuentas">CUENTAS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#mensaje">HOME BRANDING</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#contacto">CONTACTO</a>
-				  </div>
-				</div>
-			</li>
+
+
+
+				<ul id="menu" class="navegacion">
+					<li><a class="txt-menu" href="#" onclick="return false" ;="" style="font-size:  25px;">
+						<strong class="primaryColor">☰</strong><strong>MENU</strong>
+					</a>
+						<ul id="submenu" hidden="" style="display: none;">
+							
+							<li class="submenu"><a href="#exitos">CASOS DE ÉXITO</a></li>
+							<li class="submenu"><a href="#servicios">SERVICIOS</a></li>
+							<li class="submenu"><a href="#nosotros">¿QUIÈNES SOMOS?</a></li>
+							<li class="submenu"><a href="#cuentas">CUENTAS</a></li>
+							<li class="submenu"><a href="#mensaje">HOME BRANDING</a></li>
+							<li class="submenu"><a href="#contacto">CONTACTO</a></li>
+						</ul>
+
+					</li>
+				</ul>
 		</ul>
 	</header>
 	<!--  	 			SECCION DE CODIGO PHP PARA DATOS A MOSTRAR -->
@@ -547,9 +377,9 @@
 
 				<div class="w3-third gale-rigth">
 <!--3.1 imagen estatica-->
-					<div class="containerData zoom box8">
+					<div class="containerData zoom box8" style="width:  380px;">
 						<img class="imagenAjustada img_container" src="img/photos/3.1.JPG" alt="foto1">
-						    <div id="alpha">
+						    <div id="alpha" style="width:  380px;">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
 									<?php echo "$img8_peo"; ?> 
@@ -574,72 +404,72 @@
 						    </div>
 						</div>
 					</div>
-<!-- 3.2.1 imagen estatica-->
-<div class="w3-row" id="myGrid">
-	<div class="w3-third gale-legth">
-					<div class="containerData zoom box9">
-					  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img9_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img9_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img9_pre"; ?>
-						    	</p>
-						    </div>
-					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
-					    		<strong><ins>Activación</ins></strong><br>
-					    		<?php echo "$img9_name"; ?> <br>
-								<img class="iconImageDesple" src="img/icons/people-icon.png">
-								<?php echo "$img9_peo"; ?> Personas <br>
-								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-								<?php echo "$img9_reg"; ?> Registros <br>
-								<img class="iconImageDesple" src="img/icons/premios-icon.png">
-								<?php echo "$img9_pre"; ?> Premios<br>
-					    	</p>
-					    </div>
-					  </div>
+					<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
+					<div class="w3-row" id="myGrid">
+						<div class="w3-third" style="width:  50%;">
+										<div class="containerData zoom box9">
+										  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
+											    <div id="alpha">
+											    	<p>
+											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+														<?php echo "$img9_peo"; ?> 
+														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+														<?php echo "$img9_reg"; ?>
+														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+														<?php echo "$img9_pre"; ?>
+											    	</p>
+											    </div>
+										  	<div class="overlay">
+										    <div class="texto">
+										    	<p>
+										    		<strong><ins>Activación</ins></strong><br>
+										    		<?php echo "$img9_name"; ?> <br>
+													<img class="iconImageDesple" src="img/icons/people-icon.png">
+													<?php echo "$img9_peo"; ?> Personas <br>
+													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+													<?php echo "$img9_reg"; ?> Registros <br>
+													<img class="iconImageDesple" src="img/icons/premios-icon.png">
+													<?php echo "$img9_pre"; ?> Premios<br>
+										    	</p>
+										    </div>
+										  </div>
+										</div>
+						</div>
+						<div class="w3-third" style="width:  50%;">
+					<!-- 3.2.2 imagen estatica-->
+										<div class="containerData zoom box10">
+										  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
+											    <div id="alpha">
+											    	<p>
+											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+														<?php echo "$img10_peo"; ?> 
+														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+														<?php echo "$img10_reg"; ?>
+														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+														<?php echo "$img10_pre"; ?>
+											    	</p>
+											    </div>
+										  	<div class="overlay">
+										    <div class="texto">
+										    	<p>
+										    		<strong><ins>Activación</ins></strong><br>
+										    		<?php echo "$img10_name"; ?> <br>
+													<img class="iconImageDesple" src="img/icons/people-icon.png">
+													<?php echo "$img10_peo"; ?> Personas <br>
+													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+													<?php echo "$img10_reg"; ?> Registros <br>
+													<img class="iconImageDesple" src="img/icons/premios-icon.png">
+													<?php echo "$img10_pre"; ?> Premios<br>
+										    	</p>
+										    </div>
+										  </div>
+										</div>
+						</div>
 					</div>
-	</div>
-<div class="w3-third gale-legth">
-<!-- 3.2.2 imagen estatica-->
-					<div class="containerData zoom box10">
-					  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img10_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img10_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img10_pre"; ?>
-						    	</p>
-						    </div>
-					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
-					    		<strong><ins>Activación</ins></strong><br>
-					    		<?php echo "$img10_name"; ?> <br>
-								<img class="iconImageDesple" src="img/icons/people-icon.png">
-								<?php echo "$img10_peo"; ?> Personas <br>
-								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-								<?php echo "$img10_reg"; ?> Registros <br>
-								<img class="iconImageDesple" src="img/icons/premios-icon.png">
-								<?php echo "$img10_pre"; ?> Premios<br>
-					    	</p>
-					    </div>
-					  </div>
-					</div>
-	</div>
-</div>
 <!-- 3.3 imagen estatica-->
-					<div class="containerData zoom box11">
+					<div class="containerData zoom box11" style="width:  350px;">
 					  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
-						    <div id="alpha">
+						    <div id="alpha" style="width:  350px;">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
 									<?php echo "$img11_peo"; ?> 
@@ -841,9 +671,9 @@
 						<span class="marca secondColor">
 							<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
 							<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom"></i><br> no esta en como se dice, sino en como se hace!<br>
-							#TuPublicidadEnBuenas
-							<i class="em em-open_hands zoom"></i>
+							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no esta en como se dice, sino en como se hace!<br>
+							<strong>#TuPublicidadEnBuenas</strong>
+							<i class="em em-open_hands zoom iconsTextMje1"></i>
 						</span>
 					</p>
 				</div>
@@ -855,8 +685,8 @@
 
 		<div id="contacto" class="container-fluid">
 			<div class=" w3-cell-row contenedorForm">
-				<div class="w3-container w3-cell">
-				  	<h3 class="tittleDiv" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
+<div class="w3-container w3-cell" style="padding-left: 60px;">
+				  	<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
 				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php">
 					  	<div class="form-group">
 						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">Nombre:</label>
@@ -892,7 +722,7 @@
 
 				<div class="vl w3-containerw3-cell"></div>
 				<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
-					<h3 class="tittleDiv"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
+					<h3 class="tittleDivForm"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
 					<div style="color:  #FFFFFF;" class="infoFormat">
 						<p>Cerrada Noche Buena 15, <br>
 						Col. Potreros, Deleg. Tlalpan <br>
@@ -918,7 +748,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.7.3</h3>
+				<br><h3>VERSION DEMO 1.8.2 BUILD 26.4.18</h3>
 			</samp>
 		</div>
 	</FOOTER>
@@ -934,5 +764,20 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
   });
 });
 </script>
+	<script>
+		$("#submenu").hide();
+		var flag = 0;
+		$("#menu").click(function(){
+			flag = (flag + 1)%2;
+			
+			if (flag==1) {
+				$("#submenu").show(1000);
+				$(".txt-menu").text("X CERRAR");
+			}else {
+				$("#submenu").hide(1000);
+				$(".txt-menu").text("☰ MENU");
+			}
+		});
+	</script>
 </BODY>
 </HTML>
