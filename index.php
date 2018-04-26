@@ -21,7 +21,7 @@
 		  <link rel="stylesheet" type="text/css" href="styles/cssS.css">
 		
 	<!--    ESTILOS DE PRUEBA	-->
-		<style>
+		<style type="text/css">
 		/*NO REMOVE*/
         #imagen{
 	        background-image: url('img/banQuienes.jpg');
@@ -60,11 +60,105 @@
         }
         /*NO REMOVE*/
 		</style>
+
+
 		<!--Colocamos la barra de menu estatica-->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+	.clienteslogos{
+		padding-bottom: 10%;
+		padding-top: 10%;
+		margin-right: 10%;
+		margin-left: 30%;
+		width: 35%;
+		height: 35%;
+	}
+	/* The Modal (background) */
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	    -webkit-animation-name: fadeIn; /* Fade in the background */
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: fadeIn;
+	    animation-duration: 0.4s
+	}
+
+	/* Modal Content */
+	.modal-content {
+	    position: fixed;
+	    bottom: 0;
+	    background-color: #fefefe;
+	    width: 100%;
+	    -webkit-animation-name: slideIn;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: slideIn;
+	    animation-duration: 0.4s
+	}
+
+	/* The Close Button */
+	.close {
+	    color: var(--second-txt-color);
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: #000;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	.modal-header {
+	    padding: 2px 16px;
+	    background-color: var(--principal-txt-color);
+	    color: white;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+	    padding: 2px 16px;
+	    background-color: var(--principal-txt-color);
+	    color: white;
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes slideIn {
+	    from {bottom: -300px; opacity: 0} 
+	    to {bottom: 0; opacity: 1}
+	}
+
+	@keyframes slideIn {
+	    from {bottom: -300px; opacity: 0}
+	    to {bottom: 0; opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+
+	@keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+</style>
 
 
 </HEAD>
-<BODY id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="header">
 		<ul id="contenido">
 			<li>
@@ -640,15 +734,67 @@
 			</div>
 		</div>
 
+		<!--
+					GALERIA PARA LAS IMAGENES
+		-->
+
 		<div id="cuentas" class="container-fluid">
-			<div>
-				<h2 class="tittleDiv primaryColor">CUENTAS</h2>
-				<div>
-						<img class="clientesLogos" src="img/logos1.jpg">
-						<img class="clientesLogos" src="img/logos1.jpg">
+	  		<h2 class="tittleDiv primaryColor">CUENTAS</h2>
+			<div class="w3-row" id="myGrid">
+<!--  	PRIMER PANEL IZQ IMAGENES 123  -->
+				<div class="w3-third">
+<!--1.1 imagen estatica-->
+					<div class="containerData clienteslogos">
+						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+<!--1.2 imagen estatica-->
+					<div class="containerData clienteslogos">
+					  <img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+<!-- 1.3 imagen estatica-->
+					<div class="containerData clienteslogos">
+					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+				</div>
+
+
+<!--	SEGUNDO PANEL SE COMPONE DE 4 IMAGENES	IMG 4,5,6,7		-->
+
+				<div class="w3-third">
+				    <!--1.1 imagen estatica-->
+					<div class="containerData clienteslogos">
+						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+<!-- 2.2 imagen estatica-->
+					<div class="containerData clienteslogos">
+					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+<!-- 2.3 imagen estatica-->
+					<div class="containerData clienteslogos">
+					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+					</div>
+				</div>
+
+				  <!--	TERCER PANEL SE COMPONE DE 4 IMAGENES	IMG 8,9,10,11		-->
+
+				<div class="w3-third">
+<!--3.1 imagen estatica-->
+					<div class="containerData clienteslogos"">
+						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+				</div>
+				<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
+					<!-- 2.4 imagen estatica-->
+				<div class="containerData clienteslogos">
+				  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
+				</div>
+					<!-- 2.4 imagen estatica-->
+				<div class="containerData clienteslogos">
+				  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
 				</div>
 			</div>
+<!-- 3.3 imagen estatica-->
 		</div>
+
 					<!--   	MENSAJE IMPORTANTE			 -->
 		<div id="mensaje" class="container-fluid">
 			<div class="footerMje">
@@ -687,21 +833,21 @@
 			<div class=" w3-cell-row contenedorForm">
 <div class="w3-container w3-cell" style="padding-left: 60px;">
 				  	<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
-				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php">
+				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php" method="post">
 					  	<div class="form-group">
-						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">Nombre:</label>
+						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
 						    <div class="col-sm-6">
-					        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="name" required="Please">
+					        	<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please">
 					     	</div>
 					    </div>
 					    <div class="form-group">
-					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">Email:</label>
+					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">*Email:</label>
 					      	<div class="col-sm-6">
-					        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email" required="Please">
+					        	<input type="email" class="form-control" id="correo" placeholder="Escriba su email" name="correo" required="Please">
 					      	</div>
 					    </div>
 					    <div class="form-group">
-					      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">Teléfono:</label>
+					      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">*Teléfono:</label>
 					      	<div class="col-sm-6">          
 					        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="tel" required="Please">
 					      	</div>
@@ -709,16 +855,70 @@
 					    <div class="form-group">
 					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
 					      	<div class="col-sm-6">  
-					      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
+					      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
+					      		<p><cite class="">* Campo obligarotio</cite></p>
 					      	</div>
+
 					    </div>
 					    <div class="form-group">        
 					    	<div class="col-sm-offset-2 col-sm-6">
-					        	<input type="submit" class="btn btn-default"></input>
+					        	<input id="btnSend" type="submit" class="btn btn-default" onclick="message();"></input>
 					      	</div>
 					    </div>
 				  	</form>
 				</div>
+				
+					<!-- The Modal -->
+				<!-- The Modal -->
+										<div id="myModal" class="modal">
+
+										  <!-- Modal content -->
+										  <div class="modal-content">
+										    <div class="modal-header">
+										      <span class="close">&times;</span>
+										      <h2>Aviso de Provacidad</h2>
+										    </div>
+										    <div class="modal-body">
+										       <h1>DESCRIPCIÓN DEL AVISO</h1>
+												<p>
+													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>
+												  	
+
+
+													  <h1>DATOS PERSONALES QUE RECABAMOS</h1>
+													  <p>
+													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+													</p>
+
+												  
+
+													  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+													  <P>
+													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+													  </P>
+											</div>
+										    <div class="modal-footer">
+										      <!--  CODE -->
+										    </div>
+										  </div>
+
+										</div>
 
 				<div class="vl w3-containerw3-cell"></div>
 				<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
@@ -748,7 +948,8 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.8.2 BUILD 26.4.18</h3>
+				<br><h3>VERSION DEMO 1.8.3 BUILD 26.4.18</h3>
+				<button id="myBtn" onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
 	</FOOTER>
@@ -779,5 +980,35 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 			}
 		});
 	</script>
-</BODY>
+	<script>
+		function message() {
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			// body...
+		}
+	}
+	</script>
+</body>
 </HTML>
