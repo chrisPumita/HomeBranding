@@ -471,7 +471,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 				<div class="w3-third gale-rigth">
 <!--3.1 imagen estatica-->
-					<div class="containerData zoom box8" style="width:  380px;">
+					<div class="containerData zoom box8" style="width:  280px;">
 						<img class="imagenAjustada img_container" src="img/photos/3.1.JPG" alt="foto1">
 						    <div id="alpha" style="width:  380px;">
 						    	<p>
@@ -831,7 +831,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 		<div id="contacto" class="container-fluid">
 			<div class=" w3-cell-row contenedorForm">
-<div class="w3-container w3-cell" style="padding-left: 60px;">
+				<div class="w3-container w3-cell" style="padding-left: 60px;">
 				  	<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
 				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php" method="post">
 					  	<div class="form-group">
@@ -856,7 +856,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
 					      	<div class="col-sm-6">  
 					      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
-					      		<p><cite class="">* Campo obligarotio</cite></p>
+					      		<p><cite class="">* Campo obligatorio</cite></p>
 					      	</div>
 
 					    </div>
