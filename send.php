@@ -1,7 +1,5 @@
 <?php
-	echo "<script>alert('Recibiendo datos: ".$_POST['nombre']." );</script>";
-
-	
+	header("Content-Type: text/html;charset=utf-8");
 	$nombre = "";
 	if ( $_POST['nombre'] )
 		$nombre = $_POST['nombre'];
@@ -25,83 +23,91 @@
 	else {
  */
 
-    //==Para enviar correos==
+ // PARTE PARA ENVIAR LOS CORREOS ===================================================================================================================================================== 
+	   /*
+	   
+	    require("includes/class.phpmailer.php");//
+	      $mail = new PHPMailer();
+	      $mail->IsSMTP(); 
 
-      require("includes/class.phpmailer.php");
-      $mail = new PHPMailer();
-
-
-      $contacto = "contacto@mecanismo.com.mx";
-      $pass_contacto = "mecanismO.1";
-
-      //$contacto = "web@mecanismo.com.mx";
-
-       
-
-	  
-	  $mail->From     = $contacto;    // Correo Electronico para SMTP 
-      $mail->FromName = $nombre; 
-      $mail->AddAddress("christian.floppy@gmail.com"); // Dirección a la que llegaran los mensajes
-	
-	  // Aquí van los datos que apareceran en el correo que reciba
-	  
-	  $mail->WordWrap = 50; 
-      $mail->IsHTML(true);     
-      $mail->Subject  =  "Comentario recibido a traves del Sitio Web";
-      $mail->Body     =  "<b>Este mensaje fue enviado por:</b> $nombre \n<br /><br />".
-      "<b>Su e-mail es:</b> $email \n<br />".
-      "<b>Su teléfono es:</b> $tel \n<br/>".
-      "<b>Requiere:</b> $comentario \n<br /><br />";
-	  
-      // Datos del servidor SMTP
-
-    $mail->IsSMTP(); 
-    $mail->Host = "mecanismo.com.mx";  // mail. o solo dominio - Servidor de Salida. (recomiendo sin mail.)
-    $mail->SMTPAuth = true; 
-    $mail->Username = $contacto;  // Correo Electrónico para SMTP correo@dominio.tld
-    $mail->Password = $pass_contacto; // Contraseña para SMTP
-
-    if ($mail->Send())
-    echo "<script>alert('Tu información fue recibida de forma correcta, muchas gracias, pronto recibirás una respuesta');location.href ='http://www.irritinsa.com';</script>";
-    else
-    echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
+	      $contacto = "web@mecanismo.com.mx";
+	      $pass_contacto = "mecaMXweb.2";
+	      $para = "christian.floppy@gmail.com" //PRUEBA PARA RECIBIR EL CORREO
 
 
+	          
+	      $mail->From     = $contacto;    // Correo Electronico para SMTP 
+	      $mail->FromName = $nombre; 
+	      $mail->AddAddress($para); // Dirección a la que llegaran los mensajes
 
-/**
- * /
-			 require('path-of-extracted-folder/PHPMailerAutoload.php'); // ORIGINAL
+	            // Aquí van los datos que apareceran en el correo que reciba
+	          
+	      $mail->WordWrap = 50; 
+	      $mail->IsHTML(true);     
+	      $mail->Subject  =  "Comentario recibido a traves del Sitio Web";
+
+	      $mail->Body = '<div class="body">
+						<p>Estimado(a) '.$nombre.',</p>
+						<p>CUERPO DEL MENSAJE</p>
+						<br><br>
+						<p>Correo: '.$correo.',</p>
+						<p>Teléfono: '.$tel.',</p>
+						<p>Comentario: '.$comentario.',</p>
+						<br><br><br>
+						<br>
+						<cite>ENVIO DE CORREO DE PRUEBA</cite>
+						
+					</div>
+
+					
+			';
+
+			         // Datos del servidor SMTP
+
+	      $mail->Host = "mecanismo.com.mx";  // mail. o solo dominio - Servidor de Salida. (recomiendo sin mail.)
+	      $mail->SMTPAuth = true; 
+	      $mail->Username = $contacto;  // Correo Electrónico para SMTP correo@dominio.tld
+	      $mail->Password = $pass_contacto; // Contraseña para SMTP
+
+	      if ($mail->Send())
+			echo "<script>alert('Se envio el correo exitosamente a: $para');location.href ='../index.php';</script>";
+	      else
+			echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
+	    */
+
+
+
+
+			 require("includes/class.phpmailer.php");// ORIGINAL
 				  
 			 $mail = new PHPMailer();
 			 //Quien ENVIA
 	         $mail->From  = "web@mecanismo.com.mx"; 
              $mail->FromName = $nombre;
              //CORREO DESTINO:
-             $mail->AddAddress("christian.floppy@gmail.com"); 
+             $mail->AddAddress("web@mecanismo.com.mx "); 
 	  
 			 $mail->WordWrap = 50; 
              $mail->IsHTML(true);     
-             $mail->Subject  =  "PRUEBA LOCAL: Contacto desde el formulario del Sitio Web";
-             $mail->Body     =  "<h1>PRUEBA LOCAL</H1> <br><b>Este mensaje fue enviado por:</b> $nombre \n<br /><br />".
-								"DEMO 1.2 Su correo es: $correo \n".
-								"Su telefono es: $tel \n".
-								"Su comentario es: $comentario ";
+             $mail->Subject  =  "Contacto desde HomeBranding Web Site";
+             $mail->Body     =  "<H1>PRUEBA DESDE SERVER</H1> 
+             					<br><b>Este mensaje fue enviado por:</b> $nombre \n".
+								"<br>DEMO 1.2 Su correo es: $correo \n".
+								"<br>Su telefono es: $tel \n".
+								"<br>Su comentario es: $comentario ";
 						
 			$mail->IsSMTP(); 
             $mail->Host = "mecanismo.com.mx";  // Servidor de Salida.
             $mail->SMTPAuth = true; 
-            $mail->Username = "contacto@mecanismo.com.mx";  // Correo Electrónico
-            $mail->Password = "mecanismO.1"; // Contraseña
+            $mail->Username = "web@mecanismo.com.mx";  // Correo Electrónico
+            $mail->Password = "mecaMXweb.2"; // Contraseña
 			
 			 if ($mail->Send())
-		      	echo "<script>alert('Su información se envio con éxito');location.href ='index.html';</script>";
+		      	echo "<script>alert('Gracias, nos pondremos en contacto con usted $nombre');location.href ='index.php';</script>";
 		      else
 		      	echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
- */
-		 		/*
 
-		
-		
+/*
 		$your_email = 'christian.floppy@gmail.com';
 		//$your_email = "web@mecanismo.com.mx";
 		//$your_email = "israel@elements.com.mx";
@@ -119,8 +125,6 @@
 		else {
 			echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
 		}
-		 */
-			
-	//}
+*/
 
 ?>

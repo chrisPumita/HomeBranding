@@ -948,7 +948,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.8.3 BUILD 26.4.18</h3>
+				<br><h3>VERSION DEMO 1.7.2 BUILD 27.4.18</h3>
 				<button id="myBtn" onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
