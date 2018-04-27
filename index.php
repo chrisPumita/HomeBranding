@@ -161,9 +161,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 		/* Fading animation */
 		.fade {
 		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 2.2s;
+		  -webkit-animation-duration: 1.5s;
 		  animation-name: fade;
-		  animation-duration: 2.2s;
+		  animation-duration: 1.5s;
 		}
 
 		@-webkit-keyframes fade {
@@ -776,7 +776,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 			  <span class="dot"></span> 
 			  <span class="dot"></span> 
-			  <span class="dot"></span>
 
 		</div>
 
@@ -882,28 +881,22 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				    </div>
 				    <div class="modal-body">
 						<p>
-							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-						  	
-
-
-							  <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-							  <p>
-							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-
-						  
-
 							  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
 							  <P>
 							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -1020,26 +1013,26 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 		}
 	}
 	</script>
-	<script>
-		var slideIndex = 0;
-		showSlides();
+<script>
+var slideIndex = 0;
+showSlides();
 
-		function showSlides() {
-		    var i;
-		    var slides = document.getElementsByClassName("mySlides");
-		    var dots = document.getElementsByClassName("dot");
-		    for (i = 0; i < slides.length; i++) {
-		       slides[i].style.display = "none";  
-		    }
-		    slideIndex++;
-		    if (slideIndex > slides.length) {slideIndex = 1}    
-		    for (i = 0; i < dots.length; i++) {
-		        dots[i].className = dots[i].className.replace(" active", "");
-		    }
-		    slides[slideIndex-1].style.display = "block";  
-		    dots[slideIndex-1].className += " active";
-		    setTimeout(showSlides, 2000); // Change image every 2 seconds
-			}
-	</script>
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 </body>
 </HTML>
