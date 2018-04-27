@@ -131,7 +131,7 @@
         }
 
         .menuTxtFormat{
-            font-size: 2.5em;
+            font-size: 2em;
             text-align:  center;
         }
 
@@ -183,7 +183,7 @@
             width: 100% ;
             text-align: center;
         }
-*/
+
 
         /*
             LOGOTIPOS Y CLIENTES DE HB
@@ -264,7 +264,6 @@
 
         .mjeText1{
             position: static;
-            display: -webkit-inline-box;
             padding: 0px;
             padding-left: 10%;
             padding-right: 10%;
@@ -565,3 +564,16 @@
 
 
                         /*     GALERIA DE CLIENTES        */
+
+            .formatEmprContainer{
+                margin-right: 5%;
+                margin-left: 10%;
+                margin-bottom: 50px;
+            }
+            .floating-box {
+                display: inline-block;
+                width: 150px;
+                height: auto;
+                margin: 10px;
+                border: 0px solid var(--econd-txt-color);  
+            }

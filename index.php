@@ -26,7 +26,7 @@
         #imagen{
 	        background-image: url('img/banQuienes.jpg');
 	        background-repeat: repeat;
-	        height:100%;
+	        height:600px;
 	        width:100%;
 	        -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -106,15 +106,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	}
 
 	/* The Close Button */
-	.close {
+	.close  .close2{
 	    color: var(--second-txt-color);
 	    float: right;
 	    font-size: 28px;
 	    font-weight: bold;
 	}
 
-	.close:hover,
-	.close:focus {
+	.close:hover, .close2:hover,
+	.close:focus, 	.close2:focus {
 	    color: #000;
 	    text-decoration: none;
 	    cursor: pointer;
@@ -154,6 +154,27 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	    from {opacity: 0} 
 	    to {opacity: 1}
 	}
+</style>
+
+<style>
+	
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 2.2s;
+		  animation-name: fade;
+		  animation-duration: 2.2s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
 </style>
 
 
@@ -727,73 +748,54 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 				</div>
 				<div id="imagen" class="portada">
+					<div class="slideshow-container" style="padding-top:  10px;">
+
+						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+						  Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
+						</div>
+
+						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+				</div>
+				</div>
+				
+				<!--
+				<div id="imagen" class="portada">
 					<p class="elementoMmensaje menuTxtFormat zoom">
 						Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 					</p>
 				</div>
+				-->
 			</div>
+
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+
 		</div>
 
-		<!--
-					GALERIA PARA LAS IMAGENES
-		-->
+		<!--GALERIA PARA LAS IMAGENES. -->
 
-		<div id="cuentas" class="container-fluid">
-	  		<h2 class="tittleDiv primaryColor">CUENTAS</h2>
-			<div class="w3-row" id="myGrid">
-<!--  	PRIMER PANEL IZQ IMAGENES 123  -->
-				<div class="w3-third">
-<!--1.1 imagen estatica-->
-					<div class="containerData clienteslogos">
-						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-<!--1.2 imagen estatica-->
-					<div class="containerData clienteslogos">
-					  <img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-<!-- 1.3 imagen estatica-->
-					<div class="containerData clienteslogos">
-					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-				</div>
-
-
-<!--	SEGUNDO PANEL SE COMPONE DE 4 IMAGENES	IMG 4,5,6,7		-->
-
-				<div class="w3-third">
-				    <!--1.1 imagen estatica-->
-					<div class="containerData clienteslogos">
-						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-<!-- 2.2 imagen estatica-->
-					<div class="containerData clienteslogos">
-					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-<!-- 2.3 imagen estatica-->
-					<div class="containerData clienteslogos">
-					  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-					</div>
-				</div>
-
-				  <!--	TERCER PANEL SE COMPONE DE 4 IMAGENES	IMG 8,9,10,11		-->
-
-				<div class="w3-third">
-<!--3.1 imagen estatica-->
-					<div class="containerData clienteslogos"">
-						<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-				</div>
-				<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
-					<!-- 2.4 imagen estatica-->
-				<div class="containerData clienteslogos">
-				  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-				</div>
-					<!-- 2.4 imagen estatica-->
-				<div class="containerData clienteslogos">
-				  	<img class="imagenAjustada img_container" src="img/logos1.jpg" alt="foto1">
-				</div>
-			</div>
-<!-- 3.3 imagen estatica-->
+		<div id="cuentas" class="formatEmprContainer">
+			<h2 class="tittleDiv primaryColor">CUENTAS</h2>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/1.png" alt="foto1"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/2.png" alt="foto2"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/3.png" alt="foto3"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/4.png" alt="foto4"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/5.png" alt="foto5"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/6.png" alt="foto6"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/7.png" alt="foto7"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/8.png" alt="foto8"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/9.png" alt="foto9"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/10.png" alt="foto10"></div>
 		</div>
+
 
 					<!--   	MENSAJE IMPORTANTE			 -->
 		<div id="mensaje" class="container-fluid">
@@ -870,55 +872,56 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				
 					<!-- The Modal -->
 				<!-- The Modal -->
-										<div id="myModal" class="modal">
+				<div id="myModal" class="modal">
 
-										  <!-- Modal content -->
-										  <div class="modal-content">
-										    <div class="modal-header">
-										      <span class="close">&times;</span>
-										      <h2>Aviso de Provacidad</h2>
-										    </div>
-										    <div class="modal-body">
-										       <h1>DESCRIPCIÓN DEL AVISO</h1>
-												<p>
-													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-												</p>
-												  	
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <div class="modal-header">
+				    	<span class="close">&times;</span>
+				      	<h2>Aviso de Provacidad</h2>
+				    </div>
+				    <div class="modal-body">
+						<p>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						  	
 
 
-													  <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-													  <p>
-													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-													  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-													  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-													  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-													  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-													  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-													</p>
+							  <h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							  <p>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
 
-												  
+						  
 
-													  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-													  <P>
-													  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-													  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-													  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-													  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-													  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-													  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-													  </P>
-											</div>
-										    <div class="modal-footer">
-										      <!--  CODE -->
-										    </div>
-										  </div>
+							  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							  <P>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							  </P>
+					</div>
 
-										</div>
+
+				    <div class="modal-footer">
+				      <span class="close2">CERRAR</span>
+				      <!--  CODE -->
+				    </div>
+				  </div>
+				</div>
 
 				<div class="vl w3-containerw3-cell"></div>
 				<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
@@ -990,6 +993,7 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 
 			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
+			var span2 = document.getElementsByClassName("close2")[0];
 
 			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
@@ -999,6 +1003,12 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 			// When the user clicks on <span> (x), close the modal
 			span.onclick = function() {
 			    modal.style.display = "none";
+
+			}
+
+			span2.onclick = function() {
+			    modal.style.display = "none";
+			    
 			}
 
 			// When the user clicks anywhere outside of the modal, close it
@@ -1009,6 +1019,27 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 			// body...
 		}
 	}
+	</script>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";  
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1}    
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";  
+		    dots[slideIndex-1].className += " active";
+		    setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
 	</script>
 </body>
 </HTML>
