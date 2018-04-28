@@ -13,234 +13,173 @@
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+		<!-- LOCAL SYLES  -->
 		  <link rel="stylesheet" type="text/css" href="styles/style.css">
 		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
 		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
 		  <link rel="stylesheet" type="text/css" href="styles/effects.css">
 		  <link rel="stylesheet" type="text/css" href="styles/cssS.css">
-
-	<style type="text/css" media="screen">
-		#section {
-		    margin-left: -20px;
-		    margin-right: -20px;
-		}
-		#contenido{
-		    border-bottom: 15px solid var(--principal-txt-color);
-		    margin-bottom: 0px;
-		    margin-left: -10px;
-		    margin-right: -10px;
-		}
-
-		.imgFotoGalery{
-			margin-top: 0px;
-			margin-bottom: 0px;
-			margin-left: 0px;
-			margin-right: 0px
-		}
-
-		.gale-legth{
-			width: 40%;
-    		margin-top: -60px;
-    		padding-left: 5px;
-		}
-		.gale-center{
-			width: 20%;
-		    padding-left: 0px;
-			padding-right: 0px;
-		}
-		.gale-rigth{
-			width: 40%;
-    		padding-right: 5px;
-    		margin-top: 100px;
-		}
-
-		            /*       EEFCTOS DE IMAGENES        */
+		
+	<!--    ESTILOS DE PRUEBA	-->
+		<style type="text/css">
+		/*NO REMOVE*/
         #imagen{
 	        background-image: url('img/banQuienes.jpg');
 	        background-repeat: repeat;
-	        height:100%;
+	        height:600px;
 	        width:100%;
 	        -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
-
         #imagen{
-	    animation-name: mov-izq;
-	    animation-duration: 15s;
-	    animation-iteration-count: infinite;
-	    animation-timing-function: linear;
-	    animation-delay: 1s;
-         
-        -moz-animation-name: mov-izq;
-        -moz-animation-duration: 15s;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -moz-animation-delay: 1s; 
-          
-        -webkit-animation-name: mov-izq;
-        -webkit-animation-duration: 15s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 1s;
+		    animation-name: mov-izq;
+		    animation-duration: 15s;
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		    animation-delay: 1s;
+	         
+	        -moz-animation-name: mov-izq;
+	        -moz-animation-duration: 15s;
+	        -moz-animation-iteration-count: infinite;
+	        -moz-animation-timing-function: linear;
+	        -moz-animation-delay: 1s; 
+	          
+	        -webkit-animation-name: mov-izq;
+	        -webkit-animation-duration: 15s;
+	        -webkit-animation-iteration-count: infinite;
+	        -webkit-animation-timing-function: linear;
+	        -webkit-animation-delay: 1s;
         }
 	    @keyframes mov-izq{
           100%{background-position:-940px 0px}
         }
-
         @-webkit-keyframes mov-izq{
             100%{background-position:-940px 0px}
         }
-
-	</style>						
-	<!--    FIN ESTILOS			-->
-
-	<style>
-
-			.box1{
-				width: 300px;
-				height: 300px;
-				overflow: hidden;
-				padding-left: 70px;
-			}
-			.box2{
-				width: 300px;
-				height: 160px;
-				padding-left: 70px;
-				overflow: hidden;
-			}
-			.box3{
-				width: 100%;
-				height: 160px;
-				overflow: hidden;
-			}
-			.box4{
-				width: 300px;
-				height: 300px;
-				overflow: hidden;
-			}
-			.box5{
-				width: 300px;
-				height: 150px;
-				overflow: hidden;
-			}
-			.box6{
-				width: 150px;
-				height: 75px;
-				overflow: hidden;
-			}
-			.box7{
-				width: 150px;
-				height: 250px;
-				overflow: hidden;
-			}
-			.box8{
-				width: 250px;
-				height: 160px;
-				overflow: hidden;
-				padding-right: 100px;
-			}
-			.box9{
-				width: 150px;
-				height: 200px;
-				overflow: hidden;
-			}
-			.box10{
-				width: 150px;
-				height: 200px;
-				overflow: hidden;
-			}
-			.box11{
-				width: 350px;
-				height: 160px;
-				overflow: hidden;
-				padding-right: 100px;
-			}
+        /*NO REMOVE*/
+		</style>
 
 
-			.box1 .imagenAjustada, .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
-			  width: 100%;
-			  height: auto;
-			}
-			@supports(object-fit: cover){
-				.box1 .imagenAjustada,  .box2 .imagenAjustada, .box3 .imagenAjustada, .box4 .imagenAjustada, .box5 .imagenAjustada, .box6 .imagenAjustada, .box7 .imagenAjustada, .box8 .imagenAjustada, .box9 .imagenAjustada, .box10 .imagenAjustada, .box11 .imagenAjustada{
-			    height: 100%;
-			    object-fit: cover;
-			    object-position: center center;
-			    }
-			}
-
-
-
-			.containerData {
-				position: relative;
-				width: 100%;
-			}
-
-			.imageInfo {
-			  width: 100%;
-			}
-
-			.overlay {
-				position: absolute;
-				bottom: 0;
-				background-color: rgba(0, 0, 0, .9);
-				overflow: hidden;
-				width: 100%;
-				height: 0;
-				transition: .2s ease;
-			}
-
-			.containerData:hover .overlay {
-				height: 100%;
-				width: 100%;
-				opacity: .8;	
-				position: absolute;
-			}
-
-			.containerData:hover #alpha {
-				opacity: 0;
-			}
-
-			.texto {
-				opacity: 1;
-				white-space: nowrap; 
-				color: var(--border-block-color);
-				font-size: 15px;
-				overflow: hidden;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-	   			position:absolute;
-			}
-
-			#alpha {
-			    background-color: var(--principal-txt-color);
-			    opacity: .7;
-			    height: 3em;
-			    width: 100%;
-			    position: absolute;
-			    bottom: 0px;
-			    padding-left:20px;
-			    padding-top: 10px;
-			    color:  var(--second-txt-color);
-			}
-			.img_container {
-			    position: relative;
-			    width: 100%;
-			    margin: 0 auto;
-			}
-
-	</style>
-	
 		<!--Colocamos la barra de menu estatica-->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+	.clienteslogos{
+		padding-bottom: 10%;
+		padding-top: 10%;
+		margin-right: 10%;
+		margin-left: 30%;
+		width: 35%;
+		height: 35%;
+	}
+	/* The Modal (background) */
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	    -webkit-animation-name: fadeIn; /* Fade in the background */
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: fadeIn;
+	    animation-duration: 0.4s
+	}
+
+	/* Modal Content */
+	.modal-content {
+	    position: fixed;
+	    bottom: 0;
+	    background-color: #fefefe;
+	    width: 100%;
+	    -webkit-animation-name: slideIn;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: slideIn;
+	    animation-duration: 0.4s
+	}
+
+	/* The Close Button */
+	.close  .close2{
+	    color: var(--second-txt-color);
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	}
+
+	.close:hover, .close2:hover,
+	.close:focus, 	.close2:focus {
+	    color: #000;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	.modal-header {
+	    padding: 2px 16px;
+	    background-color: var(--principal-txt-color);
+	    color: white;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+	    padding: 2px 16px;
+	    background-color: var(--principal-txt-color);
+	    color: white;
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes slideIn {
+	    from {bottom: -300px; opacity: 0} 
+	    to {bottom: 0; opacity: 1}
+	}
+
+	@keyframes slideIn {
+	    from {bottom: -300px; opacity: 0}
+	    to {bottom: 0; opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+
+	@keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+</style>
+
+<style>
+	
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+</style>
 
 
 </HEAD>
-<BODY id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="header">
 		<ul id="contenido">
 			<li>
@@ -251,25 +190,31 @@
 			<li style="float:right">
 				<div style="text-align:  center;">
 						<h3 class="secondColor alingDer tittleDiv">Siguenos!</h3>
-						<a class="redes" href="https://www.facebook.com/HomeBranding/"><img class="redesIcons" src="img/icon-face.png"></a>
+						<a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a>
 						<img class="redesIcons" src="img/icon-tw.png">
 					</div>
 			
 				<div class="vl2"></div>
 			</li>
-			<li style="float:right; margin-top:  40px;">
-				<div class="dropdown">
-				  <label class="dropbtn"> <strong class="primaryColor">☰</strong><strong>MENU</strong></label>
-				  <div class="dropdown-content" hidden> 
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#exitos">CASOS DE ÉXITO</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#servicios">SERVICIOS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#nosotros">¿QUIÈNES SOMOS?</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#cuentas">CUENTAS</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#mensaje">HOME BRANDING</a>
-							<a class="class_a_href menuTxtFormatMenu secondColor menuLink" href="#contacto">CONTACTO</a>
-				  </div>
-				</div>
-			</li>
+
+
+
+				<ul id="menu" class="navegacion">
+					<li><a class="txt-menu" href="#" onclick="return false" ;="" style="font-size:  25px;">
+						<strong class="primaryColor">☰</strong><strong>MENU</strong>
+					</a>
+						<ul id="submenu" hidden="" style="display: none;">
+							
+							<li class="submenu"><a href="#exitos">CASOS DE ÉXITO</a></li>
+							<li class="submenu"><a href="#servicios">SERVICIOS</a></li>
+							<li class="submenu"><a href="#nosotros">¿QUIÈNES SOMOS?</a></li>
+							<li class="submenu"><a href="#cuentas">CUENTAS</a></li>
+							<li class="submenu"><a href="#mensaje">HOME BRANDING</a></li>
+							<li class="submenu"><a href="#contacto">CONTACTO</a></li>
+						</ul>
+
+					</li>
+				</ul>
 		</ul>
 	</header>
 	<!--  	 			SECCION DE CODIGO PHP PARA DATOS A MOSTRAR -->
@@ -547,9 +492,9 @@
 
 				<div class="w3-third gale-rigth">
 <!--3.1 imagen estatica-->
-					<div class="containerData zoom box8">
+					<div class="containerData zoom box8" style="width:  280px;">
 						<img class="imagenAjustada img_container" src="img/photos/3.1.JPG" alt="foto1">
-						    <div id="alpha">
+						    <div id="alpha" style="width:  380px;">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
 									<?php echo "$img8_peo"; ?> 
@@ -574,72 +519,72 @@
 						    </div>
 						</div>
 					</div>
-<!-- 3.2.1 imagen estatica-->
-<div class="w3-row" id="myGrid">
-	<div class="w3-third gale-legth">
-					<div class="containerData zoom box9">
-					  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img9_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img9_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img9_pre"; ?>
-						    	</p>
-						    </div>
-					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
-					    		<strong><ins>Activación</ins></strong><br>
-					    		<?php echo "$img9_name"; ?> <br>
-								<img class="iconImageDesple" src="img/icons/people-icon.png">
-								<?php echo "$img9_peo"; ?> Personas <br>
-								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-								<?php echo "$img9_reg"; ?> Registros <br>
-								<img class="iconImageDesple" src="img/icons/premios-icon.png">
-								<?php echo "$img9_pre"; ?> Premios<br>
-					    	</p>
-					    </div>
-					  </div>
+					<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
+					<div class="w3-row" id="myGrid">
+						<div class="w3-third" style="width:  50%;">
+										<div class="containerData zoom box9">
+										  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
+											    <div id="alpha">
+											    	<p>
+											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+														<?php echo "$img9_peo"; ?> 
+														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+														<?php echo "$img9_reg"; ?>
+														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+														<?php echo "$img9_pre"; ?>
+											    	</p>
+											    </div>
+										  	<div class="overlay">
+										    <div class="texto">
+										    	<p>
+										    		<strong><ins>Activación</ins></strong><br>
+										    		<?php echo "$img9_name"; ?> <br>
+													<img class="iconImageDesple" src="img/icons/people-icon.png">
+													<?php echo "$img9_peo"; ?> Personas <br>
+													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+													<?php echo "$img9_reg"; ?> Registros <br>
+													<img class="iconImageDesple" src="img/icons/premios-icon.png">
+													<?php echo "$img9_pre"; ?> Premios<br>
+										    	</p>
+										    </div>
+										  </div>
+										</div>
+						</div>
+						<div class="w3-third" style="width:  50%;">
+					<!-- 3.2.2 imagen estatica-->
+										<div class="containerData zoom box10">
+										  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
+											    <div id="alpha">
+											    	<p>
+											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+														<?php echo "$img10_peo"; ?> 
+														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+														<?php echo "$img10_reg"; ?>
+														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+														<?php echo "$img10_pre"; ?>
+											    	</p>
+											    </div>
+										  	<div class="overlay">
+										    <div class="texto">
+										    	<p>
+										    		<strong><ins>Activación</ins></strong><br>
+										    		<?php echo "$img10_name"; ?> <br>
+													<img class="iconImageDesple" src="img/icons/people-icon.png">
+													<?php echo "$img10_peo"; ?> Personas <br>
+													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+													<?php echo "$img10_reg"; ?> Registros <br>
+													<img class="iconImageDesple" src="img/icons/premios-icon.png">
+													<?php echo "$img10_pre"; ?> Premios<br>
+										    	</p>
+										    </div>
+										  </div>
+										</div>
+						</div>
 					</div>
-	</div>
-<div class="w3-third gale-legth">
-<!-- 3.2.2 imagen estatica-->
-					<div class="containerData zoom box10">
-					  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img10_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img10_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img10_pre"; ?>
-						    	</p>
-						    </div>
-					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
-					    		<strong><ins>Activación</ins></strong><br>
-					    		<?php echo "$img10_name"; ?> <br>
-								<img class="iconImageDesple" src="img/icons/people-icon.png">
-								<?php echo "$img10_peo"; ?> Personas <br>
-								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-								<?php echo "$img10_reg"; ?> Registros <br>
-								<img class="iconImageDesple" src="img/icons/premios-icon.png">
-								<?php echo "$img10_pre"; ?> Premios<br>
-					    	</p>
-					    </div>
-					  </div>
-					</div>
-	</div>
-</div>
 <!-- 3.3 imagen estatica-->
-					<div class="containerData zoom box11">
+					<div class="containerData zoom box11" style="width:  350px;">
 					  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
-						    <div id="alpha">
+						    <div id="alpha" style="width:  350px;">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
 									<?php echo "$img11_peo"; ?> 
@@ -803,22 +748,54 @@
 					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
 				</div>
 				<div id="imagen" class="portada">
+					<div class="slideshow-container" style="padding-top:  10px;">
+
+						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+						  Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
+						</div>
+
+						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+				</div>
+				</div>
+				
+				<!--
+				<div id="imagen" class="portada">
 					<p class="elementoMmensaje menuTxtFormat zoom">
 						Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 					</p>
 				</div>
+				-->
 			</div>
+
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+
 		</div>
 
-		<div id="cuentas" class="container-fluid">
-			<div>
-				<h2 class="tittleDiv primaryColor">CUENTAS</h2>
-				<div>
-						<img class="clientesLogos" src="img/logos1.jpg">
-						<img class="clientesLogos" src="img/logos1.jpg">
-				</div>
-			</div>
+		<!--GALERIA PARA LAS IMAGENES. -->
+
+		<div id="cuentas" class="formatEmprContainer">
+			<h2 class="tittleDiv primaryColor">CUENTAS</h2>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/1.png" alt="foto1"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/2.png" alt="foto2"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/3.png" alt="foto3"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/4.png" alt="foto4"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/5.png" alt="foto5"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/6.png" alt="foto6"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/7.png" alt="foto7"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/8.png" alt="foto8"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/9.png" alt="foto9"></div>
+			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/10.png" alt="foto10"></div>
 		</div>
+
+
 					<!--   	MENSAJE IMPORTANTE			 -->
 		<div id="mensaje" class="container-fluid">
 			<div class="footerMje">
@@ -841,9 +818,9 @@
 						<span class="marca secondColor">
 							<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
 							<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom"></i><br> no esta en como se dice, sino en como se hace!<br>
-							#TuPublicidadEnBuenas
-							<i class="em em-open_hands zoom"></i>
+							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no esta en como se dice, sino en como se hace!<br>
+							<strong>#TuPublicidadEnBuenas</strong>
+							<i class="em em-open_hands zoom iconsTextMje1"></i>
 						</span>
 					</p>
 				</div>
@@ -855,23 +832,23 @@
 
 		<div id="contacto" class="container-fluid">
 			<div class=" w3-cell-row contenedorForm">
-				<div class="w3-container w3-cell">
-				  	<h3 class="tittleDiv" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
-				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php">
+				<div class="w3-container w3-cell" style="padding-left: 60px;">
+				  	<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
+				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php" method="post">
 					  	<div class="form-group">
-						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">Nombre:</label>
+						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
 						    <div class="col-sm-6">
-					        	<input type="text" class="form-control" id="nom" placeholder="Escriba su nombre" name="name" required="Please">
+					        	<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please">
 					     	</div>
 					    </div>
 					    <div class="form-group">
-					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">Email:</label>
+					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">*Email:</label>
 					      	<div class="col-sm-6">
-					        	<input type="email" class="form-control" id="email" placeholder="Escriba su email" name="email" required="Please">
+					        	<input type="email" class="form-control" id="correo" placeholder="Escriba su email" name="correo" required="Please">
 					      	</div>
 					    </div>
 					    <div class="form-group">
-					      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">Teléfono:</label>
+					      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">*Teléfono:</label>
 					      	<div class="col-sm-6">          
 					        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="tel" required="Please">
 					      	</div>
@@ -879,20 +856,69 @@
 					    <div class="form-group">
 					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
 					      	<div class="col-sm-6">  
-					      		<textarea class=" form-control" cols="25" rows="5" name="text" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
+					      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
+					      		<p><cite class="">* Campo obligatorio</cite></p>
 					      	</div>
+
 					    </div>
 					    <div class="form-group">        
 					    	<div class="col-sm-offset-2 col-sm-6">
-					        	<input type="submit" class="btn btn-default"></input>
+					        	<input id="btnSend" type="submit" class="btn btn-default" onclick="message();"></input>
 					      	</div>
 					    </div>
 				  	</form>
 				</div>
+				
+					<!-- The Modal -->
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <div class="modal-header">
+				    	<span class="close">&times;</span>
+				      	<h2>Aviso de Provacidad</h2>
+				    </div>
+				    <div class="modal-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							  <P>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							  </P>
+					</div>
+
+
+				    <div class="modal-footer">
+				      <span class="close2">CERRAR</span>
+				      <!--  CODE -->
+				    </div>
+				  </div>
+				</div>
 
 				<div class="vl w3-containerw3-cell"></div>
 				<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
-					<h3 class="tittleDiv"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
+					<h3 class="tittleDivForm"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
 					<div style="color:  #FFFFFF;" class="infoFormat">
 						<p>Cerrada Noche Buena 15, <br>
 						Col. Potreros, Deleg. Tlalpan <br>
@@ -918,7 +944,8 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.7.3</h3>
+				<br><h3>VERSION DEMO 1.7.2 BUILD 27.4.18</h3>
+				<button id="myBtn" onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
 	</FOOTER>
@@ -934,5 +961,78 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
   });
 });
 </script>
-</BODY>
+	<script>
+		$("#submenu").hide();
+		var flag = 0;
+		$("#menu").click(function(){
+			flag = (flag + 1)%2;
+			
+			if (flag==1) {
+				$("#submenu").show(1000);
+				$(".txt-menu").text("X CERRAR");
+			}else {
+				$("#submenu").hide(1000);
+				$(".txt-menu").text("☰ MENU");
+			}
+		});
+	</script>
+	<script>
+		function message() {
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			var span2 = document.getElementsByClassName("close2")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+
+			}
+
+			span2.onclick = function() {
+			    modal.style.display = "none";
+			    
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			// body...
+		}
+	}
+	</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
 </HTML>
