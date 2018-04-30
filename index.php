@@ -163,11 +163,17 @@
 </head>
 <body id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="header">
+		
+			<a href="#homeBranding" title="To Top">
+				<button id="myBtnUp" title="Go to top">
+				    ▲</button>
+				 </a>
+		
 		<ul id="contenido">
 			<li>
-				<div class="logo contenido">
+				<div class="logo contenido animatedParent">
 					<a href="index.php" title="inicio">
-						<img class="iconHome animation" src="img/homebranding-logo.png">
+						<img class="iconHome animation animated pulse" src="img/homebranding-logo.png">
 					</a>
 				</div>
 			</li>
@@ -260,7 +266,7 @@
 	?>
 
 	<SECTION id="section">
-			<div class="animatedParent">
+			<div id="exitos" class="animatedParent">
 		  		<h2 class="secondColor alingDer tittleDiv animated fadeInRight">CASOS DE ÉXITO</h2>
 			</div>
 			<div class="w3-row" id="myGrid">
@@ -296,7 +302,7 @@
 					</div>
 <!--1.2 imagen estatica-->
 					<div class="containerData zoom box2">
-					  <img class="imagenAjustada img_container" src="img/photos/1.2.JPG" alt="foto1">
+						<img class="imagenAjustada img_container" src="img/photos/1.2.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -504,222 +510,247 @@
 					<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
 					<div class="w3-row" id="myGrid">
 						<div class="w3-third" style="width:  50%;">
-										<div class="containerData zoom box9">
-										  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
-											    <div id="alpha">
-											    	<p>
-											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-														<?php echo "$img9_peo"; ?> 
-														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-														<?php echo "$img9_reg"; ?>
-														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-														<?php echo "$img9_pre"; ?>
-											    	</p>
-											    </div>
-										  	<div class="overlay">
-										    <div class="texto">
-										    	<p>
-										    		<strong><ins>Activación</ins></strong><br>
-										    		<?php echo "$img9_name"; ?> <br>
-													<img class="iconImageDesple" src="img/icons/people-icon.png">
-													<?php echo "$img9_peo"; ?> Personas <br>
-													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-													<?php echo "$img9_reg"; ?> Registros <br>
-													<img class="iconImageDesple" src="img/icons/premios-icon.png">
-													<?php echo "$img9_pre"; ?> Premios<br>
-										    	</p>
-										    </div>
-										  </div>
-										</div>
+							<div class="containerData zoom box9">
+							  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
+							    <div id="alpha">
+							    	<p>
+							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+										<?php echo "$img9_peo"; ?> 
+										<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+										<?php echo "$img9_reg"; ?>
+										<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+										<?php echo "$img9_pre"; ?>
+							    	</p>
+							    </div>
+							  	<div class="overlay">
+							    	<div class="texto">
+								    	<p>
+								    		<strong><ins>Activación</ins></strong><br>
+								    		<?php echo "$img9_name"; ?> <br>
+											<img class="iconImageDesple" src="img/icons/people-icon.png">
+											<?php echo "$img9_peo"; ?> Personas <br>
+											<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+											<?php echo "$img9_reg"; ?> Registros <br>
+											<img class="iconImageDesple" src="img/icons/premios-icon.png">
+											<?php echo "$img9_pre"; ?> Premios<br>
+								    	</p>
+							    	</div>
+							 	</div>
+							</div>
 						</div>
 						<div class="w3-third" style="width:  50%;">
-					<!-- 3.2.2 imagen estatica-->
-										<div class="containerData zoom box10">
-										  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
-											    <div id="alpha">
-											    	<p>
-											    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-														<?php echo "$img10_peo"; ?> 
-														<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-														<?php echo "$img10_reg"; ?>
-														<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-														<?php echo "$img10_pre"; ?>
-											    	</p>
-											    </div>
-										  	<div class="overlay">
-										    <div class="texto">
-										    	<p>
-										    		<strong><ins>Activación</ins></strong><br>
-										    		<?php echo "$img10_name"; ?> <br>
-													<img class="iconImageDesple" src="img/icons/people-icon.png">
-													<?php echo "$img10_peo"; ?> Personas <br>
-													<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-													<?php echo "$img10_reg"; ?> Registros <br>
-													<img class="iconImageDesple" src="img/icons/premios-icon.png">
-													<?php echo "$img10_pre"; ?> Premios<br>
-										    	</p>
-										    </div>
-										  </div>
-										</div>
+						<!-- 3.2.2 imagen estatica-->
+							<div class="containerData zoom box10">
+							  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
+							    <div id="alpha">
+							    	<p>
+							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+										<?php echo "$img10_peo"; ?> 
+										<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+										<?php echo "$img10_reg"; ?>
+										<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+										<?php echo "$img10_pre"; ?>
+							    	</p>
+							    </div>
+							  	<div class="overlay">
+								    <div class="texto">
+								    	<p>
+								    		<strong><ins>Activación</ins></strong><br>
+								    		<?php echo "$img10_name"; ?> <br>
+											<img class="iconImageDesple" src="img/icons/people-icon.png">
+											<?php echo "$img10_peo"; ?> Personas <br>
+											<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+											<?php echo "$img10_reg"; ?> Registros <br>
+											<img class="iconImageDesple" src="img/icons/premios-icon.png">
+											<?php echo "$img10_pre"; ?> Premios<br>
+								    	</p>
+								  	</div>
+								</div>
+							</div>
 						</div>
-					</div>
 <!-- 3.3 imagen estatica-->
-					<div class="containerData zoom box11" style="width:  350px;">
-					  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
-						    <div id="alpha" style="width:  350px;">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img11_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img11_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img11_pre"; ?>
-						    	</p>
-						    </div>
-					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
-					    		<strong><ins>Activación</ins></strong><br>
-					    		<?php echo "$img11_name"; ?> <br>
-								<img class="iconImageDesple" src="img/icons/people-icon.png">
-								<?php echo "$img11_peo"; ?> Personas <br>
-								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-								<?php echo "$img11_reg"; ?> Registros <br>
-								<img class="iconImageDesple" src="img/icons/premios-icon.png">
-								<?php echo "$img11_pre"; ?> Premios<br>
-					    	</p>
-					    </div>
-					  </div>
+						<div class="containerData zoom box11" style="width:  350px;">
+						  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
+							    <div id="alpha" style="width:  350px;">
+							    	<p>
+							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+										<?php echo "$img11_peo"; ?> 
+										<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+										<?php echo "$img11_reg"; ?>
+										<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+										<?php echo "$img11_pre"; ?>
+							    	</p>
+							    </div>
+						  	<div class="overlay">
+							    <div class="texto">
+							    	<p>
+							    		<strong><ins>Activación</ins></strong><br>
+							    		<?php echo "$img11_name"; ?> <br>
+										<img class="iconImageDesple" src="img/icons/people-icon.png">
+										<?php echo "$img11_peo"; ?> Personas <br>
+										<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+										<?php echo "$img11_reg"; ?> Registros <br>
+										<img class="iconImageDesple" src="img/icons/premios-icon.png">
+										<?php echo "$img11_pre"; ?> Premios<br>
+							    	</p>
+							    </div>
+						  	</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
 		<div id="servicios" class="container-fluid" style="padding-bottom: 110px;">
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
 					<div class='animatedParent'>
 						<h2 class='primaryColor tittleDiv animated fadeInLeft'>SERVICIOS</h2>
 					</div>
-
+	<!-- 	Imagenes de servicios -->
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInLeft" src="img\hm.png" alt="Entregando Flayer">
-					    <h3 class="titleHidden">SALMPLING</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>SALMPLING</h3>
-					    		Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.
-					    	</p>
-					    </div>
+						<div class="animated bounceInLeft">
+							<img class="imgOver iconService" src="img\hm.png" alt="Entregando Flayer">
+						    <h3 class="titleHidden">SALMPLING</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>SALMPLING</h3>
+						    		Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInDown" src="img/flecha.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">SIGN HUMAN</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>SIGN HUMAN</h3>
-					    		Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.
-					    	</p>
-					    </div>
+						<div class=" animated bounceInDown">
+							<img class="imgOver iconService" src="img/flecha.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">SIGN HUMAN</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>SIGN HUMAN</h3>
+						    		Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInRight" src="img/solo.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">PUBLIANDANTE</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>PUBLIANDANTE</h3>
-					    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
-					    	</p>
-					    </div>
+						<div class="animated bounceInRight">
+							<img class="imgOver iconService" src="img/solo.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">PUBLIANDANTE</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>PUBLIANDANTE</h3>
+						    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceIn bounceInLeft" src="img/pantalla.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">PUBLIPANTALLA</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>PUBLIPANTALLA</h3>
-					    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
-					    	</p>
-					    </div>
+						<div class="animated bounceInLeft">
+							
+							<img class="imgOver iconService" src="img/pantalla.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">PUBLIPANTALLA</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>PUBLIPANTALLA</h3>
+						    		Promotor portando un mini bilboard con publicidad frente y vuelta, volanteando en zonas de gran afluencia, cercanos al punto de venta, cruceros, etc.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceIn" src="img/par.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">CROSS WALKER</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>CROSS WALKER</h3>
-					    		Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.
-					    	</p>
-					    </div>
+						<div class="animated bounceIn">
+							<img class="imgOver iconService" src="img/par.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">CROSS WALKER</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>CROSS WALKER</h3>
+						    		Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInRight" src="img/chicas.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">CROSS BOARD STREET</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>CROSS BOARD STREET</h3>
-					    		Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.
-					    	</p>
-					    </div>
+						<div class="animated bounceInRight">
+							<img class="imgOver iconService" src="img/chicas.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">CROSS BOARD STREET</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>CROSS BOARD STREET</h3>
+						    		Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceIn bounceInLeft" src="img/par2.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">ROLL UP</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>ROLL UP</h3>
-					    		Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.
-					    	</p>
-					    </div>
+						<div class="animated bounceInLeft">
+							<img class="imgOver iconService" src="img/par2.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">ROLL UP</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>ROLL UP</h3>
+						    		Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceIn" src="img/bici.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">BICI VALLA</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>BICI VALLA</h3>
-					    		Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.
-					    	</p>
-					    </div>
+						<div class="animated bounceIn">
+							<img class="imgOver iconService" src="img/bici.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">BICI VALLA</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>BICI VALLA</h3>
+						    		Este servicio se caracteriza por tener la flexibilidad de recorrer y distribuir publicidad en puntos de gran afluencia, genera impacto en autos y peatones.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInRight" src="img/camion.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">CARTELERA MOVIL</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>CARTELERA MOVIL</h3>
-					    		Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.
-					    	</p>
-					    </div>
+						<div class="animated bounceInRight">
+							<img class="imgOver iconService" src="img/camion.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">CARTELERA MOVIL</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>CARTELERA MOVIL</h3>
+						    		Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInLeft" src="img/anuncio.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">ESPECTACULARES</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>ESPECTACULARES</h3>
-					    		Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. 
-					    	</p>
-					    </div>
+						<div class="animated bounceInLeft">
+							<img class="imgOver iconService" src="img/anuncio.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">ESPECTACULARES</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>ESPECTACULARES</h3>
+						    		Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. 
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInUp" src="img/bus.png" alt="Banner de flecha">
-					    <h3 class="titleHidden">PUBLICIDAD EN RUTA</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>PUBLICIDAD EN RUTA</h3>
-					    		Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.
-					    	</p>
-					    </div>
+						<div class="animated bounceInUp">
+							<img class="imgOver iconService" src="img/bus.png" alt="Banner de flecha">
+						    <h3 class="titleHidden">PUBLICIDAD EN RUTA</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>PUBLICIDAD EN RUTA</h3>
+						    		Publicidad en movimiento, generando a diario grandes impactos ya que contamos con las rutas mas importantes, localizadas dentro de los cruces mas significativos de la CDMX.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 					<div class="contenidoService contHijoServ div-imgOver animatedParent">
-						<img class="imgOver iconService animated bounceInRight" src="img/globos.png" alt="Foto4">
-					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
-					    <div class="text">
-					    	<p>
-					    		<h3>MATERIAL PUBLICITARIO</h3>
-					    		Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.
-					    	</p>
-					    </div>
+						<div class="animated bounceInRight">
+							<img class="imgOver iconService" src="img/globos.png" alt="Foto4">
+						    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
+						    <div class="text">
+						    	<p>
+						    		<h3>MATERIAL PUBLICITARIO</h3>
+						    		Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.
+						    	</p>
+						    </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -753,9 +784,6 @@
 		</div>
 
 		<!--GALERIA PARA LAS IMAGENES. -->
-		
-
-
 		<div id="cuentas" class="formatEmprContainer">
 			<div class='animatedParent'>
 				<h2 class='primaryColor tittleDiv animated fadeInLeft'>CUENTAS</h2>
@@ -802,7 +830,7 @@
 					</p>
 				</div>
 				<div class="animatedParent">
-					<img class="publishFondo animated shakeUp" src="img/handPublis.png" alt="ManosConAnuncios">
+					<img class="publishFondo animated fadeInUpShort" src="img/handPublis.png" alt="ManosConAnuncios">
 				</div>
 			</div>
 		</div>
@@ -848,49 +876,49 @@
 				
 					<!-- The Modal -->
 				<!-- The Modal -->
-				<div id="myModal" class="modal">
+				<div id="myModal" class="modal" style=" z-index: 99;">
 
 				  <!-- Modal content -->
-				  <div class="modal-content">
-				    <div class="modal-header">
-				    	<span class="close">&times;</span>
-				      	<h2>Aviso de Provacidad</h2>
-				    </div>
-				    <div class="modal-body">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+					<div class="modal-content">
+				    	<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>Aviso de Provacidad</h2>
+				    	</div>
+				    	<div class="modal-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
 							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
 							<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							  <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-							  <P>
+							<h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							<P>
 							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							  </P>
-					</div>
+							</P>
+						</div>
 
 
-				    <div class="modal-footer">
-				      <span class="close2">CERRAR</span>
-				      <!--  CODE -->
-				    </div>
-				  </div>
+				    	<div class="modal-footer">
+				      		<span class="close2">CERRAR</span>
+				      		<!--  CODE -->
+				    	</div>
+				  	</div>
 				</div>
 
 				<div class="vl w3-containerw3-cell"></div>
@@ -914,9 +942,6 @@
 	<FOOTER>
 		<div class="pie">
 			<samp>
-				<a href="#homeBranding" title="To Top">
-				    ▲
-				 </a>
 				 <br>
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
@@ -990,6 +1015,24 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 		}
 	}
 	</script>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtnUp").style.display = "block";
+		    } else {
+		        document.getElementById("myBtnUp").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+</script>
 	<script src='js/css3-animate-it.js'></script>
 </body>
 </HTML>
