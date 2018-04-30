@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <HTML lang="es">
-<HEAD>
+<head>
 	<TITLE>Home Branding - Inicio</TITLE>
 	<!--  INICIO METAS 	-->
 	<meta charset="utf-8">
@@ -8,20 +8,24 @@
 	
 	<!--   INICIO ESTILOS		-->
 		<!-- FORMS -->
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- LOCAL SYLES  -->
-		  <link rel="stylesheet" type="text/css" href="styles/style.css">
-		  <link rel="stylesheet" type="text/css" href="styles/w3.css">
-		  <link rel="stylesheet" type="text/css" href="styles/cssF.css">
-		  <link rel="stylesheet" type="text/css" href="styles/effects.css">
-		  <link rel="stylesheet" type="text/css" href="styles/cssS.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/w3.css">
+		<link rel="stylesheet" type="text/css" href="styles/cssF.css">
+		<link rel="stylesheet" type="text/css" href="styles/effects.css">
+		<link rel="stylesheet" type="text/css" href="styles/cssS.css">
+		<!-- EFECTOS Y ANIMACIONES-->
+		<link href="css/animations-it.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+
 		
 	<!--    ESTILOS DE PRUEBA	-->
-		<style type="text/css">
+	<style type="text/css">
 		/*NO REMOVE*/
         #imagen{
 	        background-image: url('img/banQuienes.jpg');
@@ -59,132 +63,112 @@
             100%{background-position:-940px 0px}
         }
         /*NO REMOVE*/
-		</style>
+	</style>
 
 
 		<!--Colocamos la barra de menu estatica-->
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+	<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
 
 
-	.clienteslogos{
-		padding-bottom: 10%;
-		padding-top: 10%;
-		margin-right: 10%;
-		margin-left: 30%;
-		width: 35%;
-		height: 35%;
-	}
-	/* The Modal (background) */
-	.modal {
-	    display: none; /* Hidden by default */
-	    position: fixed; /* Stay in place */
-	    z-index: 1; /* Sit on top */
-	    left: 0;
-	    top: 0;
-	    width: 100%; /* Full width */
-	    height: 100%; /* Full height */
-	    overflow: auto; /* Enable scroll if needed */
-	    background-color: rgb(0,0,0); /* Fallback color */
-	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	    -webkit-animation-name: fadeIn; /* Fade in the background */
-	    -webkit-animation-duration: 0.4s;
-	    animation-name: fadeIn;
-	    animation-duration: 0.4s
-	}
-
-	/* Modal Content */
-	.modal-content {
-	    position: fixed;
-	    bottom: 0;
-	    background-color: #fefefe;
-	    width: 100%;
-	    -webkit-animation-name: slideIn;
-	    -webkit-animation-duration: 0.4s;
-	    animation-name: slideIn;
-	    animation-duration: 0.4s
-	}
-
-	/* The Close Button */
-	.close  .close2{
-	    color: var(--second-txt-color);
-	    float: right;
-	    font-size: 28px;
-	    font-weight: bold;
-	}
-
-	.close:hover, .close2:hover,
-	.close:focus, 	.close2:focus {
-	    color: #000;
-	    text-decoration: none;
-	    cursor: pointer;
-	}
-
-	.modal-header {
-	    padding: 2px 16px;
-	    background-color: var(--principal-txt-color);
-	    color: white;
-	}
-
-	.modal-body {padding: 2px 16px;}
-
-	.modal-footer {
-	    padding: 2px 16px;
-	    background-color: var(--principal-txt-color);
-	    color: white;
-	}
-
-	/* Add Animation */
-	@-webkit-keyframes slideIn {
-	    from {bottom: -300px; opacity: 0} 
-	    to {bottom: 0; opacity: 1}
-	}
-
-	@keyframes slideIn {
-	    from {bottom: -300px; opacity: 0}
-	    to {bottom: 0; opacity: 1}
-	}
-
-	@-webkit-keyframes fadeIn {
-	    from {opacity: 0} 
-	    to {opacity: 1}
-	}
-
-	@keyframes fadeIn {
-	    from {opacity: 0} 
-	    to {opacity: 1}
-	}
-</style>
-
-<style>
-	
-		/* Fading animation */
-		.fade {
-		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 1.5s;
-		  animation-name: fade;
-		  animation-duration: 1.5s;
+		.clienteslogos{
+			padding-bottom: 10%;
+			padding-top: 10%;
+			margin-right: 10%;
+			margin-left: 30%;
+			width: 35%;
+			height: 35%;
+		}
+		/* The Modal (background) */
+		.modal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		    -webkit-animation-name: fadeIn; /* Fade in the background */
+		    -webkit-animation-duration: 0.4s;
+		    animation-name: fadeIn;
+		    animation-duration: 0.4s
 		}
 
-		@-webkit-keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
+		/* Modal Content */
+		.modal-content {
+		    position: fixed;
+		    bottom: 0;
+		    background-color: #fefefe;
+		    width: 100%;
+		    -webkit-animation-name: slideIn;
+		    -webkit-animation-duration: 0.4s;
+		    animation-name: slideIn;
+		    animation-duration: 0.4s
 		}
 
-		@keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
+		/* The Close Button */
+		.close  .close2{
+		    color: var(--second-txt-color);
+		    float: right;
+		    font-size: 28px;
+		    font-weight: bold;
 		}
-</style>
 
+		.close:hover, .close2:hover,
+		.close:focus, 	.close2:focus {
+		    color: #000;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
 
-</HEAD>
+		.modal-header {
+		    padding: 2px 16px;
+		    background-color: var(--principal-txt-color);
+		    color: white;
+		}
+
+		.modal-body {padding: 2px 16px;}
+
+		.modal-footer {
+		    padding: 2px 16px;
+		    background-color: var(--principal-txt-color);
+		    color: white;
+		}
+
+		/* Add Animation */
+		@-webkit-keyframes slideIn {
+		    from {bottom: -300px; opacity: 0} 
+		    to {bottom: 0; opacity: 1}
+		}
+
+		@keyframes slideIn {
+		    from {bottom: -300px; opacity: 0}
+		    to {bottom: 0; opacity: 1}
+		}
+
+		@-webkit-keyframes fadeIn {
+		    from {opacity: 0} 
+		    to {opacity: 1}
+		}
+
+		@keyframes fadeIn {
+		    from {opacity: 0} 
+		    to {opacity: 1}
+		}
+	</style>
+
+</head>
 <body id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="header">
 		<ul id="contenido">
 			<li>
 				<div class="logo contenido">
-					<img class="iconHome animation" src="img/homebranding-logo.png">
+					<a href="index.php" title="inicio">
+						<img class="iconHome animation" src="img/homebranding-logo.png">
+					</a>
 				</div>
 			</li>
 			<li style="float:right">
@@ -196,9 +180,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 			
 				<div class="vl2"></div>
 			</li>
-
-
-
 				<ul id="menu" class="navegacion">
 					<li><a class="txt-menu" href="#" onclick="return false" ;="" style="font-size:  25px;">
 						<strong class="primaryColor">☰</strong><strong>MENU</strong>
@@ -279,8 +260,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	?>
 
 	<SECTION id="section">
-		<div id="exitos" class="container-fluid">
-	  		<h2 class="secondColor alingDer tittleDiv">CASOS DE ÉXITO</h2>
+			<div class="animatedParent">
+		  		<h2 class="secondColor alingDer tittleDiv animated fadeInRight">CASOS DE ÉXITO</h2>
+			</div>
 			<div class="w3-row" id="myGrid">
 <!--  	PRIMER PANEL IZQ IMAGENES 123  -->
 				<div class="w3-third gale-legth">
@@ -612,14 +594,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				</div>
 			</div>
 		</div>
-				
 		<div id="servicios" class="container-fluid" style="padding-bottom: 110px;">
 			<div class="contenedorServices" style="margin-right: -60px;">
 				<div class="contenPadreServ">
-					<h2 class="primaryColor tittleDiv">SERVICIOS</h2>
+					<div class='animatedParent'>
+						<h2 class='primaryColor tittleDiv animated fadeInLeft'>SERVICIOS</h2>
+					</div>
 
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img\hm.png" alt="Entregando Flayer">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInLeft" src="img\hm.png" alt="Entregando Flayer">
 					    <h3 class="titleHidden">SALMPLING</h3>
 					    <div class="text">
 					    	<p>
@@ -628,8 +611,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/flecha.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInDown" src="img/flecha.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">SIGN HUMAN</h3>
 					    <div class="text">
 					    	<p>
@@ -638,8 +621,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/solo.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInRight" src="img/solo.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">PUBLIANDANTE</h3>
 					    <div class="text">
 					    	<p>
@@ -648,8 +631,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/pantalla.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceIn bounceInLeft" src="img/pantalla.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">PUBLIPANTALLA</h3>
 					    <div class="text">
 					    	<p>
@@ -658,8 +641,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/par.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceIn" src="img/par.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">CROSS WALKER</h3>
 					    <div class="text">
 					    	<p>
@@ -668,8 +651,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/chicas.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInRight" src="img/chicas.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">CROSS BOARD STREET</h3>
 					    <div class="text">
 					    	<p>
@@ -678,8 +661,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/par2.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceIn bounceInLeft" src="img/par2.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">ROLL UP</h3>
 					    <div class="text">
 					    	<p>
@@ -688,8 +671,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/bici.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceIn" src="img/bici.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">BICI VALLA</h3>
 					    <div class="text">
 					    	<p>
@@ -698,8 +681,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/camion.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInRight" src="img/camion.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">CARTELERA MOVIL</h3>
 					    <div class="text">
 					    	<p>
@@ -708,8 +691,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/anuncio.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInLeft" src="img/anuncio.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">ESPECTACULARES</h3>
 					    <div class="text">
 					    	<p>
@@ -718,8 +701,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/bus.png" alt="Banner de flecha">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInUp" src="img/bus.png" alt="Banner de flecha">
 					    <h3 class="titleHidden">PUBLICIDAD EN RUTA</h3>
 					    <div class="text">
 					    	<p>
@@ -728,8 +711,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					    	</p>
 					    </div>
 					</div>
-					<div class="contenidoService contHijoServ div-imgOver">
-						<img class="imgOver iconService" src="img/globos.png" alt="Foto4">
+					<div class="contenidoService contHijoServ div-imgOver animatedParent">
+						<img class="imgOver iconService animated bounceInRight" src="img/globos.png" alt="Foto4">
 					    <h3 class="titleHidden">MATERIAL PUBLICITARIO</h3>
 					    <div class="text">
 					    	<p>
@@ -744,17 +727,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 		<div id="nosotros" class="container-fluid">
 			<div class="contenedorGaleria">
-				<div>
-					<h2 class="secondColor alingDer tittleDiv">QUIENES SOMOS</h2>
+				<div class="animatedParent">
+		  			<h2 class="secondColor alingDer tittleDiv animated fadeInRight">QUIENES SOMOS</h2>
 				</div>
-				<div id="imagen" class="portada">
-					<div class="slideshow-container" style="padding-top:  10px;">
-
-						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+				<div id="imagen" class="slider portada">
+					<ul class="slideshow-container" style="padding-top:  10px;">
+						<li>
+						  <div class=" zoom elementoMmensaje menuTxtFormat">
 						  Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 						</div>
-
-						<div class=" mySlides fade zoom elementoMmensaje menuTxtFormat">
+						</li>
+						<li>
+						  <div class=" zoom elementoMmensaje menuTxtFormat">
 						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -762,27 +746,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
 						  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
+						</li>
+					</ul>
 				</div>
-				</div>
-				
-				<!--
-				<div id="imagen" class="portada">
-					<p class="elementoMmensaje menuTxtFormat zoom">
-						Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
-					</p>
-				</div>
-				-->
 			</div>
-
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-
 		</div>
 
 		<!--GALERIA PARA LAS IMAGENES. -->
+		
+
 
 		<div id="cuentas" class="formatEmprContainer">
-			<h2 class="tittleDiv primaryColor">CUENTAS</h2>
+			<div class='animatedParent'>
+				<h2 class='primaryColor tittleDiv animated fadeInLeft'>CUENTAS</h2>
+			</div>
 			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/1.png" alt="foto1"></div>
 			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/2.png" alt="foto2"></div>
 			<div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/3.png" alt="foto3"></div>
@@ -800,8 +777,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 		<div id="mensaje" class="container-fluid">
 			<div class="footerMje">
 				<div class="contenedorMje" style="position: relative;">
-					<div class="iconLogoC">
-						<img class="logoCircle" src="img/homebranding-logo-circle.png" alt="Home Branding Logo" style=" padding-top: 20px;    padding-left:  5px;">
+					<div class="iconLogoC animatedParent">
+						<img class="logoCircle animated flip" src="img/homebranding-logo-circle.png" alt="Home Branding Logo" style=" padding-top: 20px;    padding-left:  5px;">
 					</div>
 					<div>
 						<h3 class="secondColor" style="right: -45px; padding-left:10px">Home Brandig</h3>
@@ -815,7 +792,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				<br><br><br><br>
 				<div class="elementoMensajeEmotivo menuTxtFormat mjeText1">
 					<p class="">
-						<span class="marca secondColor">
+						<span class="marca secondColor tuclase">
 							<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
 							<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no esta en como se dice, sino en como se hace!<br>
@@ -824,8 +801,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 						</span>
 					</p>
 				</div>
-				<div>
-					<img class="publishFondo" src="img/handPublis.png" alt="ManosConAnuncios">
+				<div class="animatedParent">
+					<img class="publishFondo animated shakeUp" src="img/handPublis.png" alt="ManosConAnuncios">
 				</div>
 			</div>
 		</div>
@@ -1013,26 +990,6 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 		}
 	}
 	</script>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
+	<script src='js/css3-animate-it.js'></script>
 </body>
 </HTML>

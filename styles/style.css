@@ -526,6 +526,7 @@
             margin-top: 50px;
             margin-left: 70%;
             opacity: 0.9;
+            z-index: 99;
         }
          .navegacion li {
             list-style-type: none;
@@ -576,4 +577,39 @@
                 height: auto;
                 margin: 10px;
                 border: 0px solid var(--econd-txt-color);  
+            }
+
+
+
+            /* SLIDER GENERAL DE MENSAJES */
+            .slider {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .slider ul {
+                display: flex;
+                padding: 0;
+                width: 200%;
+                
+                animation: cambio 15s infinite alternate linear;
+            }
+
+            .slider li {
+                width: 100%;
+                list-style: none;
+            }
+
+            .slider img {
+                width: 100%;
+            }
+
+            @keyframes cambio {
+                0% {margin-left: 0;}
+                50% {margin-left: 0;}
+                
+                55% {margin-left: -100%;}
+                100% {margin-left: -100%;}
+                
             }
