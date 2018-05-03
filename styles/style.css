@@ -663,13 +663,30 @@
 
             .contenedor404{
                 padding: 10%;
+                position: relative;
             }
 
             .contenedoresMjes404{
+                width: 100%;
+                height: 100%;
                 padding: 20px;
             }
 
             .borderAli404{
-                border-style: double double double double;
-                border-left: 6px snow salmon;
+             
             }
+
+        .backImg {
+            position: relative;
+            width: 100%;    
+            z-index: 1;
+        }
+
+        .frontImg {
+            background: coral;
+            position: absolute;
+            width: 52%;
+            left: 15%px;
+            top: 60px;
+            z-index: 2;
+        }
