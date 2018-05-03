@@ -40,7 +40,8 @@
       -o-transform: scale(0.5);
     }
     .div-imgOver .text {
-      font-family: 'Open Sans';
+      z-index: 99;
+      background: var(--whitte-color-solid);
       padding-top: 2px;
       display: block;
       text-align: center;
@@ -52,7 +53,7 @@
       -o-transition: all 500ms ease-in-out;
       opacity: 0;
       transition: transfom opacity 1.5s;
-      font-size: 16px;
+      font-size: 14px;
     }
     .div-imgOver:hover .text {
       transform: translate(0px, -90px);
@@ -85,3 +86,4 @@
     .div-imgOver:hover .titleHidden{
         visibility:hidden;
     }
+

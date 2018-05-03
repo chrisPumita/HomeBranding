@@ -15,71 +15,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- LOCAL SYLES  -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<link rel="stylesheet" type="text/css" href="styles/w3.css">
+		<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  -->
 		<link rel="stylesheet" type="text/css" href="styles/cssF.css">
 		<link rel="stylesheet" type="text/css" href="styles/effects.css">
 		<link rel="stylesheet" type="text/css" href="styles/cssS.css">
+		<link rel="stylesheet" type="text/css" href="styles/css.css">
 		<!-- EFECTOS Y ANIMACIONES-->
 		<link href="css/animations-it.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
 
-		
-	<!--    ESTILOS DE PRUEBA	-->
-	<style type="text/css">
-		/*NO REMOVE*/
-        #imagen{
-	        background-image: url('img/banQuienes.jpg');
-	        background-repeat: repeat;
-	        height:600px;
-	        width:100%;
-	        -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        #imagen{
-		    animation-name: mov-izq;
-		    animation-duration: 15s;
-		    animation-iteration-count: infinite;
-		    animation-timing-function: linear;
-		    animation-delay: 1s;
-	         
-	        -moz-animation-name: mov-izq;
-	        -moz-animation-duration: 15s;
-	        -moz-animation-iteration-count: infinite;
-	        -moz-animation-timing-function: linear;
-	        -moz-animation-delay: 1s; 
-	          
-	        -webkit-animation-name: mov-izq;
-	        -webkit-animation-duration: 15s;
-	        -webkit-animation-iteration-count: infinite;
-	        -webkit-animation-timing-function: linear;
-	        -webkit-animation-delay: 1s;
-        }
-	    @keyframes mov-izq{
-          100%{background-position:-940px 0px}
-        }
-        @-webkit-keyframes mov-izq{
-            100%{background-position:-940px 0px}
-        }
-        /*NO REMOVE*/
-	</style>
+		<link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
 
-
-		<!--Colocamos la barra de menu estatica-->
 	<style>
-	body {font-family: Arial, Helvetica, sans-serif;}
 
-
-		.clienteslogos{
-			padding-bottom: 10%;
-			padding-top: 10%;
-			margin-right: 10%;
-			margin-left: 30%;
-			width: 35%;
-			height: 35%;
-		}
-		/* The Modal (background) */
+/* The Modal (background) */
 		.modal {
 		    display: none; /* Hidden by default */
 		    position: fixed; /* Stay in place */
@@ -138,7 +87,9 @@
 		    color: white;
 		}
 
-		/* Add Animation */
+
+
+				/* Add Animation */
 		@-webkit-keyframes slideIn {
 		    from {bottom: -300px; opacity: 0} 
 		    to {bottom: 0; opacity: 1}
@@ -158,36 +109,23 @@
 		    from {opacity: 0} 
 		    to {opacity: 1}
 		}
+		
 	</style>
 
 </head>
-<body id="homeBranding" style="overflow-x: hidden" data-spy="scroll" data-target=".navbar" data-offset="60">
-	<header id="header">
-		
-			<a href="#homeBranding" title="To Top">
-				<button id="myBtnUp" title="Go to top">
-				    ▲</button>
-				 </a>
-		
-		<ul id="contenido">
-			<li>
-				<div class="logo contenido animatedParent">
+<body id="homeBranding" style="overflow-x:hidden; background-color: white;" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<header id="headertop">
+		<div id="" class="containerHeader">
+			<div class="contenedorLogo">
+				<div class="logo animatedParent">
 					<a href="index.php" title="inicio">
 						<img class="iconHome animation animated pulse" src="img/homebranding-logo.png">
 					</a>
 				</div>
-			</li>
-			<li style="float:right">
-				<div style="text-align:  center;">
-						<h3 class="secondColor alingDer tittleDiv">Siguenos!</h3>
-						<a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a>
-						<img class="redesIcons" src="img/icon-tw.png">
-					</div>
-			
-				<div class="vl2"></div>
-			</li>
+			</div>
+			<div class="contenedorMenu">
 				<ul id="menu" class="navegacion">
-					<li><a class="txt-menu" href="#" onclick="return false" ;="" style="font-size:  25px;">
+					<li><a class="txt-menu" href="#" onclick="return false" ;="" style="background:  white; font-size:  25px;">
 						<strong class="primaryColor">☰</strong><strong>MENU</strong>
 					</a>
 						<ul id="submenu" hidden="" style="display: none;">
@@ -199,123 +137,73 @@
 							<li class="submenu"><a href="#mensaje">HOME BRANDING</a></li>
 							<li class="submenu"><a href="#contacto">CONTACTO</a></li>
 						</ul>
-
 					</li>
 				</ul>
-		</ul>
+
+			</div>
+			<div class="contenedorSociales">
+				<h3>Siguenos!</h3>
+				<a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a>
+				<img class="redesIcons" src="img/icon-tw.png">
+			</div>
+		</div>
 	</header>
+			<a href="#homeBranding" title="To Top">
+				<button id="myBtnUp" title="Go to top">
+				    ▲</button>
+				 </a>
+
 	<!--  	 			SECCION DE CODIGO PHP PARA DATOS A MOSTRAR -->
-	<?php 
-	/*
-			Optimizacion de la informacion de las imagenes, con ayuda de php se imprimen solo los valores de cada imagen y si se desea cambiarlas, solamente se efita el valor.
-	 */
-			$img1_name = "BURGER KING";
-			$img1_peo = "4548";
-			$img1_reg = "342";
-			$img1_pre = "10";
-
-			$img2_name = "Domino`s Pizza";
-			$img2_peo = "3,500";
-			$img2_reg = "320";
-			$img2_pre = "93";
-
-			$img3_name = "Cerveceria Modelo";
-			$img3_peo = "1,500";
-			$img3_reg = "810";
-			$img3_pre = "32";
-
-			$img4_name = "Cerveceria Modelo";
-			$img4_peo = "1,500";
-			$img4_reg = "810";
-			$img4_pre = "32";
-
-			$img5_name = "Cerveceria Modelo";
-			$img5_peo = "1,500";
-			$img5_reg = "810";
-			$img5_pre = "32";
-
-			$img6_name = "Cerveceria Modelo";
-			$img6_peo = "1,500";
-			$img6_reg = "810";
-			$img6_pre = "32";
-
-			$img7_name = "Cerveceria Modelo";
-			$img7_peo = "1,500";
-			$img7_reg = "810";
-			$img7_pre = "32";
-
-			$img8_name = "Cerveceria Modelo";
-			$img8_peo = "1,500";
-			$img8_reg = "810";
-			$img8_pre = "32";
-
-			$img9_name = "Cerveceria Modelo";
-			$img9_peo = "1,500";
-			$img9_reg = "810";
-			$img9_pre = "32";
-
-			$img10_name = "Cerveceria Modelo";
-			$img10_peo = "1,500";
-			$img10_reg = "810";
-			$img10_pre = "32";
-
-			$img11_name = "Cerveceria Modelo";
-			$img11_peo = "1,500";
-			$img11_reg = "810";
-			$img11_pre = "32";
-	?>
+	<?php require 'php/data.php';?>
 
 	<SECTION id="section">
 			<div id="exitos" class="animatedParent">
 		  		<h2 class="secondColor alingDer tittleDiv animated fadeInRight">CASOS DE ÉXITO</h2>
 			</div>
-			<div class="w3-row" id="myGrid">
-<!--  	PRIMER PANEL IZQ IMAGENES 123  -->
-				<div class="w3-third gale-legth">
-<!--1.1 imagen estatica-->
-					<div class="containerData zoom box1">
-						<img class="imagenAjustada img_container" src="img/photos/1.1.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img1_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img1_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img1_pre"; ?>
-						    	</p>
-						    </div>
+			
+			<div class="contenedorGalery">
+				<div class="derGalery">
+<!--1.1 imagen estatica IMG 1-->
+					<div class="containerData box1" style="padding-left:  25%;">
+						<img class="imagenAjustada" src="img/photos/1.1.JPG" alt="foto1">
+				    	<div id="alpha">
+					    	<p>
+					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+								<?php echo "$img7_peo"; ?> 
+								<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+								<?php echo "$img7_reg"; ?>
+								<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+								<?php echo "$img7_pre"; ?>
+					    	</p>
+					    </div>
 						<div class="overlay">
-						    <div class="texto">
-						    	<p>
-						    		<strong><ins>Activación</ins></strong><br>
-						    		<?php echo "$img1_name"; ?> <br>
-									<img class="iconImageDesple" src="img/icons/people-icon.png">
-									<?php echo "$img1_peo"; ?> Personas <br>
-									<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-									<?php echo "$img1_reg"; ?> Registros <br>
-									<img class="iconImageDesple" src="img/icons/premios-icon.png">
-									<?php echo "$img1_pre"; ?> Premios<br>
-						    	</p>
-						    </div>
+					    	<p class="textoImgCOntenedor">
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img1_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img1_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img1_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img1_pre"; ?> Premios<br>
+					    	</p>
 						</div>
 					</div>
-<!--1.2 imagen estatica-->
-					<div class="containerData zoom box2">
-						<img class="imagenAjustada img_container" src="img/photos/1.2.JPG" alt="foto1">
-						    <div id="alpha">
+<!--1.2 imagen estatica  IMG 2-->
+					<div class="containerData box2" style="padding-left: 25%;">
+						<img class="imagenAjustada" src="img/photos/1.2.JPG" alt="foto1">
+					    	 <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img2_peo"; ?> 
+									<?php echo "$img7_peo"; ?> 
 									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img2_reg"; ?>
+									<?php echo "$img7_reg"; ?>
 									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img2_pre"; ?>
+									<?php echo "$img7_pre"; ?>
 						    	</p>
 						    </div>
 						<div class="overlay">
-					    <div class="texto">
-					    	<p>
+					    	<p class="textoImgCOntenedor">
 					    		<strong><ins>Activación</ins></strong><br>
 					    		<?php echo "$img2_name"; ?> <br>
 								<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -325,12 +213,11 @@
 								<img class="iconImageDesple" src="img/icons/premios-icon.png">
 								<?php echo "$img2_pre"; ?> Premios<br>
 					    	</p>
-					    </div>
 					  </div>
 					</div>
-<!-- 1.3 imagen estatica-->
-					<div class="containerData zoom box3">
-					  	<img class="imagenAjustada img_container" src="img/photos/1.3.JPG" alt="foto1">
+<!-- 1.3 imagen estatica IMG 3 -->
+					<div class="containerData box3">
+					  	<img class="imagenAjustada" src="img/photos/1.3.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -342,8 +229,8 @@
 						    	</p>
 						    </div>
 					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
+					    
+					    	<p class="textoImgCOntenedor">
 					    		<strong><ins>Activación</ins></strong><br>
 					    		<?php echo "$img3_name"; ?> <br>
 								<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -353,45 +240,42 @@
 								<img class="iconImageDesple" src="img/icons/premios-icon.png">
 								<?php echo "$img3_pre"; ?> Premios<br>
 					    	</p>
-					    </div>
 					  </div>
 					</div>
 				</div>
 
-
 <!--	SEGUNDO PANEL SE COMPONE DE 4 IMAGENES	IMG 4,5,6,7		-->
-
-				<div class="w3-third gale-center">
-				    <!--1.1 imagen estatica-->
-					<div class="containerData zoom box4">
-						<img class="imagenAjustada img_container" src="img/photos/2.1.JPG" alt="foto1">
-						    <div id="alpha">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img4_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img4_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img4_pre"; ?>
-						    	</p>
-						    </div>
+				<!-- IMAGENES DEL CENTRO -->
+<!-- 2.1 imagen estatica IMG 4 -->
+				<div class="cenGalery">
+					<div class="containerData box4">
+					<img class="imagenAjustada img_container" src="img/photos/2.1.JPG" alt="foto1">
+					    <div id="alpha">
+					    	<p>
+					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+								<?php echo "$img4_peo"; ?> 
+								<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+								<?php echo "$img4_reg"; ?>
+								<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+								<?php echo "$img4_pre"; ?>
+					    	</p>
+					    </div>
 						<div class="overlay">
-						    <div class="texto">
-						    	<p>
-						    		<strong><ins>Activación</ins></strong><br>
-						    		<?php echo "$img4_name"; ?> <br>
-									<img class="iconImageDesple" src="img/icons/people-icon.png">
-									<?php echo "$img4_peo"; ?> Personas <br>
-									<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-									<?php echo "$img4_reg"; ?> Registros <br>
-									<img class="iconImageDesple" src="img/icons/premios-icon.png">
-									<?php echo "$img4_pre"; ?> Premios<br>
-						    	</p>
-						    </div>
+					    	<p class="textoImgCOntenedor">
+					    		<strong><ins>Activación</ins></strong><br>
+					    		<?php echo "$img4_name"; ?> <br>
+								<img class="iconImageDesple" src="img/icons/people-icon.png">
+								<?php echo "$img4_peo"; ?> Personas <br>
+								<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+								<?php echo "$img4_reg"; ?> Registros <br>
+								<img class="iconImageDesple" src="img/icons/premios-icon.png">
+								<?php echo "$img4_pre"; ?> Premios<br>
+					    	</p>
 						</div>
 					</div>
-<!-- 2.2 imagen estatica-->
-					<div class="containerData zoom box5">
+
+<!-- 2.2 imagen estatica   IMG 5 -->
+					<div class="containerData box5">
 					  	<img class="imagenAjustada img_container" src="img/photos/2.2.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
@@ -404,8 +288,7 @@
 						    	</p>
 						    </div>
 					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
+					    	<p class="textoImgCOntenedor">
 					    		<strong><ins>Activación</ins></strong><br>
 					    		<?php echo "$img5_name"; ?> <br>
 								<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -415,12 +298,11 @@
 								<img class="iconImageDesple" src="img/icons/premios-icon.png">
 								<?php echo "$img5_pre"; ?> Premios<br>
 					    	</p>
-					    </div>
 					  </div>
 					</div>
-<!-- 2.3 imagen estatica-->
-					<div class="containerData zoom box5">
-					  	<img class="imagenAjustada img_container" src="img/photos/2.3.JPG" alt="foto1">
+<!-- 2.3 imagen estatica	IMG 6-->
+					<div class="containerData box6">
+					  	<img class="imagenAjustada img_container" src="img/photos/2.3.jpg" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -432,8 +314,8 @@
 						    	</p>
 						    </div>
 					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
+					    <div class="box6">
+					    	<p class="textoImgCOntenedor">
 					    		<strong><ins>Activación</ins></strong><br>
 					    		<?php echo "$img6_name"; ?> <br>
 								<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -446,8 +328,8 @@
 					    </div>
 					  </div>
 					</div>
-<!-- 2.4 imagen estatica-->
-					<div class="containerData zoom box7">
+<!-- 2.4 imagen estatica 	IMG 7	-->
+					<div class="containerData box7">
 					  	<img class="imagenAjustada img_container" src="img/photos/2.4.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
@@ -460,8 +342,8 @@
 						    	</p>
 						    </div>
 					  	<div class="overlay">
-					    <div class="texto">
-					    	<p>
+					    <div class="box7">
+					    	<p class="textoImgCOntenedor">
 					    		<strong><ins>Activación</ins></strong><br>
 					    		<?php echo "$img7_name"; ?> <br>
 								<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -476,25 +358,26 @@
 					</div>
 				</div>
 
-					  <!--	TERCER PANEL SE COMPONE DE 4 IMAGENES	IMG 8,9,10,11		-->
 
-				<div class="w3-third gale-rigth">
-<!--3.1 imagen estatica-->
-					<div class="containerData zoom box8" style="width:  280px;">
-						<img class="imagenAjustada img_container" src="img/photos/3.1.JPG" alt="foto1">
-						    <div id="alpha" style="width:  380px;">
-						    	<p>
-						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-									<?php echo "$img8_peo"; ?> 
-									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-									<?php echo "$img8_reg"; ?>
-									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-									<?php echo "$img8_pre"; ?>
-						    	</p>
-						    </div>
+				<!-- IMAGNES DE LA IZQUIERDA -->
+ <!--	TERCER PANEL SE COMPONE DE 4 IMAGENES	IMG 8,9,10,11		-->
+ <!-- 3.1 imagen estatica 	IMG 8	-->
+				<div class="izqGalery">
+					<div class="box8 containerData"  style="width:  350px;">
+						<img class="imagenAjustada" src="img/photos/3.1.jpg" alt="foto1">
+					    <div id="alpha">
+					    	<p>
+					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+								<?php echo "$img8_peo"; ?> 
+								<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+								<?php echo "$img8_reg"; ?>
+								<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+								<?php echo "$img8_pre"; ?>
+					    	</p>
+					    </div>
 						<div class="overlay">
-						    <div class="texto">
-						    	<p>
+						    <div class="box8 style="width:  350px;"">
+						    	<p class="textoImgCOntenedor">
 						    		<strong><ins>Activación</ins></strong><br>
 						    		<?php echo "$img8_name"; ?> <br>
 									<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -507,70 +390,67 @@
 						    </div>
 						</div>
 					</div>
-					<!-- 3.2.1 imagen estatica   PAR DE IMAGENES -->
-					<div class="w3-row" id="myGrid">
-						<div class="w3-third" style="width:  50%;">
-							<div class="containerData zoom box9">
-							  	<img class="imagenAjustada img_container" src="img/photos/3.2.1.JPG" alt="foto1">
-							    <div id="alpha">
-							    	<p>
-							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-										<?php echo "$img9_peo"; ?> 
-										<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-										<?php echo "$img9_reg"; ?>
-										<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-										<?php echo "$img9_pre"; ?>
+ <!-- 3.2.1 imagen estatica 	IMG 9	-->
+					<div class="dobleContenedor">
+						<div class="containerData box9" style="width: 60%;">
+						  	<img class="imagenAjustada " src="img/photos/3.2.1.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img9_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img9_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img9_pre"; ?>
+						    	</p>
+						    </div>
+						  	<div class="overlay">
+						    	<div class="box9">
+							    	<p class="textoImgCOntenedor">
+							    		<strong><ins>Activación</ins></strong><br>
+							    		<?php echo "$img9_name"; ?> <br>
+										<img class="iconImageDesple" src="img/icons/people-icon.png">
+										<?php echo "$img9_peo"; ?> Personas <br>
+										<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+										<?php echo "$img9_reg"; ?> Registros <br>
+										<img class="iconImageDesple" src="img/icons/premios-icon.png">
+										<?php echo "$img9_pre"; ?> Premios<br>
 							    	</p>
-							    </div>
-							  	<div class="overlay">
-							    	<div class="texto">
-								    	<p>
-								    		<strong><ins>Activación</ins></strong><br>
-								    		<?php echo "$img9_name"; ?> <br>
-											<img class="iconImageDesple" src="img/icons/people-icon.png">
-											<?php echo "$img9_peo"; ?> Personas <br>
-											<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-											<?php echo "$img9_reg"; ?> Registros <br>
-											<img class="iconImageDesple" src="img/icons/premios-icon.png">
-											<?php echo "$img9_pre"; ?> Premios<br>
-								    	</p>
-							    	</div>
-							 	</div>
+						    	</div>
+						 	</div>
+						</div>
+						 <!-- 3.2.2 imagen estatica 	IMG 10	-->
+						<div class="containerData box10">
+						  	<img class="imagenAjustada " src="img/photos/3.2.2.JPG" alt="foto1">
+						    <div id="alpha">
+						    	<p>
+						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
+									<?php echo "$img10_peo"; ?> 
+									<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
+									<?php echo "$img10_reg"; ?>
+									<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
+									<?php echo "$img10_pre"; ?>
+						    	</p>
+						    </div>
+						  	<div class="overlay">
+							    <div class="box10">
+							    	<p class="textoImgCOntenedor">
+							    		<strong><ins>Activación</ins></strong><br>
+							    		<?php echo "$img10_name"; ?> <br>
+										<img class="iconImageDesple" src="img/icons/people-icon.png">
+										<?php echo "$img10_peo"; ?> Personas <br>
+										<img class="iconImageDesple" src="img/icons/speech-bubble.png">
+										<?php echo "$img10_reg"; ?> Registros <br>
+										<img class="iconImageDesple" src="img/icons/premios-icon.png">
+										<?php echo "$img10_pre"; ?> Premios<br>
+							    	</p>
+							  	</div>
 							</div>
 						</div>
-						<div class="w3-third" style="width:  50%;">
-						<!-- 3.2.2 imagen estatica-->
-							<div class="containerData zoom box10">
-							  	<img class="imagenAjustada img_container" src="img/photos/3.2.2.JPG" alt="foto1">
-							    <div id="alpha">
-							    	<p>
-							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
-										<?php echo "$img10_peo"; ?> 
-										<img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-										<?php echo "$img10_reg"; ?>
-										<img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-										<?php echo "$img10_pre"; ?>
-							    	</p>
-							    </div>
-							  	<div class="overlay">
-								    <div class="texto">
-								    	<p>
-								    		<strong><ins>Activación</ins></strong><br>
-								    		<?php echo "$img10_name"; ?> <br>
-											<img class="iconImageDesple" src="img/icons/people-icon.png">
-											<?php echo "$img10_peo"; ?> Personas <br>
-											<img class="iconImageDesple" src="img/icons/speech-bubble.png">
-											<?php echo "$img10_reg"; ?> Registros <br>
-											<img class="iconImageDesple" src="img/icons/premios-icon.png">
-											<?php echo "$img10_pre"; ?> Premios<br>
-								    	</p>
-								  	</div>
-								</div>
-							</div>
-						</div>
-<!-- 3.3 imagen estatica-->
-						<div class="containerData zoom box11" style="width:  350px;">
-						  	<img class="imagenAjustada img_container" src="img/photos/3.3.JPG" alt="foto1">
+					</div>
+ <!-- 3.2.1 imagen estatica 	IMG 9	-->
+					<div class="containerData box11" style="width:  350px;">
+						  	<img class="imagenAjustada" src="img/photos/3.3.JPG" alt="foto1">
 							    <div id="alpha" style="width:  350px;">
 							    	<p>
 							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -582,8 +462,8 @@
 							    	</p>
 							    </div>
 						  	<div class="overlay">
-							    <div class="texto">
-							    	<p>
+							    <div class="box11">
+							    	<p class="textoImgCOntenedor">
 							    		<strong><ins>Activación</ins></strong><br>
 							    		<?php echo "$img11_name"; ?> <br>
 										<img class="iconImageDesple" src="img/icons/people-icon.png">
@@ -596,9 +476,9 @@
 							    </div>
 						  	</div>
 						</div>
-					</div>
 				</div>
 			</div>
+
 
 		<div id="servicios" class="container-fluid" style="padding-bottom: 110px;">
 			<div class="contenedorServices" style="margin-right: -60px;">
@@ -613,7 +493,7 @@
 						    <h3 class="titleHidden">SALMPLING</h3>
 						    <div class="text">
 						    	<p>
-						    		<h3>SALMPLING</h3>
+						    		<h3>SAMPLING</h3>
 						    		Compuesto de promotores repartiendo volantes en puntos estratégicos seleccionados.
 						    	</p>
 						    </div>
@@ -687,7 +567,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>ROLL UP</h3>
-						    		Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar si marca en puntos con mayor flujo vehicular.
+						    		Por medio de la exhibición de una lona publicitaria y del volanteo de flayers se logra la combinación perfecta para posicionar su marca en puntos con mayor flujo vehicular.
 						    	</p>
 						    </div>
 						</div>
@@ -761,21 +641,18 @@
 				<div class="animatedParent">
 		  			<h2 class="secondColor alingDer tittleDiv animated fadeInRight">QUIENES SOMOS</h2>
 				</div>
-				<div id="imagen" class="slider portada">
+				<div id="" class="slider portada footerMjeEquipo">
 					<ul class="slideshow-container" style="padding-top:  10px;">
 						<li>
-						  <div class=" zoom elementoMmensaje menuTxtFormat">
+						  <div class=" elementoMmensaje menuTxtFormatMje">
 						  Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.
 						</div>
 						</li>
 						<li>
-						  <div class=" zoom elementoMmensaje menuTxtFormat">
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						  <div class=" elementoMmensaje menuTxtFormatMje3">
+						  VISIÓN:
+						  <br>Ser la mejor agencia de mercadotecnia directa e investigación de Latinoamérica, proporcionando a cada uno de nuestros clientes satisfacción total en cada producto y servicio. Comprometidos con nuestro entorno y nuestros clientes, a través de un liderazgo eficaz, con la mejor gente, las mejores prácticas y la mejor tecnología, creando de esta manera un gran valor para la industria. 
+
 						</div>
 						</li>
 					</ul>
@@ -811,8 +688,8 @@
 					<div>
 						<h3 class="secondColor" style="right: -45px; padding-left:10px">Home Brandig</h3>
 						<div >
-							<p class="secondColor" style="position: absolute; bottom: 40px; padding-left:10px">   10 años <b>·</b>
-								<img class="iconSocial" src="img/users.ico">
+							<p class="secondColor" style="position: absolute; bottom: 26px; padding-left:10px">   10 años <b>·</b>
+								<img class="iconSocial" src="img/users.png">
 							</p>
 						</div>
 					</div>
@@ -835,45 +712,58 @@
 			</div>
 		</div>
 
-		<div id="contacto" class="container-fluid">
-			<div class=" w3-cell-row contenedorForm">
-				<div class="w3-container w3-cell" style="padding-left: 60px;">
-				  	<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
-				  	<form class="form-horizontal" style="margin-left:  10px;" action="send.php" method="post">
-					  	<div class="form-group">
-						    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
-						    <div class="col-sm-6">
-					        	<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please">
-					     	</div>
-					    </div>
-					    <div class="form-group">
-					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">*Email:</label>
-					      	<div class="col-sm-6">
-					        	<input type="email" class="form-control" id="correo" placeholder="Escriba su email" name="correo" required="Please">
-					      	</div>
-					    </div>
-					    <div class="form-group">
-					      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">*Teléfono:</label>
-					      	<div class="col-sm-6">          
-					        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de Teléfono" name="tel" required="Please">
-					      	</div>
-					    </div>
-					    <div class="form-group">
-					    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
-					      	<div class="col-sm-6">  
-					      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su Comentario o mensaje" required="Please"></textarea>
-					      		<p><cite class="">* Campo obligatorio</cite></p>
-					      	</div>
+		<div id="contacto" class="contenedorForm" >
+			<div class="divForm">
+				<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
+			  	<form class="form-horizontal"  action="send.php" method="post">
+				  	<div class="form-group">
+					    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
+					    <div class="col-sm-6">
+				        	<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please">
+				     	</div>
+				    </div>
+				    <div class="form-group">
+				    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">*Email:</label>
+				      	<div class="col-sm-6">
+				        	<input type="email" class="form-control" id="correo" placeholder="Escriba su email" name="correo" required="Please">
+				      	</div>
+				    </div>
+				    <div class="form-group">
+				      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">*Teléfono:</label>
+				      	<div class="col-sm-6">          
+				        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de teléfono" name="tel" required="Please">
+				      	</div>
+				    </div>
+				    <div class="form-group">
+				    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
+				      	<div class="col-sm-6">  
+				      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su comentario o mensaje" required="Please"></textarea>
+				      		<p><cite class="">* Campo obligatorio</cite></p>
+				      	</div>
 
-					    </div>
-					    <div class="form-group">        
-					    	<div class="col-sm-offset-2 col-sm-6">
-					        	<input id="btnSend" type="submit" class="btn btn-default" onclick="message();"></input>
-					      	</div>
-					    </div>
-				  	</form>
-				</div>
-				
+				    </div>
+				    <div class="form-group">        
+				    	<div class="col-sm-offset-1 col-sm-6">
+				        	<input id="btnSend" type="submit" class="btn btn-default" onclick="message();"></input>
+				      	</div>
+				    </div>
+			  	</form>
+			</div>
+			<div class="divAddress">
+				<h3 class="tittleDivForm"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
+					<div style="color:  #FFFFFF;" class=" contenedorBorderContact">
+						<p>Cerrada Noche Buena 15, <br>
+						Col. Potreros, Deleg. Tlalpan <br>
+						C.P. 01780, CDMX, Méx. <br>
+						</p>
+						<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
+						<p style="color:  #FFFFFF; font-size: 2em; ">
+							35-36-32-53 <br>
+							35-36-32-54
+						</p>
+					</div>
+			</div>
+		</div>
 					<!-- The Modal -->
 				<!-- The Modal -->
 				<div id="myModal" class="modal" style=" z-index: 99;">
@@ -882,9 +772,10 @@
 					<div class="modal-content">
 				    	<div class="modal-header">
 					    	<span class="close">&times;</span>
-					      	<h2>Aviso de Provacidad</h2>
+					      	<h2>Aviso de Privacidad</h2>
 				    	</div>
-				    	<div class="modal-body">
+				    	<div class="modal-body politicasCont">
+				    		<h1>DATOS PERSONALES QUE RECABAMOS</h1>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -911,33 +802,100 @@
 							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</P>
+							
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							<P>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</P>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							<P>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</P><h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+							<P>
+							  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</P><h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h1>DATOS PERSONALES QUE RECABAMOS</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
 						</div>
-
-
 				    	<div class="modal-footer">
 				      		<span class="close2">CERRAR</span>
-				      		<!--  CODE -->
 				    	</div>
 				  	</div>
 				</div>
-
-				<div class="vl w3-containerw3-cell"></div>
-				<div class="w3-container contenedorForm w3-cell" style="text-align:center;">
-					<h3 class="tittleDivForm"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
-					<div style="color:  #FFFFFF;" class="infoFormat">
-						<p>Cerrada Noche Buena 15, <br>
-						Col. Potreros, Deleg. Tlalpan <br>
-						C.P. 01780, CDMX, Méx. <br>
-						</p>
-						<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
-						<p style="color:  #FFFFFF; font-size: 2em; ">
-							35-36-32-53 <br>
-							35-36-32-54
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</SECTION>
 	<FOOTER>
 		<div class="pie">
@@ -946,23 +904,23 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.8.1 BUILD 30.4.18</h3>
-				<button id="myBtn" onclick="message();">Aviso de Provacidad</button>
+				<br><h3>VERSION DEMO 1.10.2 BUILD 3.5.18</h3>
+				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
 	</FOOTER>
 	<!-- 	Script Bootstrap JS Ref Navegator -->
-<script>
-$(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50});$("#homeBranding a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();
-       var hash = this.hash;$('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-});
-</script>
+	<script>
+	$(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50});$("#homeBranding a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();
+	       var hash = this.hash;$('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	        window.location.hash = hash;
+	      });
+	    }  // End if
+	  });
+	});
+	</script>
 	<script>
 		$("#submenu").hide();
 		var flag = 0;
@@ -980,38 +938,23 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 	</script>
 	<script>
 		function message() {
-			// Get the modal
 			var modal = document.getElementById('myModal');
-
-			// Get the button that opens the modal
 			var btn = document.getElementById("myBtn");
-
-			// Get the <span> element that closes the modal
 			var span = document.getElementsByClassName("close")[0];
 			var span2 = document.getElementsByClassName("close2")[0];
-
-			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
 			    modal.style.display = "block";
 			}
-
-			// When the user clicks on <span> (x), close the modal
 			span.onclick = function() {
 			    modal.style.display = "none";
-
 			}
-
 			span2.onclick = function() {
 			    modal.style.display = "none";
-			    
 			}
-
-			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
 			    if (event.target == modal) {
 			        modal.style.display = "none";
 			    }
-			// body...
 		}
 	}
 	</script>
@@ -1026,13 +969,11 @@ $(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50}
 		        document.getElementById("myBtnUp").style.display = "none";
 		    }
 		}
-
-		// When the user clicks on the button, scroll to the top of the document
 		function topFunction() {
 		    document.body.scrollTop = 0;
 		    document.documentElement.scrollTop = 0;
 		}
-</script>
+	</script>
 	<script src='js/css3-animate-it.js'></script>
 </body>
 </HTML>
