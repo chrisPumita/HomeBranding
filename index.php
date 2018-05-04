@@ -5,7 +5,7 @@
 	<!--  INICIO METAS 	-->
 	<meta charset="utf-8">
 	<meta name="keywords" content="" />
-    <meta name="description" content="Expertos en Street Marketing, BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro." />
+    <meta name="description" content="Expertos en Street Marketing, BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro."/>
     <meta name="autor" content="mecanismo.mx" />
     <meta name="robots" content="INDEX, FOLLOW, ARCHIVE" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">

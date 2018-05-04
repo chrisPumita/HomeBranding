@@ -85,26 +85,37 @@
 	         $mail->From  = "web@mecanismo.com.mx"; 
              $mail->FromName = $nombre;
              //CORREO DESTINO:
-             $mail->AddAddress("web@mecanismo.com.mx "); 
+			$mail->AddAddress("web@mecanismo.com.mx "); 
+//			$mail->AddAddress("christian.floppy@gmail.com"); 
+//			$mail->AddAddress("christian.floppy@yahoo.com"); 
+//			$mail->AddAddress("gorillazN1_kfc@hotmail.com"); 
 	  
 			 $mail->WordWrap = 50; 
              $mail->IsHTML(true);     
              $mail->Subject  =  "Contacto desde HomeBranding Web Site";
 
 			$mail->Body = " 
-				<!DOCTYPE html>
-					<html>
-					<head>
-					<meta charset='utf-8'>
-					<meta name='viewport' content='width=device-width, initial-scale=1'>
-					<style>
+					  <body>
+					    <h2 style='text-align:center'>Informacion de Registro:</h2>
+					    <div class='card'>
+					      <img src='http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo-circle.png' alt='Icon'>
+					      <div class='container'>
+					      <h1>$nombre</h1>
+					      <p class='title'>$tel</p>
+					      <p>SU MENSAJE:</p>
+					      <strong><cite>' $comentario.'</cite></strong>
+					      </div>
+					       <p><button><a href='mailto:$correo?subject= Respuesta de contacto' 'email me'>Correo Electronico: <br>$correo 
+					      </a></button></p>
+					    </div>
+				<style>
 					body{
 					  text-align: center;
 					  font-family: arial;
 					}
 					.card {
 					  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					  max-width: 50%;
+					  max-width: 100%;
 					  margin: auto;
 					}
 					.card:hover {
@@ -141,23 +152,7 @@
 					button:hover, a:hover {
 					  opacity: 0.7;
 					}anuncio.png
-					</style>
-					</head>
-					  <body>
-					    <h2 style='text-align:center'>Informacion de Registro:</h2>
-					    <div class='card'>
-					      <img src='http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo-circle.png' alt='Icon'>
-					      <div class='container'>
-					      <h1>$nombre</h1>
-					      <p class='title'>$tel</p>
-					      <p>SU MENSAJE:</p>
-					      <strong><cite>' $comentario.'</cite></strong>
-					      </div>
-					       <p><button><a href='mailto:$correo?subject=Respuesta de contacto' 'email me'>Correo Electronico: <br>$correo 
-					      </a></button></p>
-					    </div>
-					  </body>
-					</html> 
+				</style>
 			 ";
 						
 			$mail->IsSMTP(); 
