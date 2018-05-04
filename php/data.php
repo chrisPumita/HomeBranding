@@ -56,4 +56,14 @@
 			$img11_peo = "1,500";
 			$img11_reg = "810";
 			$img11_pre = "32";
+
+
+			/*
+						INFORMACION DE CONTACTO VARIABLE Y MODIFICABLE
+			 */
+			
+			$correoEmpresa = "atencionaclientes@homebranding.com.mx";
+			$tel1 = "3536 3253";	
+			$tel2 = "3536 3254";
+			$contactoMail = "drios@homebranding.com.mx";
 	?>

@@ -506,7 +506,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>SIGN HUMAN</h3>
-						    		Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una cedula de 2 a 4 promotores.
+						    		Servicio con gran visibilidad, atrae clientes por la característica de que señala el punto de venta, conformado por una célula de 2 a 4 promotores.
 						    	</p>
 						    </div>
 						</div>
@@ -756,7 +756,9 @@
 						Col. Potreros, Deleg. Tlalpan <br>
 						C.P. 01780, CDMX, Méx. <br>
 						</p>
-						<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
+						<p class="colorContacto">
+							<?php echo "$correoEmpresa"; ?>
+						</p>
 						<p style="color:  #FFFFFF; font-size: 2em; ">
 							35-36-32-53 <br>
 							35-36-32-54
@@ -935,8 +937,6 @@
 				$(".txt-menu").text("☰ MENU");
 			}
 		});
-	</script>
-	<script>
 		function message() {
 			var modal = document.getElementById('myModal');
 			var btn = document.getElementById("myBtn");
@@ -957,8 +957,6 @@
 			    }
 		}
 	}
-	</script>
-	<script>
 		// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function() {scrollFunction()};
 

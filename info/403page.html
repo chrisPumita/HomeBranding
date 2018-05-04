@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>403 Forbidden</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/cssF.css">
+	<link rel="stylesheet" type="text/css" href="../styles/cssS.css">
+	<link rel="stylesheet" type="text/css" href="../styles/css.css">
+
+	<link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
+</head>
+<body>
+	<div id="contacto" class="notPage">
+		<div class="divForm contenedoresMjes404">
+			<div class="contenedor404">
+				<a href="../index.php">
+					<img class="iconPageInfo" src="../img/homebranding-logo.png">
+				</a>
+					<p class="contenedorUps">
+						Lo sentimos, la página o sección del sitio que intentas abrir tiene permisos especiales y no puedes acceder de esta forma.<br><br>
+						Prueba nuevamente regresando a nuestra página de inicio o si requieres ayuda ponte en contacto con nosotros.
+					</p>
+			</div>
+		</div>
+		<div class="divAddress contenedoresMjes404">
+				<img class="backImg fronttxt" src="../img/forbidden.png" alt="No accesso">
+			</div>
+
+		</div>
+	</div>
+	
+
+	<div id="contacto" class="contenedorForm">
+		<div class="divForm">
+			<h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
+		  	<form class="form-horizontal"  action="../send.php" method="post">
+			  	<div class="form-group">
+				    <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
+				    <div class="col-sm-6">
+			        	<input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please">
+			     	</div>
+			    </div>
+			    <div class="form-group">
+			    	<label class="control-label col-sm-2 colorContacto infoFormat" for="email">*Email:</label>
+			      	<div class="col-sm-6">
+			        	<input type="email" class="form-control" id="correo" placeholder="Escriba su email" name="correo" required="Please">
+			      	</div>
+			    </div>
+			    <div class="form-group">
+			      	<label class="control-label col-sm-2 colorContacto infoFormat" for="tel">*Teléfono:</label>
+			      	<div class="col-sm-6">          
+			        	<input type="tel" class="form-control" id="tel" placeholder="Escriba su número de teléfono" name="tel" required="Please">
+			      	</div>
+			    </div>
+			    <div class="form-group">
+			    	<label class="control-label col-sm-2 colorContacto infoFormat" for="coment">Comentario:</label>
+			      	<div class="col-sm-6">  
+			      		<textarea class=" form-control" cols="25" rows="5" name="comentario" placeholder="Escriba su comentario o mensaje" required="Please"></textarea>
+			      		<p><cite class="">* Campo obligatorio</cite></p>
+			      	</div>
+			    </div>
+			    <div class="form-group">        
+			    	<div class="col-sm-offset-1 col-sm-6">
+			        	<input id="btnSend" type="submit" class="btn btn-default" onclick="message();"></input>
+			      	</div>
+			    </div>
+		  	</form>
+		</div>
+		<div class="divAddress">
+			<h3 class="tittleDivForm"><ins style="color:  #FFFFFF;">INFORMES:</ins></h3>
+				<div style="color:  #FFFFFF;" class=" contenedorBorderContact">
+					<p>Cerrada Noche Buena 15, <br>
+					Col. Potreros, Deleg. Tlalpan <br>
+					C.P. 01780, CDMX, Méx. <br>
+					</p>
+					<p class="colorContacto">atencionaclientes@homebramding.com.mx</p>
+					<p style="color:  #FFFFFF; font-size: 2em; ">
+						35-36-32-53 <br>
+						35-36-32-54
+					</p>
+				</div>
+		</div>
+	</div>
+		
+	<div class="pie">
+		<samp>
+			 <br>
+			<!-- Implements automatic YEAR -->
+			<?php date_default_timezone_set('GMT'); echo date("Y.");?>
+			© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
+		</samp>
+	</div>
+</body>
+</html>

@@ -90,11 +90,75 @@
 			 $mail->WordWrap = 50; 
              $mail->IsHTML(true);     
              $mail->Subject  =  "Contacto desde HomeBranding Web Site";
-             $mail->Body     =  "<H1>PRUEBA DESDE SERVER</H1> 
-             					<br><b>Este mensaje fue enviado por:</b> $nombre \n".
-								"<br>DEMO 1.2 Su correo es: $correo \n".
-								"<br>Su telefono es: $tel \n".
-								"<br>Su comentario es: $comentario ";
+
+			$mail->Body = " 
+				<!DOCTYPE html>
+					<html>
+					<head>
+					<meta charset='utf-8'>
+					<meta name='viewport' content='width=device-width, initial-scale=1'>
+					<style>
+					body{
+					  text-align: center;
+					  font-family: arial;
+					}
+					.card {
+					  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+					  max-width: 50%;
+					  margin: auto;
+					}
+					.card:hover {
+					    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+					}
+					.container {
+					    padding: 2px 16px;
+					}
+					.title {
+					  color: #787872;
+					  font-size: 18px;
+					}
+					img{
+					  width: 50%;
+					  padding: 10%;
+					}
+					button {
+					  border: none;
+					  outline: 0;
+					  display: inline-block;
+					  padding: 8px;
+					  color: white;
+					  background-color: #9FC74D;
+					  text-align: center;
+					  cursor: pointer;
+					  width: 100%;
+					  font-size: 18px;
+					}
+					a {
+					  text-decoration: none;
+					  font-size: 22px;
+					  color: #787872;
+					}
+					button:hover, a:hover {
+					  opacity: 0.7;
+					}anuncio.png
+					</style>
+					</head>
+					  <body>
+					    <h2 style='text-align:center'>Informacion de Registro:</h2>
+					    <div class='card'>
+					      <img src='http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo-circle.png' alt='Icon'>
+					      <div class='container'>
+					      <h1>$nombre</h1>
+					      <p class='title'>$tel</p>
+					      <p>SU MENSAJE:</p>
+					      <strong><cite>' $comentario.'</cite></strong>
+					      </div>
+					       <p><button><a href='mailto:$correo?subject=Respuesta de contacto' 'email me'>Correo Electronico: <br>$correo 
+					      </a></button></p>
+					    </div>
+					  </body>
+					</html> 
+			 ";
 						
 			$mail->IsSMTP(); 
             $mail->Host = "mecanismo.com.mx";  // Servidor de Salida.
