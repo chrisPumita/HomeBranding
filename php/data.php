@@ -32,10 +32,10 @@
 			$img6_reg = "810";
 			$img6_pre = "32";
 
-			$img7_name = "Cerveceria Modelo";
-			$img7_peo = "1,500";
-			$img7_reg = "810";
-			$img7_pre = "32";
+			$img7_name = "Mecanismo Creativo";
+			$img7_peo = "800 000";
+			$img7_reg = "254";
+			$img7_pre = "34";
 
 			$img8_name = "Cerveceria Modelo";
 			$img8_peo = "1,500";

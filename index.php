@@ -1,30 +1,90 @@
 <!DOCTYPE html>
 <HTML lang="es">
 <head>
-	<TITLE>Home Branding - Inicio</TITLE>
+	<TITLE>Home Branding - En Home Branding hacemos Street Marketing, BTL, Guerrilla en Semáforos</TITLE>
 	<!--  INICIO METAS 	-->
 	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+    <meta name="description" content="Expertos en Street Marketing, BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro." />
+    <meta name="autor" content="mecanismo.mx" />
+    <meta name="robots" content="INDEX, FOLLOW, ARCHIVE" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--   FIN METAS 	-->
 	
 	<!--   INICIO ESTILOS		-->
-		<!-- FORMS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!-- LOCAL SYLES  -->
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  -->
-		<link rel="stylesheet" type="text/css" href="styles/cssF.css">
-		<link rel="stylesheet" type="text/css" href="styles/effects.css">
-		<link rel="stylesheet" type="text/css" href="styles/cssS.css">
-		<link rel="stylesheet" type="text/css" href="styles/css.css">
-		<!-- EFECTOS Y ANIMACIONES-->
-		<link href="css/animations-it.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<!-- FORMS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- LOCAL SYLES  -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  -->
+	<link rel="stylesheet" type="text/css" href="styles/cssF.css">
+	<link rel="stylesheet" type="text/css" href="styles/effects.css">
+	<link rel="stylesheet" type="text/css" href="styles/cssS.css">
+	<link rel="stylesheet" type="text/css" href="styles/css.css">
+	<!-- EFECTOS Y ANIMACIONES-->
+	<link href="css/animations-it.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
 
-		<link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
+	<link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
+
+	<!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
+	<script type="application/ld+json">
+	[ {
+	  "@context" : "http://schema.org",
+	  "@type" : "LocalBusiness",
+	  "name" : "Home Brandig",
+	  "priceRange" : "1000",
+	  "image" : "http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo.png",
+	  "telephone" : [ "35-36-32-53", "35-36-32-54" ],
+	  "email" : "atencionaclientes@homebranding.com.mx",
+	  "address" : {
+	    "@type" : "PostalAddress",
+	    "streetAddress" : "Cerrada Noche Buena 15",
+	    "addressLocality" : "Col. Potreros",
+	    "addressRegion" : "Deleg. Tlalpan",
+	    "addressCountry" : "Méx"
+	  },
+	  "url" : "http://www.homebranding.com.mx/",
+	  "review" : {
+	    "@type" : "Review",
+	    "author" : {
+	      "@type" : "Person",
+	      "name" : "Home Branding"
+	    },
+	    "reviewBody" : "Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro."
+	  }
+	}, {
+	  "@context" : "http://schema.org",
+	  "@type" : "LocalBusiness",
+	  "name" : "Home Brandig",
+	  "priceRange" : "1000",
+	  "image" : "http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo.png",
+	  "telephone" : [ "35-36-32-53", "35-36-32-54" ],
+	  "email" : "atencionaclientes@homebranding.com.mx",
+	  "address" : {
+	    "@type" : "PostalAddress",
+	    "streetAddress" : "Cerrada Noche Buena 15",
+	    "addressLocality" : "Col. Potreros",
+	    "addressRegion" : "CDMX",
+	    "addressCountry" : "Méx",
+	    "postalCode" : "01780"
+	  },
+	  "url" : "http://www.homebranding.com.mx/",
+	  "review" : {
+	    "@type" : "Review",
+	    "author" : {
+	      "@type" : "Person",
+	      "name" : "Home Branding"
+	    },
+	    "reviewBody" : "Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro."
+	  }
+	} ]
+	</script>
+
+
 
 	<style>
 
@@ -906,7 +966,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><h3>VERSION DEMO 1.10.2 BUILD 3.5.18</h3>
+				<br><cite>VERSION DEMO 1.11.3 BUILD 4.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
