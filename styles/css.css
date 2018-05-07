@@ -45,7 +45,7 @@
         }
          .navegacion li {
             list-style-type: none;
-            text-align: right;
+            text-align: left;
         }
          .navegacion li a {
             text-decoration: none;

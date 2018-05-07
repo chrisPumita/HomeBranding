@@ -966,7 +966,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><cite>VERSION DEMO 1.11.3 BUILD 4.5.18</cite><br>
+				<br><cite>VERSION DEMO 1.12.1 BUILD 7.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>

@@ -95,64 +95,54 @@
              $mail->Subject  =  "Contacto desde HomeBranding Web Site";
 
 			$mail->Body = " 
-					  <body>
-					    <h2 style='text-align:center'>Informacion de Registro:</h2>
-					    <div class='card'>
-					      <img src='http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo-circle.png' alt='Icon'>
-					      <div class='container'>
-					      <h1>$nombre</h1>
-					      <p class='title'>$tel</p>
-					      <p>SU MENSAJE:</p>
-					      <strong><cite>' $comentario.'</cite></strong>
-					      </div>
-					       <p><button><a href='mailto:$correo?subject= Respuesta de contacto' 'email me'>Correo Electronico: <br>$correo 
-					      </a></button></p>
-					    </div>
-				<style>
-					body{
-					  text-align: center;
-					  font-family: arial;
-					}
-					.card {
-					  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					  max-width: 100%;
-					  margin: auto;
-					}
-					.card:hover {
-					    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-					}
-					.container {
-					    padding: 2px 16px;
-					}
-					.title {
-					  color: #787872;
-					  font-size: 18px;
-					}
-					img{
-					  width: 50%;
-					  padding: 10%;
-					}
-					button {
-					  border: none;
-					  outline: 0;
-					  display: inline-block;
-					  padding: 8px;
-					  color: white;
-					  background-color: #9FC74D;
-					  text-align: center;
-					  cursor: pointer;
-					  width: 100%;
-					  font-size: 18px;
-					}
-					a {
-					  text-decoration: none;
-					  font-size: 22px;
-					  color: #787872;
-					}
-					button:hover, a:hover {
-					  opacity: 0.7;
-					}anuncio.png
-				</style>
+					<table style='font-family: arial, sans-serif; border-collapse: collapse; width: 80%;'>
+							<tr>
+								<td>
+									<center>
+										<img style='width: 80%;' src='http://mecanismo.mx/proyectos/HomeBranding/img/icons/iconHB.jpg' alt='Logo Hombe Branding'>
+									</center>
+								</td>
+							</tr>
+							<tr>
+								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #dddddd;'>
+									<center>
+										<h2>👤</h2>
+										name555
+									</center>
+								</td>
+							</tr>
+							<tr>
+								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px;'>
+									<center>
+
+										<h3>📞</h3>55 2636 28384
+									</center>
+								</td>
+							</tr>
+							<tr>
+								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px;  background-color: #dddddd;'>
+									<center>
+										<h3>Su mensaje:</h3>❝
+										'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+										❞
+									</center>
+								</td>
+							</tr>
+							<tr>
+								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px; background: black; color: white'>
+									<center>
+										<h3>📩</h3>xxxxx@xxxx.xxxxx
+									</center>
+								</td>
+							</tr>
+					</table>
+					🏠
+					<cite>Mensaje enviado desde el formulario de HomeBranding.com.mx</cite>
 			 ";
 						
 			$mail->IsSMTP(); 
