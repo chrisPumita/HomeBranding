@@ -12,20 +12,22 @@
 	<!--   FIN METAS 	-->
 	
 	<!--   INICIO ESTILOS		-->
-	<!-- FORMS -->
+	<!-- FORMS 
+	-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- LOCAL SYLES  -->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  -->
+	<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  
 	<link rel="stylesheet" type="text/css" href="styles/cssF.css">
 	<link rel="stylesheet" type="text/css" href="styles/effects.css">
 	<link rel="stylesheet" type="text/css" href="styles/cssS.css">
 	<link rel="stylesheet" type="text/css" href="styles/css.css">
+	-->
 	<!-- EFECTOS Y ANIMACIONES-->
-	<link href="css/animations-it.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/animations-it.css" >
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
 
 	<link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
@@ -83,9 +85,6 @@
 	  }
 	} ]
 	</script>
-
-
-
 	<style>
 
 /* The Modal (background) */
@@ -225,7 +224,7 @@
 				<div class="derGalery">
 <!--1.1 imagen estatica IMG 1-->
 					<div class="containerData box1" style="padding-left:  25%;">
-						<img class="imagenAjustada" src="img/photos/1.1.JPG" alt="foto1">
+						<img class="imagenAjustada precarga" src="img/photos/1.1.JPG" alt="foto1">
 				    	<div id="alpha">
 					    	<p>
 					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -251,7 +250,7 @@
 					</div>
 <!--1.2 imagen estatica  IMG 2-->
 					<div class="containerData box2" style="padding-left: 25%;">
-						<img class="imagenAjustada" src="img/photos/1.2.JPG" alt="foto1">
+						<img class="imagenAjustada precarga" src="img/photos/1.2.JPG" alt="foto1">
 					    	 <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -277,7 +276,7 @@
 					</div>
 <!-- 1.3 imagen estatica IMG 3 -->
 					<div class="containerData box3">
-					  	<img class="imagenAjustada" src="img/photos/1.3.JPG" alt="foto1">
+					  	<img class="imagenAjustada precarga" src="img/photos/1.3.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -309,7 +308,7 @@
 <!-- 2.1 imagen estatica IMG 4 -->
 				<div class="cenGalery">
 					<div class="containerData box4">
-					<img class="imagenAjustada img_container" src="img/photos/2.1.JPG" alt="foto1">
+					<img class="imagenAjustada precarga img_container" src="img/photos/2.1.JPG" alt="foto1">
 					    <div id="alpha">
 					    	<p>
 					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -336,7 +335,7 @@
 
 <!-- 2.2 imagen estatica   IMG 5 -->
 					<div class="containerData box5">
-					  	<img class="imagenAjustada img_container" src="img/photos/2.2.JPG" alt="foto1">
+					  	<img class="imagenAjustada precarga img_container" src="img/photos/2.2.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -362,7 +361,7 @@
 					</div>
 <!-- 2.3 imagen estatica	IMG 6-->
 					<div class="containerData box6">
-					  	<img class="imagenAjustada img_container" src="img/photos/2.3.jpg" alt="foto1">
+					  	<img class="imagenAjustada precarga img_container" src="img/photos/2.3.jpg" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -390,7 +389,7 @@
 					</div>
 <!-- 2.4 imagen estatica 	IMG 7	-->
 					<div class="containerData box7">
-					  	<img class="imagenAjustada img_container" src="img/photos/2.4.JPG" alt="foto1">
+					  	<img class="imagenAjustada precarga img_container" src="img/photos/2.4.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -424,7 +423,7 @@
  <!-- 3.1 imagen estatica 	IMG 8	-->
 				<div class="izqGalery">
 					<div class="box8 containerData"  style="width:  350px;">
-						<img class="imagenAjustada" src="img/photos/3.1.jpg" alt="foto1">
+						<img class="imagenAjustada precarga" src="img/photos/3.1.jpg" alt="foto1">
 					    <div id="alpha">
 					    	<p>
 					    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -453,7 +452,7 @@
  <!-- 3.2.1 imagen estatica 	IMG 9	-->
 					<div class="dobleContenedor">
 						<div class="containerData box9" style="width: 60%;">
-						  	<img class="imagenAjustada " src="img/photos/3.2.1.JPG" alt="foto1">
+						  	<img class="imagenAjustada precarga " src="img/photos/3.2.1.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -481,7 +480,7 @@
 						</div>
 						 <!-- 3.2.2 imagen estatica 	IMG 10	-->
 						<div class="containerData box10">
-						  	<img class="imagenAjustada " src="img/photos/3.2.2.JPG" alt="foto1">
+						  	<img class="imagenAjustada precarga " src="img/photos/3.2.2.JPG" alt="foto1">
 						    <div id="alpha">
 						    	<p>
 						    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -510,7 +509,7 @@
 					</div>
  <!-- 3.2.1 imagen estatica 	IMG 9	-->
 					<div class="containerData box11" style="width:  350px;">
-						  	<img class="imagenAjustada" src="img/photos/3.3.JPG" alt="foto1">
+						  	<img class="imagenAjustada precarga" src="img/photos/3.3.JPG" alt="foto1">
 							    <div id="alpha" style="width:  350px;">
 							    	<p>
 							    		<img class="iconImageDesple" src="img/icons/people-iconBN.png">
@@ -966,7 +965,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><cite>VERSION DEMO 1.12.1 BUILD 7.5.18</cite><br>
+				<br><cite>VERSION DEMO 1.12.5 BUILD 7.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>

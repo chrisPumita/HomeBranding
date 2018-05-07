@@ -15,6 +15,279 @@
         }
         
 
+        #headertop{
+    border-bottom: 15px solid var(--principal-txt-color);
+    margin-bottom: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.containerHeader{
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+.contenedorLogo{
+    width: 25%;
+    position: relative;
+}
+
+.contenedorMenu{
+    width: 55%;
+}
+
+.contenedorSociales{
+    text-align: center;
+    float: right;
+    border-left: 3px solid var(--principal-txt-color);
+    border-radius: 3px 3px;
+    /* padding: 2%; */
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*
+            
+ */
+
+        
+        body{
+            width: 100%;
+            background-color: white;
+        }
+
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: var(--principal-txt-color);
+            border: none;
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-decoration: none;
+            margin: 10px 0px;
+            cursor: pointer;
+            color: var(--second-txt-color);
+            font-size: 20px;
+        }
+
+
+
+        .pie{
+            padding: 30px;
+            text-align: center;
+            color: var(--second-txt-color);
+            background: #FFF;
+        }
+
+        .infoFormat{
+            font-size: 20px;
+            margin-right: 60px;
+        }
+
+
+
+        #header, #section{
+             background-color: white;
+             margin-top: 0px;
+        }
+
+        .colorContacto{
+            color:  var(--principal-txt-color);
+        }
+
+    
+        /* LINEA DIVISORA */
+
+        
+        .vl {
+                margin-top: 30px;
+                border-left: 5px solid var(--principal-txt-color);
+                height: 340px;
+                left: 50%;
+                top: 0;
+        }
+
+        .vl2 {
+            position: relative;
+            /* margin-top: 30px; */
+            border-left: 3px solid var(--principal-txt-color);
+            height: 82px;
+            /* left: 50%; */
+            top: -88px;
+            width: 1px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li .menuLink {
+            display: block;
+            color: white;
+            text-align: center;
+            
+            text-decoration: none;
+        }
+
+        li .menuLink:hover:not(.active) {
+            background-color: var(--principal-txt-color);
+        }
+
+        .active {
+            background-color: #f9f9f9;
+        }
+
+
+        /*MENU ESTILO*/
+        .dropbtn {
+            color: var(--second-txt-color);
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content {
+            position: fixed;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 16px 16px 0px #f9f9f9;
+            
+        }
+
+        .dropdown-content a {
+            color: var(--second-txt-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #CDFC02}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: var(--principal-txt-color);
+        }
+
+
+
+/* navegacion   */
+
+        .navegacion {
+            position: absolute;
+            top: 0;
+            background: var(--second-txt-color);
+            margin-top: 54px;
+            margin-left: 43%;
+            opacity: 0.9;
+            z-index: 99;
+        }
+         .navegacion li {
+            list-style-type: none;
+            text-align: left;
+        }
+         .navegacion li a {
+            text-decoration: none;
+            color: var(--principal-txt-color);
+            padding: 10px;
+            margin: 0px;
+
+        }
+         .navegacion > li > a:hover {
+            color: var(--principal-txt-color);
+        }
+         .navegacion li ul {
+            padding-top: 30px;
+            display: grid;
+        }
+         .navegacion li ul li {
+            padding-right: 20px;
+            padding-left: 20px;
+            border-top: 1px solid var(--principal-txt-color);
+        }
+         .navegacion li ul li:hover {
+            background: var(--trasnparent-color-fondo);
+        }
+         .navegacion li ul li:hover a {
+            color: var(--principal-txt-color);
+        }
+
+         .navegacion li ul li a {
+            font-size: 27px;
+        }
+
+/*      COLUMNA DE IMAGNES GALERY       */
+
+
+        .contenedorGalery{
+            width: 100%;
+            display: flex;
+        }
+
+        .derGalery{
+            margin-top: -50px;
+            width: 40%;
+        }
+
+        .cenGalery{
+            margin-top: 50px;
+            width: 15%;
+
+        }
+
+        .izqGalery{
+            margin-top: 50px;
+            width: 45%;
+        }
+
+        .dobleContenedor{
+            width: 100%;
+            display: flex;
+        }
+
+
+
+        /*      DIV para el contenedor de los formularios       */
+         #contacto{
+            display: flex;
+         }
+
+         .divForm{
+            width: 100%;
+            padding-left: 10%;
+            padding-top: 6%;
+            padding-bottom: 6%;
+         }
+
+         .divAddress{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+         }
+
+         .contenedorBorderContact{
+            border-left: 3px solid var(--principal-txt-color);
+        }
+
+
+
+
         /* 
                 GENERAL CLASES STYLES
         */
@@ -704,4 +977,99 @@
                 font-size: 150%;
                 color: var(--second-txt-color);
             }
+
+
+            .precarga{
+                background:transparent url(../img/icons/loader.gif) center no-repeat;
+            }
+
+/*       EFFECTS        CSSS S*/
+
+    .container {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 10px;
+    }
+    .div-imgOver {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .div-imgOver .imgOver {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+    }
+    .div-imgOver:hover .imgOver {
+      transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      -o-transform: scale(0.5);
+    }
+    .div-imgOver .text {
+      z-index: 99;
+      background: var(--whitte-color-solid);
+      padding-top: 2px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      transform: translate(0px);
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      opacity: 0;
+      transition: transfom opacity 1.5s;
+      font-size: 14px;
+    }
+    .div-imgOver:hover .text {
+      transform: translate(0px, -90px);
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    .div-imgOver:hover .hiddenClic{
+      -ms-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -o-transform: scale(0.8);
+    }
+
+    .div-imgOver .hiddenClic {
+      font-family: 'Open Sans';
+      padding-top: 0px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      transform: translate(0px);
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      opacity: 0;
+      transition: transfom opacity 1.5s;
+    }
+
+    .div-imgOver:hover .titleHidden{
+        visibility:hidden;
+    }
+
 
