@@ -9,23 +9,13 @@
     <meta name="autor" content="mecanismo.mx" />
     <meta name="robots" content="INDEX, FOLLOW, ARCHIVE" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--   FIN METAS 	-->
-	
-	<!--   INICIO ESTILOS		-->
-	<!-- FORMS 
-	-->
+	<!-- FORMS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- LOCAL SYLES  -->
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<!--- <link rel="stylesheet" type="text/css" href="styles/w3.css">.  
-	<link rel="stylesheet" type="text/css" href="styles/cssF.css">
-	<link rel="stylesheet" type="text/css" href="styles/effects.css">
-	<link rel="stylesheet" type="text/css" href="styles/cssS.css">
-	<link rel="stylesheet" type="text/css" href="styles/css.css">
-	-->
 	<!-- EFECTOS Y ANIMACIONES-->
 	<link rel="stylesheet" type="text/css" href="css/animations-it.css" >
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
@@ -85,95 +75,15 @@
 	  }
 	} ]
 	</script>
-	<style>
-
-/* The Modal (background) */
-		.modal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    left: 0;
-		    top: 0;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		    -webkit-animation-name: fadeIn; /* Fade in the background */
-		    -webkit-animation-duration: 0.4s;
-		    animation-name: fadeIn;
-		    animation-duration: 0.4s
-		}
-
-		/* Modal Content */
-		.modal-content {
-		    position: fixed;
-		    bottom: 0;
-		    background-color: #fefefe;
-		    width: 100%;
-		    -webkit-animation-name: slideIn;
-		    -webkit-animation-duration: 0.4s;
-		    animation-name: slideIn;
-		    animation-duration: 0.4s
-		}
-
-		/* The Close Button */
-		.close  .close2{
-		    color: var(--second-txt-color);
-		    float: right;
-		    font-size: 28px;
-		    font-weight: bold;
-		}
-
-		.close:hover, .close2:hover,
-		.close:focus, 	.close2:focus {
-		    color: #000;
-		    text-decoration: none;
-		    cursor: pointer;
-		}
-
-		.modal-header {
-		    padding: 2px 16px;
-		    background-color: var(--principal-txt-color);
-		    color: white;
-		}
-
-		.modal-body {padding: 2px 16px;}
-
-		.modal-footer {
-		    padding: 2px 16px;
-		    background-color: var(--principal-txt-color);
-		    color: white;
-		}
-
-
-
-				/* Add Animation */
-		@-webkit-keyframes slideIn {
-		    from {bottom: -300px; opacity: 0} 
-		    to {bottom: 0; opacity: 1}
-		}
-
-		@keyframes slideIn {
-		    from {bottom: -300px; opacity: 0}
-		    to {bottom: 0; opacity: 1}
-		}
-
-		@-webkit-keyframes fadeIn {
-		    from {opacity: 0} 
-		    to {opacity: 1}
-		}
-
-		@keyframes fadeIn {
-		    from {opacity: 0} 
-		    to {opacity: 1}
-		}
-		
-	</style>
-
 </head>
 <body id="homeBranding" style="overflow-x:hidden; background-color: white;" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="headertop">
+		<!-- 	LOADING PAGE  -->
+		<div>
+			<div class="loader-page"></div>
+		</div>
+
+	<!-- INICIO DE LA PAGINA -->
 		<div id="" class="containerHeader">
 			<div class="contenedorLogo">
 				<div class="logo animatedParent">
@@ -825,8 +735,7 @@
 					</div>
 			</div>
 		</div>
-					<!-- The Modal -->
-				<!-- The Modal -->
+<!-- The Modal -->
 				<div id="myModal" class="modal" style=" z-index: 99;">
 
 				  <!-- Modal content -->
@@ -965,7 +874,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><cite>VERSION DEMO 1.12.5 BUILD 7.5.18</cite><br>
+				<br><cite>VERSION DEMO 1.12.7 BUILD 7.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
@@ -1032,5 +941,13 @@
 		}
 	</script>
 	<script src='js/css3-animate-it.js'></script>
+
+	<script>
+		$(window).on('load', function () {
+		    $(".loader-page").fadeOut("slow");
+		});
+	</script>
+
+
 </body>
 </HTML>
