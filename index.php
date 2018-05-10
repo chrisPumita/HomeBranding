@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<HTML lang="es">
+<HTML lang="es" manifest="cache.appcache">
 <head>
 	<TITLE>Home Branding - En Home Branding hacemos Street Marketing, BTL, Guerrilla en Semáforos</TITLE>
 	<!--  INICIO METAS 	-->
@@ -111,7 +111,7 @@
 
 			</div>
 			<div class="contenedorSociales">
-				<h3>Siguenos!</h3>
+				<h3>Síguenos!</h3>
 				<a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a>
 				<img class="redesIcons" src="img/icon-tw.png">
 			</div>
@@ -512,7 +512,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>CROSS WALKER</h3>
-						    		Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folleros o cualquier articulo promocional.
+						    		Caracterizado por su gran impacto ya que además de la imagen promocional que lleve, puede repartir folletos o cualquier artículo promocional.
 						    	</p>
 						    </div>
 						</div>
@@ -524,7 +524,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>CROSS BOARD STREET</h3>
-						    		Cédula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.
+						    		Célula de 4 promotoras o promotores portando un mini bilboard, recomendado para zonas de alto impacto.
 						    	</p>
 						    </div>
 						</div>
@@ -559,7 +559,7 @@
 						    <h3 class="titleHidden">CARTELERA MOVIL</h3>
 						    <div class="text">
 						    	<p>
-						    		<h3>CARTELERA MOVIL</h3>
+						    		<h3>CARTELERA MÓVIL</h3>
 						    		Con un espacio publicitario, se propone al cliente rutas de acuerdo con sus necesidades.
 						    	</p>
 						    </div>
@@ -572,7 +572,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>ESPECTACULARES</h3>
-						    		Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son, Santa Fe, Periférico, Viaducto, Ríos Churubusco, etc. 
+						    		Contamos con los espectaculares con mayor vista dentro de la Ciudad de México, puntos como son: Santa Fe, Periférico, Viaducto, Río Churubusco, etc. 
 						    	</p>
 						    </div>
 						</div>
@@ -596,7 +596,7 @@
 						    <div class="text">
 						    	<p>
 						    		<h3>MATERIAL PUBLICITARIO</h3>
-						    		Material publicitario para punto de venta, elaborados con creatividad y solidas estructuras, listas para destacar la marca.
+						    		Material publicitario para punto de venta, elaborados con creatividad y sólidas estructuras, listas para destacar la marca.
 						    	</p>
 						    </div>
 						</div>
@@ -669,7 +669,7 @@
 						<span class="marca secondColor tuclase">
 							<!-- EMOJIS OBTENIDOS DE https://afeld.github.io/emoji-css/ -->
 							<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-							¡Lo + importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no esta en como se dice, sino en como se hace!<br>
+							¡Lo <strong>+</strong> importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no está en como se dice, sino en como se hace!<br>
 							<strong>#TuPublicidadEnBuenas</strong>
 							<i class="em em-open_hands zoom iconsTextMje1"></i>
 						</span>
@@ -874,7 +874,7 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><cite>VERSION DEMO 1.12.7 BUILD 7.5.18</cite><br>
+				<br><cite>VERSION DEMO 1.13.1.1 BUILD 10.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>

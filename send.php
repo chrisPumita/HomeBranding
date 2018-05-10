@@ -95,7 +95,7 @@
              $mail->Subject  =  "Contacto desde HomeBranding Web Site";
 
 			$mail->Body = " 
-					<table style='font-family: arial, sans-serif; border-collapse: collapse; width: 80%;'>
+					<table style='font-family: arial, sans-serif;width: 250px;'>
 							<tr>
 								<td>
 									<center>
@@ -106,8 +106,8 @@
 							<tr>
 								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #dddddd;'>
 									<center>
-										<h2>👤</h2>
-										name555
+										<h2>NOMBRE:</h2>
+										$nombre
 									</center>
 								</td>
 							</tr>
@@ -115,41 +115,34 @@
 								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px;'>
 									<center>
 
-										<h3>📞</h3>55 2636 28384
+										<h3>TELEFONO</h3>$tel
 									</center>
 								</td>
 							</tr>
 							<tr>
 								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px;  background-color: #dddddd;'>
 									<center>
-										<h3>Su mensaje:</h3>❝
-										'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-										❞
+										<h3>Su mensaje:</h3>&quot;
+										$comentario
+										&quot;
 									</center>
 								</td>
 							</tr>
 							<tr>
 								<td style='border: 1px solid #dddddd; text-align: left; padding: 8px; background: black; color: white'>
 									<center>
-										<h3>📩</h3>xxxxx@xxxx.xxxxx
+										<h3>MAIL:</h3>$correo
 									</center>
 								</td>
 							</tr>
 					</table>
-					🏠
 					<cite>Mensaje enviado desde el formulario de HomeBranding.com.mx</cite>
 			 ";
 						
 			$mail->IsSMTP(); 
             $mail->Host = "mecanismo.com.mx";  // Servidor de Salida.
             $mail->SMTPAuth = true; 
-            $mail->Username = "web@mecanismo.com.mx";  // Correo Electrónico
-            $mail->Password = "mecaMXweb.2"; // Contraseña
+
 			
 			 if ($mail->Send())
 		      	echo "<script>alert('Gracias, nos pondremos en contacto con usted $nombre');location.href ='index.php';</script>";
