@@ -8,7 +8,7 @@
     <meta name="description" content="Expertos en Street Marketing, BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro."/>
     <meta name="autor" content="mecanismo.mx" />
     <meta name="robots" content="INDEX, FOLLOW, ARCHIVE" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- FORMS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -874,80 +874,12 @@
 				<!-- Implements automatic YEAR -->
 				<?php date_default_timezone_set('GMT'); echo date("Y.");?>
 				© Todos los Derechos Reservados. HomeBranding S.A. de C.V.
-				<br><cite>VERSION DEMO 1.13.1.1 BUILD 10.5.18</cite><br>
+				<br><cite>VERSION DEMO 1.14.1 BUILD 14.5.18</cite><br>
 				<button id="myBtn" class="btn btn-default"  onclick="message();">Aviso de Provacidad</button>
 			</samp>
 		</div>
 	</FOOTER>
-	<!-- 	Script Bootstrap JS Ref Navegator -->
-	<script>
-	$(document).ready(function(){$('body').scrollspy({target: ".navbar", offset: 50});$("#homeBranding a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();
-	       var hash = this.hash;$('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 800, function(){
-	        window.location.hash = hash;
-	      });
-	    }  // End if
-	  });
-	});
-	</script>
-	<script>
-		$("#submenu").hide();
-		var flag = 0;
-		$("#menu").click(function(){
-			flag = (flag + 1)%2;
-			
-			if (flag==1) {
-				$("#submenu").show(1000);
-				$(".txt-menu").text("X CERRAR");
-			}else {
-				$("#submenu").hide(1000);
-				$(".txt-menu").text("☰ MENU");
-			}
-		});
-		function message() {
-			var modal = document.getElementById('myModal');
-			var btn = document.getElementById("myBtn");
-			var span = document.getElementsByClassName("close")[0];
-			var span2 = document.getElementsByClassName("close2")[0];
-			btn.onclick = function() {
-			    modal.style.display = "block";
-			}
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-			span2.onclick = function() {
-			    modal.style.display = "none";
-			}
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-		}
-	}
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		        document.getElementById("myBtnUp").style.display = "block";
-		    } else {
-		        document.getElementById("myBtnUp").style.display = "none";
-		    }
-		}
-		function topFunction() {
-		    document.body.scrollTop = 0;
-		    document.documentElement.scrollTop = 0;
-		}
-	</script>
 	<script src='js/css3-animate-it.js'></script>
-
-	<script>
-		$(window).on('load', function () {
-		    $(".loader-page").fadeOut("slow");
-		});
-	</script>
-
-
+	<script src='js/effects.js'></script>
 </body>
 </HTML>
