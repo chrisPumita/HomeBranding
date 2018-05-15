@@ -141,7 +141,7 @@ div.contenedorMje{float:left;padding-left:30px;}
 .gale-center{width:20%;padding-left:0px;padding-right:0px;}
 .gale-rigth{width:40%;padding-right:5px;margin-top:50px;}
 .formatEmprContainer{margin-right:5%;margin-left:10%;margin-bottom:50px;}
-.floating-box{display:inline-block;width:15%;height:150px;margin-left:15px;border:0px solid var(--econd-txt-color);}
+.floating-box{display:inline-block;width:20%;height:auto;margin-left:3%;border:0px solid var(--econd-txt-color);}
 .slider{margin:auto;overflow:hidden;}
 .slider ul{display:flex;padding:0;width:200%;animation:cambio 15s infinite alternate linear;}
 .slider li{width:100%;list-style:none;}
@@ -174,294 +174,55 @@ div.contenedorMje{float:left;padding-left:30px;}
 .div-imgOver:hover .hiddenClic{-ms-transform:scale(0.8);-moz-transform:scale(0.8);-webkit-transform:scale(0.8);-o-transform:scale(0.8);}
 .div-imgOver .hiddenClic{font-family:'Open Sans';padding-top:0px;display:block;text-align:center;width:100%;transform:translate(0px);-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-ms-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;opacity:0;transition:transfom opacity 1.5s;}
 .div-imgOver:hover .titleHidden{visibility:hidden;}
-
-/* The Modal (background) */
-		.modal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    left: 0;
-		    top: 0;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		    -webkit-animation-name: fadeIn; /* Fade in the background */
-		    -webkit-animation-duration: 0.4s;
-		    animation-name: fadeIn;
-		    animation-duration: 0.4s
-		}
-
-		/* Modal Content */
-		.modal-content {
-		    position: fixed;
-		    bottom: 0;
-		    background-color: #fefefe;
-		    width: 100%;
-		    -webkit-animation-name: slideIn;
-		    -webkit-animation-duration: 0.4s;
-		    animation-name: slideIn;
-		    animation-duration: 0.4s
-		}
-
-		/* The Close Button */
-		.close  .close2{
-		    color: var(--second-txt-color);
-		    float: right;
-		    font-size: 28px;
-		    font-weight: bold;
-		}
-
-		.close:hover, .close2:hover,
-		.close:focus, 	.close2:focus {
-		    color: #000;
-		    text-decoration: none;
-		    cursor: pointer;
-		}
-
-		.modal-header {
-		    padding: 2px 16px;
-		    background-color: var(--principal-txt-color);
-		    color: white;
-		}
-
-		.modal-body {padding: 2px 16px;}
-
-		.modal-footer {
-		    padding: 2px 16px;
-		    background-color: var(--principal-txt-color);
-		    color: white;
-		}
-
-
-
-				/* Add Animation */
-		@-webkit-keyframes slideIn {
-		    from {bottom: -300px; opacity: 0} 
-		    to {bottom: 0; opacity: 1}
-		}
-
-		@keyframes slideIn {
-		    from {bottom: -300px; opacity: 0}
-		    to {bottom: 0; opacity: 1}
-		}
-
-		@-webkit-keyframes fadeIn {
-		    from {opacity: 0} 
-		    to {opacity: 1}
-		}
-
-		@keyframes fadeIn {
-		    from {opacity: 0} 
-		    to {opacity: 1}
-		}
-
-
-/*LOADER*/
-
-.loader-page {
-    position: fixed;
-    z-index: 25000;
-    background: rgb(255, 255, 255);
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:all .3s ease;
-  }
-  .loader-page::before {
-    content: "";
-    position: absolute;
-    border: 10px solid var(--principal-txt-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    box-sizing: border-box;
-    border-left: 10px solid rgba(50, 150, 176,0);
-    border-top: 10px solid rgba(50, 150, 176,0);
-    animation: rotarload 1s linear infinite;
-    transform: rotate(0deg);
-  }
-  @keyframes rotarload {
-      0%   {transform: rotate(0deg)}
-      100% {transform: rotate(360deg)}
-  }
-  .loader-page::after {
-    content: "";
-    position: absolute;
-    border: 2px solid var(--principal-txt-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border-left: 2px solid rgba(50, 150, 176, 0);
-    border-top: 2px solid rgba(50, 150, 176, 0);
-    animation: rotarload 1s ease-out infinite;
-    transform: rotate(0deg);
-  }
-
-
-  @media only screen and (max-width: 600px) {
-    /* For tablets: */
-	    .navegacion {
-	    margin-left: 33%;
-	}
-
-	.contHijoServ {
-	    width: 40%;
-	    height: 300px;
-	    margin: 3% 0% 3% 0%;
-	    text-align: center;
-	    font-size: 15px;
-	}
-	.footerMjeEquipo {
-	    background: url(../img/banQuienes.jpg) center no-repeat fixed;
-	    position: initial;
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	    height: 100%;
-	    width: 100%;
-	    padding: 0px;
-	    padding-top: 3%;
-	}
-	
-	.menuTxtFormatMje3 {
-    font-size: 175%;
-	}
-	.menuTxtFormat {
-	    font-size: 183%;
-	}
-
-	#contacto {
-	    display: block;
-	}
-
-	.modal-content {
-    position: fixed;
-    bottom: 0;
-    background-color: #fefefe;
-    width: 73%;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s;
+.modal{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4);-webkit-animation-name:fadeIn;-webkit-animation-duration:0.4s;animation-name:fadeIn;animation-duration:0.4s}
+.modal-content{position:fixed;bottom:0;background-color:#fefefe;width:100%;-webkit-animation-name:slideIn;-webkit-animation-duration:0.4s;animation-name:slideIn;animation-duration:0.4s}
+.close .close2{color:var(--second-txt-color);float:right;font-size:28px;font-weight:bold;}
+.close:hover, .close2:hover,
+.close:focus, .close2:focus{color:#000;text-decoration:none;cursor:pointer;}
+.modal-header{padding:2px 16px;background-color:var(--principal-txt-color);color:white;}
+.modal-body{padding:2px 16px;}
+.modal-footer{padding:2px 16px;background-color:var(--principal-txt-color);color:white;}
+@-webkit-keyframes slideIn{from{bottom:-300px;opacity:0}
+to{bottom:0;opacity:1}
 }
-
+@keyframes slideIn{from{bottom:-300px;opacity:0}
+to{bottom:0;opacity:1}
 }
-@media only screen and (max-width: 481px) {
-	.navegacion {
-	    position: absolute;
-	    top: 0;
-	    background: var(--second-txt-color);
-	    margin-top: 0px;
-	    margin-left: 0px;
-	    opacity: 0.9;
-	    z-index: 99;
-	}
-
-	#headertop {
-	    border-bottom: 15px solid var(--principal-txt-color);
-	    margin-bottom: 0px;
-	    /* margin-left: -10px; */
-	    /* margin-right: -10px; */
-	}
-
-	.containerHeader {
-	    top: 0px;
-	    width: 100%;
-	    padding: 5px;
-	    display: inline-block;
-	}
-
-	.contenedorSociales {
-	    position: absolute;
-	    text-align: center;
-	    float: right;
-	    padding-left: 2px;
-	    margin-top: -177px;
-	    /* margin-bottom: -39px; */
-	    margin-left: 271px;
-	}
-
-	.contenedorGalery {
-	    padding-top: 54px;
-	    width: 100%;
-	    display: block;
-	}
-
-	.contHijoServ {
-	    box-sizing: border-box;
-	    display: block;
-	    width: 79%;
-	    height: 260px;
-	    margin: 3% 0% 3% 0%;
-	    text-align: center;
-	    font-size: 15px;
-	}
-
-	.contenedorServices {
-	    display: inline-block;
-	    margin-right: -150px;
-	    margin-left: 14px;
-	}
-
-	.floating-box {
-    /* display: inline-block; */
-    width: 40px;
-    height: 80px;
-    margin-left: 29px;
-    border: 0px solid var(--econd-txt-color);
-	}
-
-	div.contenedorMje {
-	    float: left;
-	    padding-left: 15px;
-	}
-	.container-fluid {
-	    padding-right: 3px;
-	    margin-right: 0px;
-	    margin-left: 0px;
-	}
-
-	.elementoMmensaje {
-	    margin: 10% 17% 17% 6%;
-	    padding: 2%;
-	    background: rgba(0,0,0,0.3);
-	    display: inline-block;
-	    border-style: solid;
-	    border-color: var(--border-block-color);
-	    color: var(--text-fondo-color);
-	}
-
-	.menuTxtFormat {
-    font-size: 90%;
-	}
-	.menuTxtFormatMje {
-    font-size: 157%;
+@-webkit-keyframes fadeIn{from{opacity:0}
+to{opacity:1}
 }
-	.divForm {
-	    width: 85%;
-	    padding-left: 8%;
-	    padding-top: 11%;
-	    padding-right: 0px;
-	}
-	.form-horizontal .form-group {
-	    margin-right: 0px;
-	    margin-left: 0px;
-	}
-
-	.tittleDiv {
-	    padding: 20px;
-	    margin-left: 7px;
-	}
-
-	.menuTxtFormatMje3 {
-    	font-size: 130%;
-	}
+@keyframes fadeIn{from{opacity:0}
+to{opacity:1}
+}
+.loader-page{position:fixed;z-index:25000;background:rgb(255, 255, 255);left:0px;top:0px;height:100%;width:100%;display:flex;align-items:center;justify-content:center;transition:all .3s ease;}
+.loader-page::before{content:"";position:absolute;border:10px solid var(--principal-txt-color);width:60px;height:60px;border-radius:100%;box-sizing:border-box;border-left:10px solid rgba(50, 150, 176,0);border-top:10px solid rgba(50, 150, 176,0);animation:rotarload 1s linear infinite;transform:rotate(0deg);}
+@keyframes rotarload{0%{transform:rotate(0deg)}
+100%{transform:rotate(360deg)}
+}
+.loader-page::after{content:"";position:absolute;border:2px solid var(--principal-txt-color);width:60px;height:60px;border-radius:50%;box-sizing:border-box;border-left:2px solid rgba(50, 150, 176, 0);border-top:2px solid rgba(50, 150, 176, 0);animation:rotarload 1s ease-out infinite;transform:rotate(0deg);}
+@media only screen and (max-width:600px){.navegacion{margin-left:33%;}
+.contHijoServ{width:40%;height:300px;margin:3% 0% 3% 0%;text-align:center;font-size:15px;}
+.footerMjeEquipo{background:url(../img/banQuienes.jpg) center no-repeat fixed;position:initial;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;width:100%;padding:0px;padding-top:3%;}
+.menuTxtFormatMje3{font-size:175%;}
+.menuTxtFormat{font-size:183%;}
+#contacto{display:block;}
+.modal-content{position:fixed;bottom:0;background-color:#fefefe;width:73%;-webkit-animation-name:slideIn;-webkit-animation-duration:0.4s;animation-name:slideIn;animation-duration:0.4s;}
+}
+@media only screen and (max-width:481px){.navegacion{position:absolute;top:0;background:var(--second-txt-color);margin-top:0px;margin-left:0px;opacity:0.9;z-index:99;}
+#headertop{border-bottom:15px solid var(--principal-txt-color);margin-bottom:0px;}
+.containerHeader{top:0px;width:100%;padding:5px;display:inline-block;}
+.contenedorSociales{position:absolute;text-align:center;float:right;padding-left:2px;margin-top:-177px;margin-left:271px;}
+.contenedorGalery{padding-top:54px;width:100%;display:block;}
+.contHijoServ{box-sizing:border-box;display:block;width:79%;height:260px;margin:3% 0% 3% 0%;text-align:center;font-size:15px;}
+.contenedorServices{display:inline-block;margin-right:-150px;margin-left:14px;}
+.floating-box{width:45%;height:80px;margin-left:29px;border:0px solid var(--econd-txt-color);}
+div.contenedorMje{float:left;padding-left:15px;}
+.container-fluid{padding-right:3px;margin-right:0px;margin-left:0px;}
+.elementoMmensaje{margin:10% 17% 17% 6%;padding:2%;background:rgba(0,0,0,0.3);display:inline-block;border-style:solid;border-color:var(--border-block-color);color:var(--text-fondo-color);}
+.menuTxtFormat{font-size:90%;}
+.menuTxtFormatMje{font-size:157%;}
+.divForm{width:85%;padding-left:8%;padding-top:11%;padding-right:0px;}
+.form-horizontal .form-group{margin-right:0px;margin-left:0px;}
+.tittleDiv{padding:20px;margin-left:7px;}
+.menuTxtFormatMje3{font-size:130%;}
 }
