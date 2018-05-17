@@ -1,4 +1,4 @@
-<!-- ----- VERSION DEL DOCUMENTO ---------VERSION DEMO 1.15.1 BUILD 15.5.18@autor: mecanismo creativo@website: mecanismo.mx@webdev: ChrisRCGS -->
+<!-- ----- VERSION DEL DOCUMENTO ---------VERSION DEMO 1.16.1 BUILD 17.5.18 @autor: mecanismo creativo@website: mecanismo.mx@webdev: ChrisRCGS -->
 <!DOCTYPE html>
 <html lang="es" manifest="cache.appcache">
 
@@ -53,7 +53,7 @@
         </ul>
       </div>
       <div class="contenedorSociales">
-        <h3>Síguenos!</h3>
+        <h3 style="color:  var(--background-fotter-color);">Síguenos!</h3>
         <a class="redes" href="https://www.facebook.com/HomeBranding/" target="_blank"><img class="redesIcons" src="img/icon-face.png"></a><img class="redesIcons" src="img/icon-tw.png"></div>
     </div>
   </header><a href="#homeBranding" title="To Top"><button id="myBtnUp" title="Go to top"> ▲</button> </a>
@@ -66,7 +66,7 @@
     <div class="contenedorGalery">
       <div class="derGalery">
         <!--1.1 imagen estatica IMG 1-->
-        <div class="containerData box1" style="padding-left: 25%;"><img class="imagenAjustada precarga" src="img/photos/1.1.JPG" alt="foto1">
+        <div class="containerData box1"><img class="imagenAjustada precarga" src="img/photos/1.1.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
               <?php echo "$img7_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
@@ -82,7 +82,7 @@
           </div>
         </div>
         <!--1.2 imagen estatica IMG 2-->
-        <div class="containerData box2" style="padding-left: 25%;"><img class="imagenAjustada precarga" src="img/photos/1.2.JPG" alt="foto1">
+        <div class="containerData box2"><img class="imagenAjustada precarga" src="img/photos/1.2.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
               <?php echo "$img7_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
@@ -190,7 +190,7 @@
       <!--TERCER PANEL SE COMPONE DE 4 IMAGENESIMG 8,9,10,11-->
       <!-- 3.1 imagen estatica IMG 8-->
       <div class="izqGalery">
-        <div class="box8 containerData" style="width: 350px;"><img class="imagenAjustada precarga" src="img/photos/3.1.jpg" alt="foto1">
+        <div class="box8 containerData"><img class="imagenAjustada precarga" src="img/photos/3.1.jpg" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
               <?php echo "$img8_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
@@ -245,9 +245,9 @@
             </div>
           </div>
         </div>
-        <!-- 3.2.1 imagen estatica IMG 9-->
-        <div class="containerData box11" style="width: 350px;"> <img class="imagenAjustada precarga" src="img/photos/3.3.JPG" alt="foto1">
-          <div id="alpha" style="width: 350px;">
+        <!-- 3.2.1 imagen estatica IMG 11-->
+        <div class="containerData box11"> <img class="imagenAjustada precarga" src="img/photos/3.3.JPG" alt="foto1">
+          <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
               <?php echo "$img11_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
               <?php echo "$img11_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
@@ -440,9 +440,9 @@
               <p class="secondColor" style="position: absolute; bottom: 26px; padding-left:10px"> 10 años <b>·</b><img class="iconSocial" src="img/users.png"></p>
             </div>
           </div>
-        </div><br><br><br><br>
+        </div>
         <div class="elementoMensajeEmotivo menuTxtFormat mjeText1">
-          <p class=""><span class="marca secondColor tuclase"><!-- EMOJIS OBTENIDOS DE https:\afeld.github.io\emoji-css\ --><link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">¡Lo <strong>+</strong> importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no está en como se dice, sino en como se hace!<br><strong>#TuPublicidadEnBuenas</strong><i class="em em-open_hands zoom iconsTextMje1"></i></span></p>
+          <p style="margin: 117px 0 2px;"><span class="marca secondColor tuclase"><!-- EMOJIS OBTENIDOS DE https:\afeld.github.io\emoji-css\ --><link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">¡Lo <strong>+</strong> importante de la comunicación <i class="em em-loudspeaker zoom iconsTextMje1"></i><br> no está en como se dice, sino en como se hace!<br><strong>#TuPublicidadEnBuenas</strong><i class="em em-open_hands zoom iconsTextMje1"></i></span></p>
         </div>
         <div class="animatedParent"><img class="publishFondo animated fadeInUpShort" src="img/handPublis.png" alt="ManosConAnuncios"></div>
       </div>
@@ -450,7 +450,7 @@
     <div id="contacto" class="contenedorForm">
       <div class="divForm">
         <h3 class="tittleDivForm" style="text-align:center;"><ins>ESCRÍBENOS:</ins></h3>
-        <form class="form-horizontal" action="send.php" method="post">
+        <form class="form-horizontal contenedorBorderContact" action="send.php" method="post">
           <div class="form-group"> <label class="control-label col-sm-2 colorContacto infoFormat" for="nom">*Nombre:</label>
             <div class="col-sm-6"> <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required="Please"> </div>
           </div>
@@ -473,7 +473,7 @@
       </div>
       <div class="divAddress">
         <h3 class="tittleDivForm"><ins style="color: #FFFFFF;">INFORMES:</ins></h3>
-        <div style="color: #FFFFFF;" class=" contenedorBorderContact"><br><br><br>
+        <div style="color: #FFFFFF;">
           <p class="colorContacto">
             <?php echo "$correoEmpresa"; ?>
           </p>
@@ -489,70 +489,38 @@
           <h2>Aviso de Privacidad</h2>
         </div>
         <div class="modal-body politicasCont">
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-          <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</P>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-          <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</P>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-          <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</P>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
-          <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</P>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <h1>DATOS PERSONALES QUE RECABAMOS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+          <div class="bloquepriv">
+            <h1>DESCRIPCIÓN DEL AVISO</h1>
+            <p>En SU PUBLICIDAD EN BUENAS MANOS S.A de C.V contamos <strong>domicilio ubicado en Cerrada Noche Buena 15, Col. Potreros, Deleg. Tlalpan, C.P. 01780, CDMX, México, y teléfono de contacto 01 (55) 3536 3253 y 01 (55) 3536 3254</strong>. La responsabilidad de la protección de los datos está a cargo de <strong>NOMBRE ENCARGADO</strong>. Hacemos de su conocimiento que no solicitamos ni hacemos uso de datos personales sensibles. Los términos que se utilicen en el presente aviso, tendrán la definición que a los mismos le asigna la Ley Federal de Protección de Datos Personales en Posesión de Particulares.</p>
+          </div>
+            <div class="bloquepriv">
+            <h1>DATOS PERSONALES QUE RECABAMOS</h1>
+            <p>Los datos personales que podemos llegar a recabar por la relación comercial que se lleva acabo se mantendrán como privados y solo solicitaremos información necesaria para llevar a cabo los requerimientos solicitados por los clientes; dentro los que encuentran:<strong> Nombres, Apellidos, Domicilios, teléfonos, correos electrónicos, fecha de nacimiento, información bancaria, Intereses sobre los productos, clave de Registro Federal de Contribuyentes, Información de formas de pago y toda aquella información que el usuario nos proporcione a lo largo de la relación contractual o comercial que se establezca.</strong></p>
+          </div>
+          
+          <div class="bloquepriv">
+            <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
+            <p>Los datos personales podrán ser tratados y utilizados por nosotros y nuestras filiales o subsidiarias nacionales e Internacionales para llevar a cabo algunas o todas las actividades relacionadas con el cumplimiento de las obligaciones que deriven de la relación comercial que se originen y deriven de la prestación de servicios o venta de productos; con el propósito de informar a los clientes del lanzamiento de nuevos productos, servicios, promociones y ofertas de nosotros o terceros, realizar estudios de mercado, así como cualquier otra actividad tendiente a promover y mejorar los servicios.
+                  La transferencia de los datos personales del usuario se encuentra limitada a aquellos actos, hechos y/o procedimientos que se requieran implementar a efecto de estar en posibilidad de cumplir con las obligaciones contractuales, regulatorias y comerciales en el curso ordinario de las operaciones. Si el usuario no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.</p>
+          </div>
+          <div class="bloquepriv">
+            <h1>MEDIOS PARA EJERCER LOS DERECHOS (A.R.C.O)</h1>
+            <p>Los datos personales que recabamos de los usuarios serán tratados en estricto apego a la Ley. En cualquier momento, el usuario tendrá el derecho a solicitar el ejercicio de los derechos que le confiere la Ley, para limitar el acceso, la rectificación, cancelación u oposición; enviando su solicitud correspondiente por escrito al siguiente <strong>correo electrónico: atencionaclientes@homebranding.com.mx o comunicándose vía telefónica al 01 (55) 3536 3253 y 01 (55) 3536 3254, donde con gusto lo atenderemos.</strong><br>
+            Si usted se registra vía telefónica o por algún medio digital y no desea recibir notificaciones y/o avisos sobre nosotros o marcas comerciales afiliadas, tendrá que indicarlo durante el proceso a la persona de Mecanismo Creativo MX que esté tratando en ese momento, marcándolo en el formulario que este entregando y en todo caso, dirigiéndose con nuestro departamento de Atención al Cliente.</p>
+          </div>
+          <div class="bloquepriv">
+            <h1>MODIFICACIONES AL AVISO DE PRIVACIDAD</h1>
+            <p>Nos reservamos el derecho de efectuar en cualquier momento, cambios o modificaciones al presente aviso de privacidad, para la atención de novedades legislativas o jurisprudenciales, políticas internas, nuevos requerimientos para el ofrecimiento de nuestros productos y mejores prácticas en el servicio. Estas modificaciones estarán disponibles al público a través de los siguientes medios:<br>
+              • En nuestra página de internet <strong>www.homebranding.com.mx</strong><br>
+            • Mediante anuncios visibles en nuestras instalaciones <br>
+            • Vía mail al correo electrónico que nos proporciono <br>
+            En la medida que el usuario no solicite, en los términos antes mencionados, la cancelación y/u oposición de sus información y continúe accediendo y/o utilizando, parcial o totalmente, los servicios, implicará que ha aceptado y consentido tales cambios y modificaciones.
+            Al proporcionarnos sus datos personales, expresa, reconoce y acepta el presente Aviso, según el mismo pueda ser modificado en tiempo, y otorga su consentimiento para procesar sus datos personales de la forma que se explica en el presente. Si no está de acuerdo o acepta este aviso, no deberá proporcionar ninguna información, ni utilizar los servicios que le ofrecemos.</p>
+          </div>
+          
+            
+          
+           <div class="actualizacion">FECHA DE ACTUALIZACIÓN: 17-MAYO-2018.</div>
         </div>
         <div class="modal-footer"> <span class="close2">CERRAR</span> </div>
       </div>
