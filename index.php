@@ -1,6 +1,6 @@
-<!-- ----- VERSION DEL DOCUMENTO ---------VERSION DEMO 1.16.1 BUILD 17.5.18 @autor: mecanismo creativo@website: mecanismo.mx@webdev: ChrisRCGS -->
+<!-- ----- VERSION DEL DOCUMENTO ---------VERSION DEMO 1.18.2 BUILD 25.5.18 @autor: mecanismo creativo @website: mecanismo.mx @webdev: ChrisRCGS -->
 <!DOCTYPE html>
-<html lang="es" manifest="cache.appcache">
+<html lang="es" manifest="cache.appcache" style="overflow-x: hidden;">
 
 <head>
   <TITLE>Home Branding - En Home Branding hacemos Street Marketing, BTL, Guerrilla en Semáforos</TITLE>
@@ -17,7 +17,7 @@
   <!-- EFECTOS Y ANIMACIONES-->
   <link rel="stylesheet" type="text/css" href="css/animations-it.css">
   <link rel="stylesheet" type="text/css" href="css/animations.css">
-  <link rel="shortcut icon" href="http://www.homebranding.com.mx/cms//favicon.ico">
+  <link rel="shortcut icon" href="img/icons/favicon.ico">
   <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
   <script type="application/ld+json">
     [ { "@context" : "http://schema.org", "@type" : "LocalBusiness", "name" : "Home Brandig", "priceRange" : "1000", "image" : "http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo.png", "telephone" : [ "35-36-32-53", "35-36-32-54" ], "email" : "atencionaclientes@homebranding.com.mx", "address" : { "@type" : "PostalAddress", "streetAddress" : "Cerrada Noche Buena 15", "addressLocality" : "Col. Potreros", "addressRegion" : "Deleg. Tlalpan", "addressCountry" : "Méx" }, "url" : "http://www.homebranding.com.mx/", "review" : { "@type" : "Review", "author" : { "@type" : "Person", "name" : "Home Branding" }, "reviewBody" : "Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro." }}, { "@context" : "http://schema.org", "@type" : "LocalBusiness", "name" : "Home Brandig", "priceRange" : "1000", "image" : "http://mecanismo.mx/proyectos/HomeBranding/img/homebranding-logo.png", "telephone" : [ "35-36-32-53", "35-36-32-54" ], "email" : "atencionaclientes@homebranding.com.mx", "address" : { "@type" : "PostalAddress", "streetAddress" : "Cerrada Noche Buena 15", "addressLocality" : "Col. Potreros", "addressRegion" : "CDMX", "addressCountry" : "Méx", "postalCode" : "01780" }, "url" : "http://www.homebranding.com.mx/", "review" : { "@type" : "Review", "author" : { "@type" : "Person", "name" : "Home Branding" }, "reviewBody" : "Tu Equipo de expertos en: Street Marketing, actividades BTL, Guerrilla en Semáforos; para lograr que su marca, su producto o empresa logre los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro." }} ]
@@ -39,7 +39,7 @@
       </div>
       <div class="contenedorMenu">
         <ul id="menu" class="navegacion">
-          <li><a class="txt-menu" href="#" onclick="return false" ;="" style="background: white; font-size: 25px;"><strong class="primaryColor">☰</strong><strong>MENU</strong></a>
+          <li><a class="txt-menu" href="#" onclick="return false" ;="" style="background: white; font-size: 25px;"><strong class="primaryColor">☰</strong><strong>MENÚ</strong></a>
             <ul
               id="submenu" hidden="" style="display: none;">
               <li class="submenu"><a href="#exitos">CASOS DE ÉXITO</a></li>
@@ -48,6 +48,7 @@
               <li class="submenu"><a href="#cuentas">CUENTAS</a></li>
               <li class="submenu"><a href="#mensaje">HOME BRANDING</a></li>
               <li class="submenu"><a href="#contacto">CONTACTO</a></li>
+              <li></li>
         </ul>
         </li>
         </ul>
@@ -65,52 +66,46 @@
     </div>
     <div class="contenedorGalery">
       <div class="derGalery">
-        <!--1.1 imagen estatica IMG 1-->
+<!--1.1 imagen estatica IMG 1-->
         <div class="containerData box1"><img class="imagenAjustada precarga" src="img/photos/1.1.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img7_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img7_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img7_pre"; ?> </p>
+              <?php echo "$img1_name"; ?> </p>
           </div>
           <div class="overlay">
-            <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-              <?php echo "$img1_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-              <?php echo "$img1_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-              <?php echo "$img1_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-              <?php echo "$img1_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor textoImgCOntenedorLong"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img1_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img1_peo"; ?>
+            </p>
           </div>
         </div>
-        <!--1.2 imagen estatica IMG 2-->
+<!--1.2 imagen estatica IMG 2-->
         <div class="containerData box2"><img class="imagenAjustada precarga" src="img/photos/1.2.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img7_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img7_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img7_pre"; ?> </p>
+              <?php echo "$img2_name"; ?> </p>
           </div>
           <div class="overlay">
-            <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-              <?php echo "$img2_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-              <?php echo "$img2_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-              <?php echo "$img2_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-              <?php echo "$img2_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor textoImgCOntenedorLong"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img2_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img2_peo"; ?>
+            </p>
           </div>
         </div>
-        <!-- 1.3 imagen estatica IMG 3 -->
+<!-- 1.3 imagen estatica IMG 3 -->
         <div class="containerData box3"> <img class="imagenAjustada precarga" src="img/photos/1.3.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img3_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img3_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img3_pre"; ?> </p>
+              <?php echo "$img3_name"; ?> </p>
           </div>
           <div class="overlay">
-            <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-              <?php echo "$img3_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-              <?php echo "$img3_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-              <?php echo "$img3_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-              <?php echo "$img3_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img3_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img3_peo"; ?>
+            </p>
           </div>
         </div>
       </div>
@@ -121,49 +116,43 @@
         <div class="containerData box4"><img class="imagenAjustada precarga img_container" src="img/photos/2.1.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img4_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img4_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img4_pre"; ?> </p>
+              <?php echo "$img4_name"; ?> </p>
           </div>
           <div class="overlay">
-            <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-              <?php echo "$img4_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-              <?php echo "$img4_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-              <?php echo "$img4_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-              <?php echo "$img4_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor textoImgCOntenedorLong"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img4_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img4_peo"; ?>
+            </p>
           </div>
         </div>
         <!-- 2.2 imagen estatica IMG 5 -->
         <div class="containerData box5"> <img class="imagenAjustada precarga img_container" src="img/photos/2.2.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img5_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img5_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img5_pre"; ?> </p>
+              <?php echo "$img5_name"; ?> </p>
           </div>
           <div class="overlay">
-            <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-              <?php echo "$img5_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-              <?php echo "$img5_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-              <?php echo "$img5_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-              <?php echo "$img5_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img5_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img5_peo"; ?>
+            </p>
           </div>
         </div>
         <!-- 2.3 imagen estaticaIMG 6-->
         <div class="containerData box6"> <img class="imagenAjustada precarga img_container" src="img/photos/2.3.jpg" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img6_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img6_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img6_pre"; ?> </p>
+              <?php echo "$img6_name"; ?></p>
           </div>
           <div class="overlay">
             <div class="box6">
-              <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                <?php echo "$img6_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                <?php echo "$img6_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                <?php echo "$img6_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                <?php echo "$img6_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img6_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img6_peo"; ?>
+            </p>
             </div>
           </div>
         </div>
@@ -171,17 +160,15 @@
         <div class="containerData box7"> <img class="imagenAjustada precarga img_container" src="img/photos/2.4.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img7_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img7_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img7_pre"; ?> </p>
+              <?php echo "$img7_name"; ?>  </p>
           </div>
           <div class="overlay">
             <div class="box7">
-              <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                <?php echo "$img7_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                <?php echo "$img7_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                <?php echo "$img7_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                <?php echo "$img7_pre"; ?> Premios<br> </p>
+             <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img7_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img7_peo"; ?>
+            </p>
             </div>
           </div>
         </div>
@@ -193,17 +180,15 @@
         <div class="box8 containerData"><img class="imagenAjustada precarga" src="img/photos/3.1.jpg" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img8_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img8_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img8_pre"; ?> </p>
+              <?php echo "$img8_name"; ?> </p>
           </div>
           <div class="overlay">
             <div class="box8 style=" width: 350px; "">
-              <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                <?php echo "$img8_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                <?php echo "$img8_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                <?php echo "$img8_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                <?php echo "$img8_pre"; ?> Premios<br> </p>
+              <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img8_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img8_peo"; ?>
+            </p>
             </div>
           </div>
         </div>
@@ -212,17 +197,15 @@
           <div class="containerData box9" style="width: 60%;"> <img class="imagenAjustada precarga " src="img/photos/3.2.1.JPG" alt="foto1">
             <div id="alpha">
               <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-                <?php echo "$img9_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-                <?php echo "$img9_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-                <?php echo "$img9_pre"; ?> </p>
+              <?php echo "$img9_name"; ?> </p>
             </div>
             <div class="overlay">
               <div class="box9">
-                <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                  <?php echo "$img9_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                  <?php echo "$img9_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                  <?php echo "$img9_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                  <?php echo "$img9_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img9_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img9_peo"; ?>
+            </p>
               </div>
             </div>
           </div>
@@ -230,17 +213,15 @@
           <div class="containerData box10"> <img class="imagenAjustada precarga " src="img/photos/3.2.2.JPG" alt="foto1">
             <div id="alpha">
               <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-                <?php echo "$img10_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-                <?php echo "$img10_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-                <?php echo "$img10_pre"; ?> </p>
+              <?php echo "$img10_name"; ?> </p>
             </div>
             <div class="overlay">
               <div class="box10">
-                <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                  <?php echo "$img10_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                  <?php echo "$img10_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                  <?php echo "$img10_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                  <?php echo "$img10_pre"; ?> Premios<br> </p>
+            <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+              <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img10_name"; ?> <br>
+              <strong><ins>Servicio:</ins></strong><br>
+              <?php echo "$img10_peo"; ?>
+            </p>
               </div>
             </div>
           </div>
@@ -249,17 +230,15 @@
         <div class="containerData box11"> <img class="imagenAjustada precarga" src="img/photos/3.3.JPG" alt="foto1">
           <div id="alpha">
             <p> <img class="iconImageDesple" src="img/icons/people-iconBN.png">
-              <?php echo "$img11_peo"; ?> <img class="iconImageDesple" src="img/icons/speech-bubbleB.png">
-              <?php echo "$img11_reg"; ?><img class="iconImageDesple" src="img/icons/premios-iconBN.png">
-              <?php echo "$img11_pre"; ?> </p>
+              <?php echo "$img11_name"; ?></p>
           </div>
           <div class="overlay">
             <div class="box11">
-              <p class="textoImgCOntenedor"> <strong><ins>Activación</ins></strong><br>
-                <?php echo "$img11_name"; ?> <br><img class="iconImageDesple" src="img/icons/people-icon.png">
-                <?php echo "$img11_peo"; ?> Personas <br><img class="iconImageDesple" src="img/icons/speech-bubble.png">
-                <?php echo "$img11_reg"; ?> Registros <br><img class="iconImageDesple" src="img/icons/premios-icon.png">
-                <?php echo "$img11_pre"; ?> Premios<br> </p>
+               <p class="textoImgCOntenedor"> <strong><ins>Activación:</ins></strong><br>
+                <img class="iconImageDesple" src="img/icons/people-icon.png"><?php echo "$img11_name"; ?> <br>
+                <strong><ins>Servicio:</ins></strong><br>
+                <?php echo "$img11_peo"; ?>
+              </p>
             </div>
           </div>
         </div>
@@ -337,9 +316,8 @@
               <h3 class="titleHidden">ROLL UP</h3>
               <div class="text">
                 <p>
-                  <h3>ROLL UP</h3> Este servicio es altamente recomendable para aquellos que buscan posicionar su marca y puntos de venta, por medio de la
-                  combinación del volanteo de flyers en conjunto con la manta publicitaria. Es colocada en los puntos con mayor flujo vehicular y en horarios
-                  específicos para que tenga mayor impacto. </p>
+                  <h3>ROLL UP</h3> Este servicio es altamente recomendable posicionar su marca y puntos de venta, combinando el volanteo de flayers con la manta publicitaria. Es colocada en los puntos con mayor flujo vehicular y en horarios específicos para mayor impacto.
+                  </p>
               </div>
             </div>
           </div>
@@ -398,7 +376,7 @@
     <div id="nosotros" class="container-fluid">
       <div class="contenedorGaleria">
         <div class="animatedParent">
-          <h2 class="secondColor alingDer tittleDiv animated fadeInRight">QUIENES SOMOS</h2>
+          <h2 class="secondColor alingDer tittleDiv animated fadeInRight">QUIÉNES SOMOS</h2>
         </div>
         <div id="" class="slider portada footerMjeEquipo">
           <ul class="slideshow-container" style="padding-top: 10px;">
@@ -407,7 +385,7 @@
                 los resultados esperados a través de tácticas de mercadotecnia directa, aprovechando las oportunidades del mercado actual y futuro.</div>
             </li>
             <li>
-              <div class=" elementoMmensaje menuTxtFormatMje3"> VISIÓN: <br>Ser la mejor agencia de mercadotecnia directa e investigación de Latinoamérica, proporcionando a cada uno de nuestros clientes
+              <div class=" elementoMmensaje menuTxtFormatMje3 menuTxtFormatMje4"> VISIÓN: <br>Ser la mejor agencia de mercadotecnia directa e investigación de Latinoamérica, proporcionando a cada uno de nuestros clientes
                 satisfacción total en cada producto y servicio. Comprometidos con nuestro entorno y nuestros clientes, a través de un liderazgo eficaz,
                 con la mejor gente, las mejores prácticas y la mejor tecnología, creando de esta manera un gran valor para la industria. </div>
             </li>
@@ -421,7 +399,7 @@
         <h2 class='primaryColor tittleDiv animated fadeInLeft'>CUENTAS</h2>
       </div>
       <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/nelsonVargarIcon.png" alt="Icono Nelson Vargas"></div>
-      <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/chilisLogo.jpg" alt="Logo Chilis"></div>
+      <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/chilisLogo.png" alt="Logo Chilis"></div>
       <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/CaliforniaPizzaLogo.png" alt="logo California Pizza"></div>
       <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/DominosLogo.png" alt="Logo Dominos Pizza"></div>
       <div class="floating-box"><img class="imagenAjustada img_container" src="img/logos-emp/SotanoLogo.png" alt="Logo El Sotano Liberia"></div>
@@ -491,7 +469,7 @@
         <div class="modal-body politicasCont">
           <div class="bloquepriv">
             <h1>DESCRIPCIÓN DEL AVISO</h1>
-            <p>En SU PUBLICIDAD EN BUENAS MANOS S.A de C.V contamos <strong>domicilio ubicado en Cerrada Noche Buena 15, Col. Potreros, Deleg. Tlalpan, C.P. 01780, CDMX, México, y teléfono de contacto 01 (55) 3536 3253 y 01 (55) 3536 3254</strong>. La responsabilidad de la protección de los datos está a cargo de <strong>NOMBRE ENCARGADO</strong>. Hacemos de su conocimiento que no solicitamos ni hacemos uso de datos personales sensibles. Los términos que se utilicen en el presente aviso, tendrán la definición que a los mismos le asigna la Ley Federal de Protección de Datos Personales en Posesión de Particulares.</p>
+            <p>En SU PUBLICIDAD EN BUENAS MANOS S.A de C.V contamos <strong>domicilio ubicado en Cerrada Noche Buena 15, Col. Potreros, Deleg. Tlalpan, C.P. 01780, CDMX, México, y teléfono de contacto 01 (55) 3536 3253 y 01 (55) 3536 3254</strong>. La responsabilidad de la protección de los datos está a cargo de <strong>Daniela Ríos</strong>. Hacemos de su conocimiento que no solicitamos ni hacemos uso de datos personales sensibles. Los términos que se utilicen en el presente aviso, tendrán la definición que a los mismos le asigna la Ley Federal de Protección de Datos Personales en Posesión de Particulares.</p>
           </div>
             <div class="bloquepriv">
             <h1>DATOS PERSONALES QUE RECABAMOS</h1>
@@ -501,26 +479,23 @@
           <div class="bloquepriv">
             <h1>¿CON QUE FINALIDAD RECABAMOS LOS DATOS?</h1>
             <p>Los datos personales podrán ser tratados y utilizados por nosotros y nuestras filiales o subsidiarias nacionales e Internacionales para llevar a cabo algunas o todas las actividades relacionadas con el cumplimiento de las obligaciones que deriven de la relación comercial que se originen y deriven de la prestación de servicios o venta de productos; con el propósito de informar a los clientes del lanzamiento de nuevos productos, servicios, promociones y ofertas de nosotros o terceros, realizar estudios de mercado, así como cualquier otra actividad tendiente a promover y mejorar los servicios.
-                  La transferencia de los datos personales del usuario se encuentra limitada a aquellos actos, hechos y/o procedimientos que se requieran implementar a efecto de estar en posibilidad de cumplir con las obligaciones contractuales, regulatorias y comerciales en el curso ordinario de las operaciones. Si el usuario no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.</p>
+            La transferencia de los datos personales del usuario se encuentra limitada a aquellos actos, hechos y/o procedimientos que se requieran implementar a efecto de estar en posibilidad de cumplir con las obligaciones contractuales, regulatorias y comerciales en el curso ordinario de las operaciones. Si el usuario no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.</p>
           </div>
           <div class="bloquepriv">
             <h1>MEDIOS PARA EJERCER LOS DERECHOS (A.R.C.O)</h1>
-            <p>Los datos personales que recabamos de los usuarios serán tratados en estricto apego a la Ley. En cualquier momento, el usuario tendrá el derecho a solicitar el ejercicio de los derechos que le confiere la Ley, para limitar el acceso, la rectificación, cancelación u oposición; enviando su solicitud correspondiente por escrito al siguiente <strong>correo electrónico: atencionaclientes@homebranding.com.mx o comunicándose vía telefónica al 01 (55) 3536 3253 y 01 (55) 3536 3254, donde con gusto lo atenderemos.</strong><br>
-            Si usted se registra vía telefónica o por algún medio digital y no desea recibir notificaciones y/o avisos sobre nosotros o marcas comerciales afiliadas, tendrá que indicarlo durante el proceso a la persona de Mecanismo Creativo MX que esté tratando en ese momento, marcándolo en el formulario que este entregando y en todo caso, dirigiéndose con nuestro departamento de Atención al Cliente.</p>
+            <p>Los datos personales que recabamos de los usuarios serán tratados en estricto apego a la Ley. En cualquier momento, el usuario tendrá el derecho a solicitar el ejercicio de los derechos que le confiere la Ley, para limitar el acceso, la rectificación, cancelación u oposición; enviando su solicitud correspondiente por escrito al siguiente <strong>correo electrónico: drios@homebranding.com.mx o comunicándose vía telefónica al 01 (55) 3536 3253 y 01 (55) 3536 3254, donde con gusto lo atenderemos.</strong><br>
+            Si usted se registra vía telefónica o por algún medio digital y no desea recibir notificaciones y/o avisos sobre nosotros o marcas comerciales afiliadas, tendrá que indicarlo durante el proceso a la persona de Home Branding que esté tratando en ese momento, marcándolo en el formulario que este entregando y en todo caso, dirigiéndose con nuestro departamento de Atención al Cliente.</p>
           </div>
           <div class="bloquepriv">
             <h1>MODIFICACIONES AL AVISO DE PRIVACIDAD</h1>
             <p>Nos reservamos el derecho de efectuar en cualquier momento, cambios o modificaciones al presente aviso de privacidad, para la atención de novedades legislativas o jurisprudenciales, políticas internas, nuevos requerimientos para el ofrecimiento de nuestros productos y mejores prácticas en el servicio. Estas modificaciones estarán disponibles al público a través de los siguientes medios:<br>
-              • En nuestra página de internet <strong>www.homebranding.com.mx</strong><br>
+            • En nuestra página de internet <strong>www.homebranding.com.mx</strong><br>
             • Mediante anuncios visibles en nuestras instalaciones <br>
             • Vía mail al correo electrónico que nos proporciono <br>
             En la medida que el usuario no solicite, en los términos antes mencionados, la cancelación y/u oposición de sus información y continúe accediendo y/o utilizando, parcial o totalmente, los servicios, implicará que ha aceptado y consentido tales cambios y modificaciones.
             Al proporcionarnos sus datos personales, expresa, reconoce y acepta el presente Aviso, según el mismo pueda ser modificado en tiempo, y otorga su consentimiento para procesar sus datos personales de la forma que se explica en el presente. Si no está de acuerdo o acepta este aviso, no deberá proporcionar ninguna información, ni utilizar los servicios que le ofrecemos.</p>
           </div>
-          
-            
-          
-           <div class="actualizacion">FECHA DE ACTUALIZACIÓN: 17-MAYO-2018.</div>
+           <div class="actualizacion">FECHA DE ACTUALIZACIÓN: 22-MAYO-2018.</div>
         </div>
         <div class="modal-footer"> <span class="close2">CERRAR</span> </div>
       </div>

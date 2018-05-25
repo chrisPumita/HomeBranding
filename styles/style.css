@@ -202,34 +202,41 @@ to{opacity:1}
 .loader-page::after{content:"";position:absolute;border:2px solid var(--principal-txt-color);width:60px;height:60px;border-radius:50%;box-sizing:border-box;border-left:2px solid rgba(50, 150, 176, 0);border-top:2px solid rgba(50, 150, 176, 0);animation:rotarload 1s ease-out infinite;transform:rotate(0deg);}
 .bloquepriv{padding-left: 5%;padding-right: 5%;}
 .actualizacion{text-align: center;}
-@media only screen and (max-width:770px){.navegacion{    margin-left: -132px;margin-top: 0px;}
+@media only screen and (max-width:770px){.navegacion{margin-left: 30%;margin-top: 6%;}
 .contHijoServ{width:40%;height:300px;margin:3% 0% 3% 0%;text-align:center;font-size:15px;}
-.footerMjeEquipo{background:url(../img/banQuienes.jpg) center no-repeat fixed;position:initial;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;width:100%;padding:0px;padding-top:3%;}
-.menuTxtFormatMje3{font-size:175%;}
-.menuTxtFormat{font-size:183%;}
+.footerMjeEquipo{background:url(../img/banQuienes.jpg) center no-repeat;position:initial;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;width:100%;padding:0px;padding-top:3%;}
+.menuTxtFormatMje3{font-size:100%;}
+.menuTxtFormatMje4 {font-size: 140%;}
+.menuTxtFormat{font-size:150%;}
 #contacto{display:block;}
 .modal-content{position:fixed;bottom:0;background-color:#fefefe;width:100%;-webkit-animation-name:slideIn;-webkit-animation-duration:0.4s;animation-name:slideIn;animation-duration:0.4s;}
 .divForm {width: 90%;padding-left: 10%;padding-top: 6%;padding-bottom: 6%;}
 .contenedorBorderContact {border-right: 0px solid var(--principal-txt-color);}
-}
-@media only screen and (max-width:481px){.navegacion{position:absolute;top:0;background:var(--second-txt-color);margin-top:0px;margin-left:0px;opacity:0.9;z-index:99;}
+.menuTxtFormatMje {font-size: 150%;text-align: center;}
+.textoImgCOntenedorLong {font-size: 80%;margin: 5%;}
+@media only screen and (max-width:481px){.navegacion{position:relative;top:0;background:var(--whitte-color-solid);margin-top:0px;margin-left:0px;opacity:0.9;z-index:99;}
+.logo {margin: 45%;margin-left: 40%;-webkit-transition: margin 0.5s cubic-bezier(0, 0, 0.71, -0.29);-moz-transition: margin 0.5s ease-out;-o-transition: margin 0.5s ease-out;}
+.contenedorMenu {width: 100%;}
+.contenedorLogo {width: 50%;position: relative;}
+.iconHome {margin-top: 0px;width: 220px;height: auto;}
+.navegacion li {width: 100%;list-style-type: none;text-align: center;}
 #headertop{border-bottom:15px solid var(--principal-txt-color);margin-bottom:0px;}
-.containerHeader{top:0px;width:100%;padding:5px;display:inline-block;}
-.contenedorSociales{position:absolute;text-align:center;float:right;padding-left:2px;margin-top:-177px;margin-left:271px;}
+.containerHeader{top:0px;width:100%;padding:0px;display:inline-block;}
+.contenedorSociales{position: relative;text-align: center;float: initial;padding-left: 2px;margin-top: 0px;margin-left: 0px;}
 .contenedorGalery{padding-top:54px;width:100%;display:block;}
 .contHijoServ{box-sizing:border-box;display:block;width:79%;height:260px;margin:3% 0% 3% 0%;text-align:center;font-size:15px;}
 .contenedorServices{display:inline-block;margin-right:-150px;margin-left:14px;}
-.floating-box{width: 33%;height: 150px;margin-left:29px;border:0px solid var(--econd-txt-color);}
+.floating-box {width: 49%;margin-left: 0px;}
 div.contenedorMje{float:left;padding-left:15px;}
 .container-fluid{padding-right:3px;margin-right:0px;margin-left:0px;}
-.elementoMmensaje{margin:10% 17% 17% 6%;padding:2%;background:rgba(0,0,0,0.3);display:inline-block;border-style:solid;border-color:var(--border-block-color);color:var(--text-fondo-color);}
+.elementoMmensaje{margin:10% 7% 10% 7%;padding:2%;background:rgba(0,0,0,0.3);display:inline-block;border-style:solid;border-color:var(--border-block-color);color:var(--text-fondo-color);}
 .menuTxtFormat{font-size:90%;}
 .menuTxtFormatMje{font-size:157%;}
-.divForm{width:85%;padding-left:8%;padding-top:11%;padding-right:0px;}
+.divForm{padding-left:10%;padding-top:10%;padding-right:10px;}
 .form-horizontal .form-group{margin-right:0px;margin-left:0px;}
 .tittleDiv{padding:20px;margin-left:7px;}
 .menuTxtFormatMje3{font-size:130%;}
-.colorContacto {color: var(--principal-txt-color);font-size: 90%;}
+.colorContacto {color: var(--principal-txt-color);font-size: 70%;}
 .derGalery {margin-top: 0px;width: 100%;}
 .cenGalery {margin-top: 0px;width: 100%;}
 .izqGalery {margin-top: 0px;width: 100%;}
@@ -238,4 +245,6 @@ div.contenedorMje{float:left;padding-left:15px;}
 .box8{width:100%;height:150px;overflow:hidden;width: 100%;}
 .box11{width:100%;height:150px;overflow:hidden;width: 100%;}
 .contenedorBorderContact {border-right: 0px solid var(--principal-txt-color);}
+.div-imgOver:hover .text {transform: translate(0px, -110px);opacity: 1;font-size: 14px;
+}
 }

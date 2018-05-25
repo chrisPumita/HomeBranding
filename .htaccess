@@ -8,8 +8,8 @@ ExpiresByType img/photos/JPG "access 1 month"
 ExpiresDefault "access plus 1 month"
 ## EXPIRES CACHING ##
 
-ErrorDocument 404 http://mecanismo.mx/proyectos/HomeBranding/info/404page.html
-ErrorDocument 403 http://mecanismo.mx/proyectos/HomeBranding/info/404page.html
+ErrorDocument 404 /info/404page.html
+ErrorDocument 403 /info/404page.html
 
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
